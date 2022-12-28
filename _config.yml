@@ -5,7 +5,7 @@ url: "https://lbaa2022.github.io"
 # THEME-SPECIFIC CONFIGURATION
 title: LBA Agent Project                                # site's title
 description: "LBA Agent Project Homepage"      # used by search engines
-avatar: assets/img/triangle.png                         # Empty for no avatar in navbar
+avatar: assets/img/lbaa-logo.jpg                         # Empty for no avatar in navbar
 favicon: assets/favicon.ico                             # Icon displayed in the tab
 
 # Header and footer text
