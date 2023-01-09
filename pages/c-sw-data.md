@@ -7,15 +7,17 @@ permalink: /sw-data/
 
 이 과제를 통해 연구개발한 결과 SW와 데이터셋입니다.
 
-## 맥락 이해
+## 불확실성 기반 멀티모달 인지 (Uncertainty-Aware Multimodal Cognition)
 
-- Service Context Understanding for Restaurant Robots [[github](https://github.com/aai4r/aai4r-ServiceContextUnderstanding)]
+- VOS + OLN: [github](https://github.com/aseuteurideu/LBA_Project) 35
+- ARVQA(Answerability Reasoning in Visual Question Answering): [github](https://github.com/hee-suk-yoon/LBA-ARVQA) 19
+- PTAL(Personalized Human Action Recognition): [github](https://github.com/wrko/LBA-PTAL.pytorch) 5
+- Denoising Diffusion-based OOD Detection: [github](https://github.com/hushon/ood-diffusion)
+- Cross Graph Attention: [github](https://github.com/youngyoung1021/cross-graph-attention) 15
 
-- Group Engagement Modeling [[github](https://github.com/aai4r/engagement_modeling)]
+## 불확실성 기반 질문 생성 (Unvertainty-Aware Question Generation)
+- DramaQG: [github](https://github.com/gminipark/LBA-DramaQG)  11
+- Answer Extraction: [github](https://github.com/gminipark/LBA-answer-extraction) 6
+- Object-related Question Answering: [github](https://github.com/statjuns/LBA_generate_objectQA) 5
 
-- Role-based Next Speaker Prediction for Multi-Party Human-Robot Interaction [[github](https://github.com/aai4r/graph-role-nsp)]
-
-- CoFormer for Grounded Situation Recognition [[github](https://github.com/jhcho99/CoFormer)]
-
-- Detector-Free Weakly Supervised Group Activity Recognition [[github](https://github.com/dk-kim/DFWSGAR)]
-
+## 열린 세계 지식 성장 학습 (Ipen-Qorld Continual Lifelong Learning)
