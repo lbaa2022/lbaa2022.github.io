@@ -9,15 +9,15 @@ permalink: /sw-data/
 
 ## 불확실성 기반 멀티모달 인지 (Uncertainty-Aware Multimodal Cognition)
 
-- VOS + OLN: [github](https://github.com/aseuteurideu/LBA_Project) 35
-- ARVQA(Answerability Reasoning in Visual Question Answering): [github](https://github.com/hee-suk-yoon/LBA-ARVQA) 19
-- PTAL(Personalized Human Action Recognition): [github](https://github.com/wrko/LBA-PTAL.pytorch) 5
+- VOS + OLN: [github](https://github.com/aseuteurideu/LBA_Project)
+- ARVQA(Answerability Reasoning in Visual Question Answering): [github](https://github.com/hee-suk-yoon/LBA-ARVQA)
+- PTAL(Personalized Human Action Recognition): [github](https://github.com/wrko/LBA-PTAL.pytorch)
 - Denoising Diffusion-based OOD Detection: [github](https://github.com/hushon/ood-diffusion)
-- Cross Graph Attention: [github](https://github.com/youngyoung1021/cross-graph-attention) 15
+- Cross Graph Attention: [github](https://github.com/youngyoung1021/cross-graph-attention)
 
 ## 불확실성 기반 질문 생성 (Unvertainty-Aware Question Generation)
-- DramaQG: [github](https://github.com/gminipark/LBA-DramaQG)  11
-- Answer Extraction: [github](https://github.com/gminipark/LBA-answer-extraction) 6
-- Object-related Question Answering: [github](https://github.com/statjuns/LBA_generate_objectQA) 5
+- DramaQG: [github](https://github.com/gminipark/LBA-DramaQG)
+- Answer Extraction: [github](https://github.com/gminipark/LBA-answer-extraction)
+- Object-related Question Answering: [github](https://github.com/statjuns/LBA_generate_objectQA)
 
 ## 열린 세계 지식 성장 학습 (Ipen-Qorld Continual Lifelong Learning)
