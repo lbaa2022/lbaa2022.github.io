@@ -2,7 +2,7 @@
 layout: post
 title: 연구의 필요성
 tags: [연구필요성]
-categories: Demo
+categories: Motivation
 ---
 
 본 과제는 인공지능 에이전트가 기존에 학습되지 않은 상황에 대한 지식의 불확실성을 자각하고, 지식의 불확실성을 해소하기 위한 질문을 하며 성장하는 인공지능 기술 개발을 목표로 합니다.
