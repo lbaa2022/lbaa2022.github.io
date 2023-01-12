@@ -2,7 +2,7 @@
 layout: post
 title: 2022년 연구개발 결과 발표 영상
 tags: [발표영상]
-categories: Presentation
+categories: Demo
 ---
 
 2022년에 과제 수행을 통해 연구개발한 주요 결과의 발표 영상을 공유합니다.
@@ -23,6 +23,8 @@ categories: Presentation
     - [https://youtu.be/0I8wUQXyPdE](https://youtu.be/0I8wUQXyPdE)
 - 불확실성을 고려한 오픈월드 객체 검출과 도메인 적응 (한국전잩통신연구원/과학기술연합대학원 이승익)
     - [https://youtu.be/dsIXyUIiPYg](https://youtu.be/dsIXyUIiPYg)
+- 사용자 이해의 불확실성 자각과 지식 축적 (한국전자통신연구원 고우리)
+    - [https://youtu.be/63T0ih63eW4](https://youtu.be/63T0ih63eW4)
 
 ## 불확실성 기반 질문 생성 (Unvertainty-Aware Question Generation)
 
