@@ -20,4 +20,4 @@ permalink: /sw-data/
 - Answer Extraction: [github](https://github.com/gminipark/LBA-answer-extraction)
 - Object-related Question Answering: [github](https://github.com/statjuns/LBA_generate_objectQA)
 
-## 열린 세계 지식 성장 학습 (Ipen-Qorld Continual Lifelong Learning)
+## 열린 세계 지식 성장 학습 (Open-World Continual Lifelong Learning)
