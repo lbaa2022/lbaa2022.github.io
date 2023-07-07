@@ -3,28 +3,37 @@ layout: default
 ---
 
 <div class="home">
-    <style scoped>
-        {% assign image = site.header_feature_image | relative_url | split: '.' %}
-        .call-out_img {
-            background-image: url('{{ image | join: '.' }}');
-        }
-        {% if site.header_feature_image_responsive %}
-        @media screen and (max-width: 768px) {
-            .call-out_img {
-                background-image: url('{{ image[0] | append: '-medium.' | append: image[1] | default: image}}');
-            }
-        }
-        @media screen and (max-width: 576px) {
-            .call-out_img {
-                background-image: url('{{ image[0] | append: '-small.' | append: image[1] }}');
-            }
-        }
-        {% endif %}
-    </style>
-    <div id="main" class="call-out call-out_img">
-        <h1> {{ site.header_text | default: "Change <code>header_text</code> in <code>_config.yml</code>"}} </h1>
-    </div>
+  <style scoped>
+    {% assign image = site.header_feature_image | relative_url | split: '.' %}
+    .call-out_img {
+    background-image: url('{{ image | join: '.' }}');
+    }
+    {% if site.header_feature_image_responsive %}
+      @media screen and (max-width: 768px) {
+      .call-out_img {
+                                        background-image: url('{{ image[0] | append: '-medium.' | append: image[1] | default: image }}');
+      }
+                                }
+                                @media screen and (max-width: 576px) {
+                                    .call-out_img {
+                                        background-image: url('{{ image[0] | append: '-small.' | append: image[1] }}');
+      }
+                                }
+    {% endif %}
+  </style>
+  <div id="main" class="call-out call-out_img">
+    <h1>
+      {{ site.header_text | default: "Change <code>header_text</code> in <code>_config.yml</code>" }}
+    </h1>
+  </div>
 
-    {% include blog/blog.liquid %}
+  <div>
+    본 웹사이트는 대한민국 정부 R&D 과제의 수행 정보와 성과를 효과적으로 공유하기 위해 제작되었습니다.
+    과제 제목은 "스스로 불확실성을 자각하며 질문하면서 성장하는 에이전트 기술 개발"이며, 2022년에 시작하여 2026년까지 수행할 예정입니다.
+                        주관 연구기관은 한국전자통신연구원입니다. 과제 개요 정보는
+    <a href="https://lbaa2022.github.io/about/">여기</a>에서 확인하실 수 있습니다.
+  </div>
+
+  {% include blog/blog.liquid %}
 
 </div>

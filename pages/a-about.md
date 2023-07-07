@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 개요
+title: 과제 개요
 author: minsujang
 permalink: /about/
 feature-img: "assets/img/pexels/travel.jpeg"
