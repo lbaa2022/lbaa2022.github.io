@@ -4,7 +4,7 @@ title: 개요
 author: minsujang
 permalink: /about/
 feature-img: "assets/img/pexels/travel.jpeg"
-tags: [Page]
+tags: [concept]
 ---
 
 본 웹 사이트는 정부 R&D 과제 수행 내용과 성과를 기록하고 공유하기 위한 목적으로 만들었습니다.

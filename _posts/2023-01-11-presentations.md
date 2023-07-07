@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 2022년 연구개발 결과 발표 영상
-tags: [발표영상]
+tags: [presentation, 발표영상]
 categories: Demo
 ---
 
