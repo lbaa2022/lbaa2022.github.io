@@ -21,5 +21,8 @@ categories: Demo
 전자신문 | ETRI, '절차 생성 AI' 벤치마크 기술 세계 최초 개발 | [https://www.etnews.com/20240307000075](https://www.etnews.com/20240307000075)
 파이낸셜뉴스 | ETRI '절차 생성 AI 벤치마크' 기술 세계 첫 확보 | [https://www.fnnews.com/news/202403071115063525](https://www.fnnews.com/news/202403071115063525)
 헤럴드경제 | ETRI, ‘절차생성 AI’ 성능 자동평가 기술 첫 개발 | [https://biz.heraldcorp.com/view.php?ud=20240307050097](https://biz.heraldcorp.com/view.php?ud=20240307050097)
+헬로디디 | GPT4? 라마2?...ETRI, '누가 쎈가' 자동 평가기술 개발 | [https://www.hellodd.com/news/articleView.html?idxno=103596](https://www.hellodd.com/news/articleView.html?idxno=103596)
+연합뉴스 | 전자통신연, 절차 생성 AI 성능 자동평가 벤치마크 기술 첫 개발 | [https://www.yna.co.kr/view/AKR20240307121300063](https://www.yna.co.kr/view/AKR20240307121300063)
+충청투데이 | ETRI, 세계 첫 절차 생성 AI 벤치마크 기술 개발 | [https://www.cctoday.co.kr/news/articleView.html?idxno=2192450](https://www.cctoday.co.kr/news/articleView.html?idxno=2192450)
 
-
+대전일보 | "비용·시간 단축" ETRI '절차 생성 AI' 자동 평가 기술 개발 | [https://www.daejonilbo.com/news/articleView.html?idxno=2117937](https://www.daejonilbo.com/news/articleView.html?idxno=2117937)
