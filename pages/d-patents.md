@@ -5,16 +5,59 @@ feature-img: "assets/img/pexels/travel.jpeg"
 permalink: /patents/
 ---
 
-본 과제를 통해 출원한 특허입니다.
+{% include deliverables_styles.liquid %}
+{% assign patents = site.data.deliverables.patents %}
 
-## 질문 생성
+<div class="deliverables-page">
+  <p class="deliverables-lead">
+    2025년까지의 특허 성과를 정리했습니다.
+    동일 발명의 국가별 출원과 등록 이력은 한 카드 안에서 함께 확인할 수 있도록 구성했습니다.
+  </p>
 
-- 질의 생성을 위한 언어 모델 추가 학습 기법 (경희대학교, 출원번호: 10-2022-0155485)
+  <div class="deliverables-stat-grid">
+    {% for pair in patents.counts %}
+      <div class="deliverables-stat">
+        <strong>{{ pair[1] }}</strong>
+        <span>{{ pair[0] }}년 특허</span>
+      </div>
+    {% endfor %}
+  </div>
 
-## 질의응답 기반 성장학습
-
-- 지식 기반 질의 응답을 위한 구조적 주의 집중 기제 기반의 추론 방법 및 이를 수행하기 위한 컴퓨팅 장치 (서울대학교, 출원번호: 10-2022-0110335)
-
-## 불확실성 감지와 해소
-
-- 단어 의미의 모호성 해소를 위한 의미 유지 문장 혼합 방법 및 장치 (한국과학기술원, 출원번호: 10-2022-0168934)
+  {% for year_group in patents.years %}
+    <details class="deliverables-year" {% if forloop.first %}open{% endif %}>
+      <summary>
+        <span class="deliverables-year-label">{{ year_group.year }}년</span>
+        <span class="deliverables-year-count">{{ year_group.items | size }}건</span>
+      </summary>
+      <div class="deliverables-year-body">
+        <div class="deliverables-grid">
+          {% for item in year_group.items %}
+            <article class="deliverables-card">
+              <h3>{{ item.title }}</h3>
+              <div class="deliverables-chip-row">
+                {% for org in item.orgs %}
+                  <span class="deliverables-chip">{{ org }}</span>
+                {% endfor %}
+                {% for country in item.countries %}
+                  <span class="deliverables-chip deliverables-chip--muted">{{ country }}</span>
+                {% endfor %}
+              </div>
+              <div class="deliverables-meta-block">
+                <span class="deliverables-meta-label">권리 번호</span>
+                {% for number in item.numbers %}
+                  {{ number }}{% unless forloop.last %}<br>{% endunless %}
+                {% endfor %}
+              </div>
+              <div class="deliverables-meta-block">
+                <span class="deliverables-meta-label">권리 일자</span>
+                {% for date in item.dates %}
+                  {{ date }}{% unless forloop.last %}<br>{% endunless %}
+                {% endfor %}
+              </div>
+            </article>
+          {% endfor %}
+        </div>
+      </div>
+    </details>
+  {% endfor %}
+</div>

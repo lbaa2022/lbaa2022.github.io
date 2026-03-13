@@ -6,28 +6,445 @@ layout: default
   <style scoped>
     {% assign image = site.header_feature_image | relative_url | split: '.' %}
     .call-out_img {
-    background-image: url('{{ image | join: '.' }}');
+      background-image: linear-gradient(rgba(7, 23, 39, 0.55), rgba(7, 23, 39, 0.55)), url('{{ image | join: '.' }}');
+      background-position: center;
     }
+
     {% if site.header_feature_image_responsive %}
       @media screen and (max-width: 768px) {
-      .call-out_img { background-image: url('{{ image[0] | append: '-medium.' | append: image[1] | default: image }}');}
+        .call-out_img {
+          background-image: linear-gradient(rgba(7, 23, 39, 0.58), rgba(7, 23, 39, 0.58)), url('{{ image[0] | append: '-medium.' | append: image[1] | default: image }}');
+        }
       }
-      @media screen and (max-width: 576px) {.call-out_img {background-image: url('{{ image[0] | append: '-small.' | append: image[1] }}');}
+      @media screen and (max-width: 576px) {
+        .call-out_img {
+          background-image: linear-gradient(rgba(7, 23, 39, 0.62), rgba(7, 23, 39, 0.62)), url('{{ image[0] | append: '-small.' | append: image[1] }}');
+        }
       }
     {% endif %}
+
+    .hero-shell {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem 2rem;
+    }
+
+    .hero-eyebrow {
+      display: inline-block;
+      margin-bottom: 1rem;
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.16);
+      color: #f5f8fb;
+      font-size: 0.85rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .hero-title {
+      max-width: 920px;
+      margin: 0;
+      color: #ffffff;
+      font-size: clamp(2.1rem, 4.2vw, 3.8rem);
+      line-height: 1.2;
+      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.24);
+    }
+
+    .hero-summary {
+      max-width: 900px;
+      margin: 1rem auto 0;
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 1.12rem;
+      line-height: 1.8;
+    }
+
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+
+    .hero-badge {
+      padding: 0.6rem 0.9rem;
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.12);
+      color: #ffffff;
+      font-size: 0.95rem;
+    }
+
+    .home-section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+
+    .section-heading {
+      margin-bottom: 0.35rem;
+      color: #12324a;
+      font-size: 1.9rem;
+    }
+
+    .section-subheading {
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+      color: #4c6274;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    .overview-grid,
+    .pillars-grid,
+    .verification-grid,
+    .links-grid {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .overview-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .pillars-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .verification-grid {
+      grid-template-columns: 1.5fr 1fr;
+    }
+
+    .links-grid {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      margin-bottom: 1rem;
+    }
+
+    .info-card,
+    .pillar-card,
+    .stage-card,
+    .panel-card,
+    .link-card {
+      border: 1px solid #dbe6ee;
+      border-radius: 18px;
+      background: #ffffff;
+      box-shadow: 0 10px 30px rgba(18, 50, 74, 0.08);
+    }
+
+    .info-card,
+    .stage-card,
+    .panel-card,
+    .link-card {
+      padding: 1.35rem;
+    }
+
+    .pillar-card {
+      padding: 1.4rem;
+      background: linear-gradient(180deg, #f7fbff 0%, #ffffff 100%);
+    }
+
+    .card-kicker {
+      margin: 0 0 0.5rem;
+      color: #0d5a88;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .card-title {
+      margin: 0 0 0.7rem;
+      color: #12324a;
+      font-size: 1.25rem;
+    }
+
+    .card-text,
+    .panel-text,
+    .stage-text {
+      margin: 0;
+      color: #42586a;
+      line-height: 1.75;
+    }
+
+    .stage-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .stage-list,
+    .chip-list,
+    .service-list {
+      margin: 0.9rem 0 0;
+      padding-left: 1.15rem;
+      color: #42586a;
+      line-height: 1.7;
+    }
+
+    .chip-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      margin-top: 0.9rem;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      min-height: 2.3rem;
+      padding: 0.45rem 0.8rem;
+      border-radius: 999px;
+      background: #eef5fa;
+      color: #20455e;
+      font-size: 0.92rem;
+      line-height: 1.4;
+    }
+
+    .link-card {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+      transition: transform 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease;
+    }
+
+    .link-card:hover {
+      transform: translateY(-3px);
+      border-color: #8ab1cb;
+      box-shadow: 0 14px 36px rgba(18, 50, 74, 0.12);
+      text-decoration: none;
+    }
+
+    .link-card strong {
+      display: block;
+      margin-bottom: 0.45rem;
+      color: #12324a;
+      font-size: 1.05rem;
+    }
+
+    .link-card span {
+      color: #557084;
+      line-height: 1.6;
+    }
+
+    .news-section {
+      padding-top: 0.5rem;
+      padding-bottom: 2.5rem;
+    }
+
+    @media screen and (max-width: 960px) {
+      .overview-grid,
+      .verification-grid,
+      .pillars-grid,
+      .links-grid,
+      .stage-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media screen and (max-width: 576px) {
+      .hero-shell,
+      .home-section {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+
+      .hero-summary {
+        font-size: 1rem;
+      }
+    }
   </style>
+
   <div id="main" class="call-out call-out_img">
-    <h1>
-      {{ site.header_text | default: "Change <code>header_text</code> in <code>_config.yml</code>" }}
-    </h1>
+    <div class="hero-shell">
+      <div class="hero-eyebrow">People-Centered AI Core Technology Program</div>
+      <h1 class="hero-title">스스로 불확실성을 자각하며 질문하면서 성장하는 에이전트 기술 개발</h1>
+      <p class="hero-summary">
+        불확실성을 자각하고 외부 대상과 질의응답하면서 지속적으로 학습하고 성장하는
+        <strong>LBA-에이전트 브레인</strong> 핵심 기술을 개발하고, 다중 도메인 검증과 실증 서비스를 통해
+        실환경 적용성을 확인하는 정부 R&amp;D 과제입니다.
+      </p>
+      <div class="hero-badges">
+        <div class="hero-badge">연구기간 2022.04.01 - 2026.12.31</div>
+        <div class="hero-badge">주관기관 한국전자통신연구원</div>
+        <div class="hero-badge">공동연구기관 6개 기관</div>
+        <div class="hero-badge">4개 기술검증 시나리오 + 2개 실증 서비스</div>
+      </div>
+    </div>
   </div>
 
-  <div style="align-items: center; margin: auto; width: 70%; padding: 10px">
-    본 웹사이트는 대한민국 정부 R&D 과제의 수행 정보와 성과를 효과적으로 공유하기 위해 제작되었습니다.
-    과제 제목은 "스스로 불확실성을 자각하며 질문하면서 성장하는 에이전트 기술 개발"이며, 2022년에 시작하여 2026년까지 수행할 예정입니다. 주관 연구기관은 한국전자통신연구원입니다. 과제 개요 정보는
-    <a href="https://lbaa2022.github.io/about/">여기</a>에서 확인하실 수 있습니다.
-  </div>
+  <section class="home-section">
+    <h2 class="section-heading">과제 개요</h2>
+    <p class="section-subheading">
+      기존 인공지능 에이전트는 학습하지 않은 상황에서 자신의 한계를 자각하기 어렵습니다.
+      본 과제는 에이전트가 스스로 모르는 것을 인지하고, 질문으로 불확실성을 해소하며,
+      획득한 지식을 바탕으로 계속 성장하는 기술 체계를 구축하는 데 초점을 둡니다.
+    </p>
 
-  {% include blog/blog.liquid %}
+    <div class="overview-grid">
+      <article class="info-card">
+        <p class="card-kicker">Final Goal</p>
+        <h3 class="card-title">LBA-에이전트 브레인 핵심 기술 개발과 실환경 검증</h3>
+        <p class="card-text">
+          불확실성을 자각하고 외부와 질의응답하며 지속 학습하는 에이전트 지능 시스템을 구현하고,
+          실제 서비스 환경에서 기술의 성능과 적용 가능성을 검증합니다.
+        </p>
+      </article>
 
+      <article class="info-card">
+        <p class="card-kicker">Research Scope</p>
+        <h3 class="card-title">핵심기술, 플랫폼, 데이터, 서비스 실증까지 포함</h3>
+        <p class="card-text">
+          핵심 알고리즘 연구에 머무르지 않고 SW, 데이터셋, 플랫폼, 검증 시나리오,
+          실증 서비스까지 연결해 연구개발 결과의 재사용성과 현장 활용성을 함께 확보합니다.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="home-section">
+    <h2 class="section-heading">3대 핵심기술</h2>
+    <p class="section-subheading">
+      제안서에서 정의한 LBA-에이전트 브레인의 세 축은 인지, 질문, 성장 학습의 연결 구조로 설계되어 있습니다.
+    </p>
+
+    <div class="pillars-grid">
+      <article class="pillar-card">
+        <p class="card-kicker">UMC</p>
+        <h3 class="card-title">불확실성을 자각하는 멀티모달 인지</h3>
+        <p class="card-text">
+          에이전트가 환경과 상황의 변화를 접했을 때 스스로 아는 것과 모르는 것을 구분하며,
+          멀티모달 지식 축적과 불확실성 지각을 수행하는 기술입니다.
+        </p>
+      </article>
+
+      <article class="pillar-card">
+        <p class="card-kicker">UQG</p>
+        <h3 class="card-title">불확실성 기반 질문 생성</h3>
+        <p class="card-text">
+          해소가 필요한 불확실성을 중심으로 질문을 만들고, 적절한 대상에게 질의해
+          응답을 해석함으로써 필요한 정보를 획득하는 기술입니다.
+        </p>
+      </article>
+
+      <article class="pillar-card">
+        <p class="card-kicker">OCL2</p>
+        <h3 class="card-title">열린 세계 지식 성장 학습</h3>
+        <p class="card-text">
+          질의응답을 통해 새롭게 얻은 지식을 바탕으로 열린 세계 환경에서도 더 정확한 인지와
+          추론이 가능하도록 에이전트의 능력을 계속 확장하는 기술입니다.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="home-section">
+    <h2 class="section-heading">검증 및 실증 전략</h2>
+    <p class="section-subheading">
+      핵심기술은 다양한 응용 시나리오와 실증 서비스로 연결되어 실제 환경 대응력을 검증합니다.
+    </p>
+
+    <div class="verification-grid">
+      <article class="panel-card">
+        <p class="card-kicker">Verification Scenarios</p>
+        <h3 class="card-title">4개 기술검증 시나리오</h3>
+        <div class="chip-wrap">
+          <div class="chip">AI 데이터 정제</div>
+          <div class="chip">장면과 스토리 이해</div>
+          <div class="chip">의사결정 지원</div>
+          <div class="chip">환경 이해와 절차 추론</div>
+        </div>
+        <p class="panel-text" style="margin-top: 1rem;">
+          데이터 불확실성 검출, 멀티모달 이해, 질의응답 기반 성장 학습, 절차 지식 추론을
+          서로 다른 도메인에서 검증해 기술 범용성을 확인합니다.
+        </p>
+      </article>
+
+      <article class="panel-card">
+        <p class="card-kicker">Pilot Services</p>
+        <h3 class="card-title">2개 실증 서비스</h3>
+        <ul class="service-list">
+          <li>지속성장 영상진단 에이전트</li>
+          <li>학습자 상태 불확실성 기반 교육 에이전트</li>
+        </ul>
+        <p class="panel-text" style="margin-top: 1rem;">
+          실제 응용 서비스 맥락에서 질문 기반 학습과 지식 성장 기술의 적용성을 검증합니다.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="home-section">
+    <h2 class="section-heading">추진 단계</h2>
+    <p class="section-subheading">
+      과제는 핵심기술 확보와 플랫폼 통합, 그리고 실환경 서비스 검증의 두 단계로 추진됩니다.
+    </p>
+
+    <div class="stage-grid">
+      <article class="stage-card">
+        <p class="card-kicker">Phase 1</p>
+        <h3 class="card-title">핵심기술 개발과 시스템 통합</h3>
+        <p class="stage-text">
+          1차년도부터 3차년도까지는 불확실성 자각, 질문 생성과 응답 해석, 성장 학습 기술을 확보하고
+          이를 LBA-에이전트 브레인 플랫폼으로 통합하는 데 집중합니다.
+        </p>
+        <ul class="stage-list">
+          <li>멀티모달 지식 구축과 불확실성 인지 기반 기술 확보</li>
+          <li>질의 생성과 지식 성장 학습 기반 기술 확보</li>
+          <li>플랫폼 개발과 AI 데이터셋 정제 시나리오 검증</li>
+        </ul>
+      </article>
+
+      <article class="stage-card">
+        <p class="card-kicker">Phase 2</p>
+        <h3 class="card-title">기술 심화와 실환경 서비스 검증</h3>
+        <p class="stage-text">
+          4차년도부터 5차년도까지는 오픈셋 환경 대응, 질문 방식 고도화, 플랫폼 공개,
+          실증 서비스 적용을 통해 기술 적용성과 사업화 가능성을 높입니다.
+        </p>
+        <ul class="stage-list">
+          <li>에이전트 간 지식 전이와 실증 플랫폼 설계</li>
+          <li>공개 SW 및 데이터셋 공개</li>
+          <li>2개 실증 서비스 기반 기술 검증</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="home-section">
+    <h2 class="section-heading">바로가기</h2>
+    <p class="section-subheading">
+      과제 개요부터 연구 성과, 공개 자산까지 주요 정보를 빠르게 탐색할 수 있습니다.
+    </p>
+
+    <div class="links-grid">
+      <a class="link-card" href="{{ '/about/' | relative_url }}">
+        <strong>과제 개요</strong>
+        <span>사업 정보, 수행기관, 연구 필요성, 목표와 핵심기술을 확인합니다.</span>
+      </a>
+      <a class="link-card" href="{{ '/publications/' | relative_url }}">
+        <strong>논문</strong>
+        <span>과제를 통해 발표된 주요 학술 성과를 모아봅니다.</span>
+      </a>
+      <a class="link-card" href="{{ '/sw-data/' | relative_url }}">
+        <strong>SW + Data</strong>
+        <span>공개 저장소와 데이터 자산을 통해 연구 결과를 재사용할 수 있습니다.</span>
+      </a>
+      <a class="link-card" href="{{ '/patents/' | relative_url }}">
+        <strong>특허</strong>
+        <span>과제 수행 과정에서 축적된 지식재산 성과를 살펴봅니다.</span>
+      </a>
+      <a class="link-card" href="{{ '/publicity/' | relative_url }}">
+        <strong>홍보</strong>
+        <span>언론 보도, 전시, 세미나 등 대외 확산 성과를 확인합니다.</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="home-section news-section">
+    <h2 class="section-heading">최근 소식</h2>
+    <p class="section-subheading">
+      논문 발표, 회의, 기술교류회, 연구 성과 공유 등 과제 수행 과정의 주요 업데이트입니다.
+    </p>
+    {% include blog/blog.liquid %}
+  </section>
 </div>

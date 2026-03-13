@@ -5,26 +5,94 @@ feature-img: "assets/img/pexels/travel.jpeg"
 permalink: /publications/
 ---
 
-본 과제를 통해 발표한 논문입니다.
+{% include deliverables_styles.liquid %}
+{% assign publications = site.data.deliverables.papers %}
 
-## 멀티모달 지식 체계 구축
+<div class="deliverables-page">
+  <p class="deliverables-lead">
+    2025년까지의 논문 및 학술대회 성과를 정리했습니다.
+    동일 제목의 성과는 중복 없이 통합했고, 과제의 핵심 기술 분야 관점에서 다시 분류해 연도순으로 살펴볼 수 있도록 구성했습니다.
+  </p>
 
-- Mun, J., Shin, M., Han, G., Lee, S., Ha, S., Lee, J., & Kim, E. S. (2022). BaSSL: Boundary-aware Self-Supervised Learning for Video Scene Segmentation. In Proceedings of the Asian Conference on Computer Vision (pp. 4027-4043). [[paper](https://openaccess.thecvf.com/content/ACCV2022/html/Mun_BaSSL_Boundary-aware_Self-Supervised_Learning_for_Video_Scene_Segmentation_ACCV_2022_paper.html)]
+  <div class="deliverables-stat-grid">
+    {% for pair in publications.counts %}
+      <div class="deliverables-stat">
+        <strong>{{ pair[1] }}</strong>
+        <span>{{ pair[0] }}년 성과</span>
+      </div>
+    {% endfor %}
+  </div>
 
-## 불확실성 지각과 해소
+  <div class="deliverables-category-grid">
+    {% for category in publications.categories %}
+      <div class="deliverables-category-card">
+        <div class="deliverables-eyebrow">Core Area</div>
+        <h3>{{ category.title }}</h3>
+        <p>{{ category.description }}</p>
+        <span class="deliverables-count">총 {{ category.count }}건</span>
+      </div>
+    {% endfor %}
+  </div>
 
-- Yoon, H. S., Yoon, E., Harvill, J., Yoon, S., Hasegawa-Johnson, M., & Yoo, C. D. (2022). SMSMix: Sense-Maintained Sentence Mixup for Word Sense Disambiguation. arXiv preprint arXiv:2212.07072. [[paper](https://arxiv.org/abs/2212.07072)]
+  {% for category in publications.categories %}
+    <section class="deliverables-section">
+      <div class="deliverables-section-header">
+        <div class="deliverables-eyebrow">Category {{ forloop.index }}</div>
+        <h2>{{ category.title }}</h2>
+        <p>{{ category.description }}</p>
+      </div>
 
-## 질문 생성과 성장 학습
+      {% for year_group in category.years %}
+        <details class="deliverables-year" {% if forloop.first %}open{% endif %}>
+          <summary>
+            <span class="deliverables-year-label">{{ year_group.year }}년</span>
+            <span class="deliverables-year-count">{{ year_group.items | size }}건</span>
+          </summary>
+          <div class="deliverables-year-body">
+            <div class="deliverables-grid">
+              {% for item in year_group.items %}
+                <article class="deliverables-card">
+                  <h3>{{ item.title }}</h3>
+                  <div class="deliverables-chip-row">
+                    {% for org in item.orgs %}
+                      <span class="deliverables-chip">{{ org }}</span>
+                    {% endfor %}
+                    {% for kind in item.kinds %}
+                      <span class="deliverables-chip deliverables-chip--muted">{{ kind }}</span>
+                    {% endfor %}
+                  </div>
+                  {% if item.authors %}
+                    <div class="deliverables-meta-block">
+                      <span class="deliverables-meta-label">저자</span>
+                      {{ item.authors | join: ', ' }}
+                    </div>
+                  {% endif %}
+                  <div class="deliverables-meta-block">
+                    <span class="deliverables-meta-label">학술지 / 학술대회</span>
+                    {% for venue in item.venues %}
+                      {{ venue }}{% unless forloop.last %}<br>{% endunless %}
+                    {% endfor %}
+                  </div>
+                  {% if item.scholar_url or item.dbpia_url %}
+                    <div class="deliverables-link-row">
+                      {% if item.scholar_url %}
+                        <a class="deliverables-link" href="{{ item.scholar_url }}" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+                      {% endif %}
+                      {% if item.dbpia_url %}
+                        <a class="deliverables-link" href="{{ item.dbpia_url }}" target="_blank" rel="noopener noreferrer">DBpia</a>
+                      {% endif %}
+                    </div>
+                  {% endif %}
+                </article>
+              {% endfor %}
+            </div>
+          </div>
+        </details>
+      {% endfor %}
+    </section>
 
-- Park, G. M., Hong, S. E., & Park, S. B. (2022, November). Post-Training with Interrogative Sentences for Enhancing BART-based Korean Question Generator. In Proceedings of the 2nd Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 12th International Joint Conference on Natural Language Processing (pp. 202-209). [[paper](https://aclanthology.org/2022.aacl-short.26/)]
-
-- Minjoon Jung, SeongHo Choi, JooChan Kim, Jin-Hwa Kim, and Byoung-Tak Zhang. 2022. Modal-specific Pseudo Query Generation for Video Corpus Moment Retrieval. In Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing, pages 7769–7781, Abu Dhabi, United Arab Emirates. Association for Computational Linguistics. [[paper](https://preview.aclanthology.org/emnlp-22-ingestion/2022.emnlp-main.530/)]
-
-- Hwang, I., Lee, S., Kwak, Y., Oh, S. J., Teney, D., Kim, J. H., & Zhang, B. T. SelecMix: Debiased Learning by Contradicting-pair Sampling. In Advances in Neural Information Processing Systems. [[paper](https://openreview.net/forum?id=cIpU8OzGSCU)]
-
-- Choi, W. S., Han, D. S., Lee, H., Park, J., & Zhang, B. T. (2022). DUEL: Adaptive Duplicate Elimination on Working Memory for Self-Supervised Learning. arXiv e-prints, arXiv-2210. [[paper](https://arxiv.org/abs/2210.17052)]
-
-## 절차이해와 작업계획
-
-- Singh, K. P., Weihs, L., Herrasti, A., Choi, J., Kembhavi, A., & Mottaghi, R. Ask4Help: Learning to Leverage an Expert for Embodied Tasks. In Advances in Neural Information Processing Systems. [[paper](https://openreview.net/forum?id=_bqtjfpj8h)]
+    {% unless forloop.last %}
+      <div class="deliverables-divider"></div>
+    {% endunless %}
+  {% endfor %}
+</div>

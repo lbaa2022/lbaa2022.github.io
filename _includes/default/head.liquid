@@ -22,7 +22,10 @@
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
     <!--Favicon-->
-    <link rel="shortcut icon" href="{{ site.favicon | relative_url }}" type="image/x-icon">
+    {% assign favicon_href = site.favicon | relative_url %}
+    {% assign favicon_version = site.time | date: '%Y%m%d%H%M%S' %}
+    <link rel="icon" href="{{ favicon_href }}?v={{ favicon_version }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ favicon_href }}?v={{ favicon_version }}" type="image/x-icon">
 
     {% if page.bootstrap %}
     <!-- Bootstrap-4.1.3 isolation CSS -->
