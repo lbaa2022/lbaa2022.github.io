@@ -23,6 +23,41 @@ permalink: /publications/
     {% endfor %}
   </div>
 
+  {% assign stats = publications.stats_by_kind %}
+  <div class="deliverables-table-wrap">
+    <table class="deliverables-table">
+      <thead>
+        <tr>
+          <th>구분</th>
+          {% for year in stats.years %}
+            <th>{{ year }}년</th>
+          {% endfor %}
+          <th>합계</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in stats.rows %}
+          <tr>
+            <th>{{ row.kind }}</th>
+            {% for n in row.counts %}
+              <td>{{ n }}</td>
+            {% endfor %}
+            <td><strong>{{ row.total }}</strong></td>
+          </tr>
+        {% endfor %}
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>합계</th>
+          {% for n in stats.totals.counts %}
+            <td><strong>{{ n }}</strong></td>
+          {% endfor %}
+          <td><strong>{{ stats.totals.total }}</strong></td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+
   <div class="deliverables-category-grid">
     {% for category in publications.categories %}
       <div class="deliverables-category-card">

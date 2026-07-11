@@ -1,7 +1,7 @@
 {
   "papers": {
     "counts": {
-      "2025": 64,
+      "2025": 66,
       "2024": 30,
       "2023": 57,
       "2022": 14
@@ -22,7 +22,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "비SCI"
+                  "비SCI(E) 저널"
                 ],
                 "venues": [
                   "정보과학회 컴퓨팅의 실제 논문지"
@@ -39,7 +39,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "비SCI"
+                  "비SCI(E) 저널"
                 ],
                 "venues": [
                   "정보과학회 컴퓨팅의 실제 논문지"
@@ -56,7 +56,7 @@
                   "한국전자통신연구원"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "International Conference on Information and Communication Technology Convergence"
@@ -73,7 +73,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "ICROS"
@@ -90,7 +90,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "ICROS"
@@ -107,7 +107,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "ICROS"
@@ -124,7 +124,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국컴퓨터종합학술대회"
@@ -141,7 +141,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국컴퓨터종합학술대회"
@@ -158,7 +158,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "CVPR"
@@ -175,7 +175,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "EMNLP"
@@ -192,7 +192,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "ICRA"
@@ -209,7 +209,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "IROS"
@@ -226,7 +226,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "WACV"
@@ -243,7 +243,7 @@
                   "한국과학기술원"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "ICCV"
@@ -260,7 +260,7 @@
                   "한양대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "ICCV"
@@ -277,7 +277,7 @@
                   "한양대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국컴퓨터종합학술대회"
@@ -294,7 +294,7 @@
                   "조선대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "대한악안면성형재건의과학회"
@@ -316,7 +316,7 @@
                   "광주과학기술원"
                 ],
                 "kinds": [
-                  "SCI"
+                  "SCI(E) 저널"
                 ],
                 "venues": [
                   "Computer Vision and Image Understanding"
@@ -336,7 +336,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "2024 한국컴퓨터종합학술대회(KCC)"
@@ -356,7 +356,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "2024 한국컴퓨터종합학술대회(KCC)"
@@ -381,7 +381,7 @@
                   "광주과학기술원"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2023"
@@ -402,7 +402,7 @@
                   "광주과학기술원"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "Ubiquitous Robots"
@@ -421,7 +421,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "Findings of the Association for Computational Linguistics: ACL 2023"
@@ -439,7 +439,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "The IEEE/CVF Conference on Computer Vision and Pattern Recognition 2023 (CVPR 2023)"
@@ -461,7 +461,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "SCI"
+                  "SCI(E) 저널"
                 ],
                 "venues": [
                   "AI MAGAZINE"
@@ -482,7 +482,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국정보과학회 소프트웨어종합학술대회 (KSC) 2023"
@@ -500,7 +500,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국정보과학회 소프트웨어종합학술대회 (KSC) 2023"
@@ -519,8 +519,8 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "비SCI",
-                  "학술대회"
+                  "비SCI(E) 저널",
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국정보과학회 (정보과학회 컴퓨팅의 실제 논문지 제29권 제12호)",
@@ -540,7 +540,7 @@
                   "한국과학기술원"
                 ],
                 "kinds": [
-                  "SCI"
+                  "SCI(E) 저널"
                 ],
                 "venues": [
                   "SENSORS"
@@ -558,7 +558,7 @@
                   "한국과학기술원"
                 ],
                 "kinds": [
-                  "SCI"
+                  "SCI(E) 저널"
                 ],
                 "venues": [
                   "IEEE Access"
@@ -581,7 +581,7 @@
                   "한국과학기술원"
                 ],
                 "kinds": [
-                  "비SCI"
+                  "비SCI(E) 저널"
                 ],
                 "venues": [
                   "MACHINE LEARNING AND KNOWLEDGE EXTRACTION"
@@ -599,7 +599,7 @@
                   "한국전자통신연구원"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "KICS Winter Conference 2023 (KICS 2023)"
@@ -617,7 +617,7 @@
                   "한국전자통신연구원"
                 ],
                 "kinds": [
-                  "SCI"
+                  "SCI(E) 저널"
                 ],
                 "venues": [
                   "NEUROCOMPUTING"
@@ -635,7 +635,7 @@
                   "한양대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)"
@@ -658,7 +658,7 @@
                   "한국과학기술원"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "36th Conference on Neural Information Processing Systems (NeurIPS 2022)"
@@ -679,7 +679,7 @@
                   "한국과학기술원"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "The 17th European Conference on Computer Vision (ECCV 2022)"
@@ -702,7 +702,7 @@
                   "한국과학기술원"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "The 2022 Conference on Empirical Methods in Natural Language Processing"
@@ -724,7 +724,7 @@
                   "한국과학기술원"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "2022 Annual Conference of the North American Chapter of the Association for Computational Linguistics"
@@ -744,7 +744,7 @@
                   "한국과학기술원"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "36th Conference on Neural Information Processing Systems (NeurIPS 2022)"
@@ -767,7 +767,7 @@
                   "한국전자통신연구원"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "제3회 한국인공지능학술대회"
@@ -785,7 +785,7 @@
                   "한양대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "The 16th Asian Conference on Computer Vision (ACCV2022)"
@@ -808,7 +808,7 @@
                   "한양대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "2022 한국소프트웨어종합학술대회"
@@ -827,7 +827,7 @@
                   "한양대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "2022 한국소프트웨어종합학술대회"
@@ -845,7 +845,7 @@
                   "한양대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "2022 한국소프트웨어종합학술대회"
@@ -866,18 +866,35 @@
         "key": "uqg",
         "title": "불확실성 기반 질문 생성 (UQG)",
         "description": "불확실성을 해소하기 위해 어떤 질문을 만들고 어떻게 질의응답으로 연결할지에 초점을 둔 연구 성과입니다.",
-        "count": 21,
+        "count": 22,
         "years": [
           {
             "year": 2025,
             "items": [
+              {
+                "title": "Angiotensin-converting enzyme insertion/deletion gene polymorphism and the progression of cerebral microbleeds",
+                "orgs": [
+                  "경희대학교"
+                ],
+                "kinds": [
+                  "국내학술대회"
+                ],
+                "venues": [
+                  "정보과학회 학술대회"
+                ],
+                "authors": [
+                  "김수연"
+                ],
+                "scholar_url": "https://scholar.google.com/scholar?q=%22Angiotensin-converting+enzyme+insertion%2Fdeletion+gene+polymorphism+and+the+progression+of+cerebral+microbleeds%22",
+                "dbpia_url": "https://www.dbpia.co.kr/search/topSearch?query=Angiotensin-converting+enzyme+insertion%2Fdeletion+gene+polymorphism+and+the+progression+of+cerebral+microbleeds"
+              },
               {
                 "title": "INQUIRER: Harnessing internal knowledge graphs for video question generation",
                 "orgs": [
                   "서울대학교"
                 ],
                 "kinds": [
-                  "SCI"
+                  "SCI(E) 저널"
                 ],
                 "venues": [
                   "Knowledge-Based Systems"
@@ -894,7 +911,7 @@
                   "경희대학교"
                 ],
                 "kinds": [
-                  "비SCI"
+                  "비SCI(E) 저널"
                 ],
                 "venues": [
                   "정보과학회논문지"
@@ -911,7 +928,7 @@
                   "한국전자통신연구원"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "대한전자공학회 하계학술대회"
@@ -928,7 +945,7 @@
                   "한국전자통신연구원"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "CVPR Workshop (Embodied AI)"
@@ -945,7 +962,7 @@
                   "한국전자통신연구원"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "대한전자공학회 하계종합학술대회"
@@ -962,7 +979,7 @@
                   "한국전자통신연구원"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "NeurIPS Workshop (Efficient Reasoning)"
@@ -979,7 +996,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국컴퓨터종합학술대회"
@@ -996,7 +1013,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "EMNLP"
@@ -1013,7 +1030,7 @@
                   "한국과학기술원"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "ICLR"
@@ -1035,7 +1052,7 @@
                   "동국대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "Proceedings of the Annual Meeting of the Cognitive Science Society"
@@ -1054,7 +1071,7 @@
                   "동국대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "Proceedings of the Annual Meeting of the Cognitive Science Society"
@@ -1076,7 +1093,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "2024 한국컴퓨터종합학술대회(KCC)"
@@ -1095,7 +1112,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "2024 한국컴퓨터종합학술대회(KCC)"
@@ -1115,7 +1132,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "2024 한국컴퓨터종합학술대회(KCC)"
@@ -1138,7 +1155,7 @@
                   "경희대학교"
                 ],
                 "kinds": [
-                  "SCI"
+                  "SCI(E) 저널"
                 ],
                 "venues": [
                   "APPLIED INTELLIGENCE"
@@ -1157,7 +1174,7 @@
                   "동국대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "2023 한국소프트웨어종합학술대회"
@@ -1177,7 +1194,7 @@
                   "동국대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "2023 한국컴퓨터종합학술대회"
@@ -1196,7 +1213,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "The IEEE/CVF Conference on Computer Vision and Pattern Recognition 2023 (CVPR 2023)"
@@ -1222,7 +1239,7 @@
                   "동국대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "Proceedings of the 2nd Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 12th International Joint Conference on Natural Language Processing (AACL-IJCNLP 2022)"
@@ -1241,7 +1258,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "The 2022 Conference on Empirical Methods in Natural Language Processing"
@@ -1262,7 +1279,7 @@
                   "한양대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "2022 한국소프트웨어종합학술대회"
@@ -1294,7 +1311,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "비SCI"
+                  "비SCI(E) 저널"
                 ],
                 "venues": [
                   "정보과학회논문지"
@@ -1311,7 +1328,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국컴퓨터종합학술대회"
@@ -1328,7 +1345,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국컴퓨터종합학술대회"
@@ -1345,7 +1362,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국컴퓨터종합학술대회"
@@ -1362,7 +1379,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국컴퓨터종합학술대회"
@@ -1379,7 +1396,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "AAAI"
@@ -1396,7 +1413,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "ACL"
@@ -1413,7 +1430,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "ACL"
@@ -1430,7 +1447,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "NeurIPS"
@@ -1447,7 +1464,7 @@
                   "한국과학기술원"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "NeurIPS"
@@ -1464,7 +1481,7 @@
                   "광주과학기술원"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국방송미디어공학회 하계학술대회"
@@ -1486,7 +1503,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "AAAI 2024 Workshop: Cooperative Multi-Agent Systems Decision-Making and Learning: From Individual Needs to Swarm Intelligence"
@@ -1507,7 +1524,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "AAAI Conference on Artificial Intelligence"
@@ -1529,7 +1546,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "Uncertainty in Artificial Intelligence (UAI), 2024"
@@ -1550,7 +1567,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "International Conference on Machine Learning"
@@ -1571,7 +1588,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "AAAI Conference on Artificial Intelligence"
@@ -1595,7 +1612,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "2024 한국컴퓨터종합학술대회(KCC)"
@@ -1616,7 +1633,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "2024 한국컴퓨터종합학술대회(KCC)"
@@ -1634,7 +1651,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "2024 한국컴퓨터종합학술대회(KCC)"
@@ -1652,8 +1669,8 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "비SCI",
-                  "학술대회"
+                  "비SCI(E) 저널",
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국정보과학회 (정보과학회 컴퓨팅의 실제 논문지 제30권 제3호)",
@@ -1674,7 +1691,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "2024 한국컴퓨터종합학술대회(KCC)"
@@ -1693,7 +1710,7 @@
                   "한국과학기술원"
                 ],
                 "kinds": [
-                  "SCI"
+                  "SCI(E) 저널"
                 ],
                 "venues": [
                   "IEEE Access"
@@ -1714,7 +1731,7 @@
                   "한국전자통신연구원"
                 ],
                 "kinds": [
-                  "SCI"
+                  "SCI(E) 저널"
                 ],
                 "venues": [
                   "IEEE Transactions on Neural Networks and Learning Systems"
@@ -1737,7 +1754,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국정보과학회 소프트웨어종합학술대회 (KSC) 2023"
@@ -1758,7 +1775,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국정보과학회 컴퓨터종합합술대회 (KCC) 2023"
@@ -1778,7 +1795,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "CLeaR (Causal Learning and Reasoning) 2023"
@@ -1799,7 +1816,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "The Eleventh International Conference on Learning Representations (ICLR 2023)"
@@ -1823,7 +1840,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국정보과학회 소프트웨어종합학술대회 (KSC) 2023"
@@ -1844,7 +1861,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "International Conference on Computer Vision (ICCV 2023)"
@@ -1867,7 +1884,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국정보과학회 소프트웨어종합학술대회 (KSC) 2023"
@@ -1887,7 +1904,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국정보과학회 소프트웨어종합학술대회 (KSC) 2023"
@@ -1906,7 +1923,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국정보과학회 소프트웨어종합학술대회 (KSC) 2023"
@@ -1924,7 +1941,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국정보과학회 소프트웨어종합학술대회 (KSC) 2023"
@@ -1942,7 +1959,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국정보과학회 컴퓨터종합합술대회 (KCC) 2023"
@@ -1960,7 +1977,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국정보과학회 컴퓨터종합합술대회 (KCC) 2023"
@@ -1980,7 +1997,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국정보과학회 소프트웨어종합학술대회 (KSC) 2023"
@@ -2002,7 +2019,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국정보과학회 컴퓨터종합합술대회 (KCC) 2023"
@@ -2022,7 +2039,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "비SCI"
+                  "비SCI(E) 저널"
                 ],
                 "venues": [
                   "한국정보과학회 (정보과학회 컴퓨팅의 실제 논문지 제29권 제2호)"
@@ -2042,7 +2059,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국정보과학회 소프트웨어종합학술대회 (KSC) 2023"
@@ -2060,7 +2077,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국정보과학회 컴퓨터종합합술대회 (KCC) 2023"
@@ -2078,7 +2095,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국정보과학회 소프트웨어종합학술대회 (KSC) 2023"
@@ -2099,7 +2116,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국정보과학회 소프트웨어종합학술대회 (KSC) 2023"
@@ -2121,7 +2138,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국정보과학회 소프트웨어종합학술대회 (KSC) 2023"
@@ -2142,7 +2159,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국정보과학회 컴퓨터종합합술대회 (KCC) 2023"
@@ -2163,7 +2180,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국정보과학회 소프트웨어종합학술대회 (KSC) 2023"
@@ -2183,18 +2200,35 @@
         "key": "planning",
         "title": "환경 이해와 절차 추론",
         "description": "실세계 이해, 절차 생성, 로봇 조작과 작업 계획 등 응용으로 이어지는 성과를 모았습니다.",
-        "count": 55,
+        "count": 56,
         "years": [
           {
             "year": 2025,
             "items": [
+              {
+                "title": "ReAcTree: Hierarchical LLM Agent Trees with Control Flow for Long-Horizon Task Planning",
+                "orgs": [
+                  "한국전자통신연구원"
+                ],
+                "kinds": [
+                  "국제학술대회"
+                ],
+                "venues": [
+                  "International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2026)"
+                ],
+                "authors": [
+                  "최재우"
+                ],
+                "scholar_url": "https://scholar.google.com/scholar?q=%22ReAcTree%3A+Hierarchical+LLM+Agent+Trees+with+Control+Flow+for+Long-Horizon+Task+Planning%22",
+                "dbpia_url": "https://www.dbpia.co.kr/search/topSearch?query=ReAcTree%3A+Hierarchical+LLM+Agent+Trees+with+Control+Flow+for+Long-Horizon+Task+Planning"
+              },
               {
                 "title": "ReActQ와 Answer 에이전트: 질의응답 기반 불확실성 해소 태스크 플래너",
                 "orgs": [
                   "한국전자통신연구원"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국방송미디어공학회 하계학술대회"
@@ -2211,7 +2245,7 @@
                   "한국전자통신연구원"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "HRI"
@@ -2228,7 +2262,7 @@
                   "한국전자통신연구원"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "IROS 2025 LBR"
@@ -2245,7 +2279,7 @@
                   "한국전자통신연구원"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국로봇종합학술대회"
@@ -2262,7 +2296,7 @@
                   "한국전자통신연구원"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "CVPR Workshop (Embodied AI)"
@@ -2279,7 +2313,7 @@
                   "한국전자통신연구원"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "대한전자공학회 하계종합학술대회"
@@ -2296,7 +2330,7 @@
                   "한국전자통신연구원"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국로봇종합학술대회"
@@ -2313,7 +2347,7 @@
                   "한국전자통신연구원"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "NeurIPS Workshop (Bridging Language, Agent, and World Models for Reasoning and Planning)"
@@ -2330,7 +2364,7 @@
                   "한국전자통신연구원"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "ICCV Workshop (Human-Robot-Scene Interaction and Collaboration)"
@@ -2347,7 +2381,7 @@
                   "한국전자통신연구원"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "NeurIPS Workshop (Bridging Language, Agent, and World Models for Reasoning and Planning)"
@@ -2364,7 +2398,7 @@
                   "한국전자통신연구원"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "ICCV Workshop (Human-Robot-Scene Interaction and Collaboration)"
@@ -2381,7 +2415,7 @@
                   "한국전자통신연구원"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "AAAI Workshop (GenPlan)"
@@ -2398,7 +2432,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "ICROS"
@@ -2415,7 +2449,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "ICROS"
@@ -2432,7 +2466,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국컴퓨터종합학술대회"
@@ -2449,7 +2483,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국컴퓨터종합학술대회"
@@ -2466,7 +2500,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국컴퓨터종합학술대회"
@@ -2483,7 +2517,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국컴퓨터종합학술대회"
@@ -2500,7 +2534,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국컴퓨터종합학술대회"
@@ -2517,7 +2551,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국컴퓨터종합학술대회"
@@ -2534,7 +2568,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국컴퓨터종합학술대회"
@@ -2551,7 +2585,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국컴퓨터종합학술대회"
@@ -2568,7 +2602,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "BigComp"
@@ -2585,7 +2619,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "ICRA"
@@ -2602,7 +2636,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "RSS"
@@ -2619,7 +2653,7 @@
                   "한국과학기술원"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "IROS"
@@ -2636,7 +2670,7 @@
                   "한양대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국컴퓨터종합학술대회"
@@ -2658,7 +2692,7 @@
                   "한국전자통신연구원"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "International Conference on Learning Representations (ICLR)"
@@ -2679,7 +2713,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "IEEE International Conference on Robotics and Automation"
@@ -2698,7 +2732,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "2024 한국컴퓨터종합학술대회(KCC)"
@@ -2716,7 +2750,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "SCI"
+                  "SCI(E) 저널"
                 ],
                 "venues": [
                   "IEEE Access"
@@ -2738,7 +2772,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "2024 한국컴퓨터종합학술대회(KCC)"
@@ -2757,8 +2791,8 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "비SCI",
-                  "학술대회"
+                  "비SCI(E) 저널",
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국정보과학회 (정보과학회 컴퓨팅의 실제 논문지 제30권 제3호)"
@@ -2777,7 +2811,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "2024 한국컴퓨터종합학술대회(KCC)"
@@ -2798,7 +2832,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "2024 한국컴퓨터종합학술대회(KCC)"
@@ -2816,7 +2850,7 @@
                   "한국전자통신연구원"
                 ],
                 "kinds": [
-                  "비SCI"
+                  "비SCI(E) 저널"
                 ],
                 "venues": [
                   "한국로봇학회 논문지"
@@ -2834,7 +2868,7 @@
                   "한국전자통신연구원"
                 ],
                 "kinds": [
-                  "비SCI"
+                  "비SCI(E) 저널"
                 ],
                 "venues": [
                   "TTA 저널"
@@ -2857,7 +2891,7 @@
                   "경희대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "IEEE/CVF International Conference on Computer Vision (ICCV), 2023"
@@ -2878,7 +2912,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "International Conference on Computer Vision (ICCV 2023)"
@@ -2899,7 +2933,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "2023 IEEE International Conference on Robotics and Automation (ICRA)"
@@ -2920,7 +2954,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "IEEE/RSJ International Conference on Intelligence Robots and Systems (IROS 2023)"
@@ -2941,7 +2975,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "The Thirty-Seventh AAAI Conference on Artificial Intelligence (AAAI 2023)"
@@ -2960,7 +2994,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "2023 International Conference on Computer Vision (ICCV 2023)"
@@ -2981,7 +3015,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "2023 IEEE International Conference on Robotics and Automation (ICRA)"
@@ -3000,7 +3034,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "Companion of the 2023 ACM/IEEE International Conference on Human-Robot Interaction (HRI ’23 Companion),"
@@ -3020,7 +3054,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국정보과학회 소프트웨어종합학술대회 (KSC) 2023"
@@ -3040,7 +3074,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국정보과학회 소프트웨어종합학술대회 (KSC) 2023"
@@ -3060,7 +3094,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국정보과학회 컴퓨터종합합술대회 (KCC) 2023"
@@ -3079,7 +3113,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국정보과학회 컴퓨터종합합술대회 (KCC) 2023"
@@ -3099,7 +3133,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국정보과학회 컴퓨터종합합술대회 (KCC) 2023"
@@ -3118,7 +3152,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국정보과학회 소프트웨어종합학술대회 (KSC) 2023"
@@ -3138,7 +3172,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국정보과학회 소프트웨어종합학술대회 (KSC) 2023"
@@ -3157,7 +3191,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국정보과학회 컴퓨터종합합술대회 (KCC) 2023"
@@ -3176,7 +3210,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국내학술대회"
                 ],
                 "venues": [
                   "한국정보과학회 컴퓨터종합합술대회 (KCC) 2023"
@@ -3199,7 +3233,7 @@
                   "서울대학교"
                 ],
                 "kinds": [
-                  "학술대회"
+                  "국제학술대회"
                 ],
                 "venues": [
                   "36th Conference on Neural Information Processing Systems (NeurIPS 2022)"
@@ -3219,7 +3253,66 @@
           }
         ]
       }
-    ]
+    ],
+    "stats_by_kind": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "rows": [
+        {
+          "kind": "SCI(E) 저널",
+          "counts": [
+            0,
+            5,
+            4,
+            1
+          ],
+          "total": 10
+        },
+        {
+          "kind": "비SCI(E) 저널",
+          "counts": [
+            0,
+            3,
+            4,
+            4
+          ],
+          "total": 11
+        },
+        {
+          "kind": "국제학술대회",
+          "counts": [
+            9,
+            17,
+            9,
+            30
+          ],
+          "total": 65
+        },
+        {
+          "kind": "국내학술대회",
+          "counts": [
+            5,
+            32,
+            13,
+            31
+          ],
+          "total": 81
+        }
+      ],
+      "totals": {
+        "counts": [
+          14,
+          57,
+          30,
+          66
+        ],
+        "total": 167
+      }
+    }
   },
   "patents": {
     "counts": {
