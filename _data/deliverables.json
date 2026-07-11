@@ -2,7 +2,7 @@
   "papers": {
     "counts": {
       "2025": 64,
-      "2024": 29,
+      "2024": 30,
       "2023": 57,
       "2022": 14
     },
@@ -2183,7 +2183,7 @@
         "key": "planning",
         "title": "환경 이해와 절차 추론",
         "description": "실세계 이해, 절차 생성, 로봇 조작과 작업 계획 등 응용으로 이어지는 성과를 모았습니다.",
-        "count": 54,
+        "count": 55,
         "years": [
           {
             "year": 2025,
@@ -2652,6 +2652,27 @@
           {
             "year": 2024,
             "items": [
+              {
+                "title": "LoTa-Bench: Benchmarking Language-oriented Task Planners for Embodied Agents",
+                "orgs": [
+                  "한국전자통신연구원"
+                ],
+                "kinds": [
+                  "학술대회"
+                ],
+                "venues": [
+                  "International Conference on Learning Representations (ICLR)"
+                ],
+                "authors": [
+                  "Jae-Woo Choi",
+                  "Youngwoo Yoon",
+                  "Hyobin Ong",
+                  "Jaehong Kim",
+                  "Minsu Jang"
+                ],
+                "scholar_url": "https://scholar.google.com/scholar?q=%22LoTa-Bench%3A+Benchmarking+Language-oriented+Task+Planners+for+Embodied+Agents%22",
+                "dbpia_url": "https://www.dbpia.co.kr/search/topSearch?query=LoTa-Bench%3A+Benchmarking+Language-oriented+Task+Planners+for+Embodied+Agents"
+              },
               {
                 "title": "HAPFI: History-Aware Planning based on Fused Information",
                 "orgs": [
