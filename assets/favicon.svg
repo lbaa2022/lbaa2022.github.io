@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>LBA Agents — Learning by Asking</title>
+  <rect width="64" height="64" rx="14" fill="#ffa657"/>
+  <path d="M21 10h22a10 10 0 0 1 10 10v18a10 10 0 0 1-10 10H31L19 56v-8a10 10 0 0 1-8-10V20a10 10 0 0 1 10-10Z" fill="#fff"/>
+  <path d="M25 23c0-4 3-7 7-7s7 3 7 7c0 6-7 6-7 11" fill="none" stroke="#102c43" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="32" cy="41" r="2.8" fill="#102c43"/>
+</svg>

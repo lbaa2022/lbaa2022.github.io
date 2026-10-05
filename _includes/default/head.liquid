@@ -21,11 +21,12 @@
     <!-- CSS -->
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
-    <!--Favicon-->
-    {% assign favicon_href = site.favicon | relative_url %}
-    {% assign favicon_version = site.time | date: '%Y%m%d%H%M%S' %}
-    <link rel="icon" href="{{ favicon_href }}?v={{ favicon_version }}" type="image/x-icon">
-    <link rel="shortcut icon" href="{{ favicon_href }}?v={{ favicon_version }}" type="image/x-icon">
+    <!-- LBA Agents: Learning by Asking -->
+    <link rel="icon" href="{{ site.favicon | relative_url }}?v=lba-asking-1" sizes="16x16 32x32 48x48" type="image/x-icon">
+    <link rel="icon" href="{{ '/assets/favicon-32x32.png' | relative_url }}?v=lba-asking-1" sizes="32x32" type="image/png">
+    <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}?v=lba-asking-1" sizes="any" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="{{ '/assets/apple-touch-icon.png' | relative_url }}?v=lba-asking-1" sizes="180x180">
+    <link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}?v=lba-asking-1">
 
     {% if page.bootstrap %}
     <!-- Bootstrap-4.1.3 isolation CSS -->

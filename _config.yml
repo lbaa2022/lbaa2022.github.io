@@ -6,7 +6,7 @@ url: "https://lbaa2022.github.io"
 title: LBA Agents                                # site's title
 description: "LBA Agent Project Homepage"      # used by search engines
 avatar: assets/img/lbaa-logo.jpg                         # Empty for no avatar in navbar
-favicon: assets/favicon.ico                             # Icon displayed in the tab
+favicon: favicon.ico                                    # Icon displayed in the tab
 
 # Header and footer text
 header_text: LBA(Learning-By-Asking) Agents  # Change Blog header text
