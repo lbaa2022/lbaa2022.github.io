@@ -7,6 +7,7 @@ permalink: /sw-data/
 
 {% include deliverables_styles.liquid %}
 {% include research_assets.liquid %}
+<link rel="stylesheet" href="{{ '/assets/css/outcomes.css' | relative_url }}">
 {% assign software = site.data.deliverables.software %}
 
 <div class="deliverables-page">
@@ -68,14 +69,14 @@ permalink: /sw-data/
     <div class="deliverables-section-header">
       <div class="deliverables-eyebrow">Registered Software</div>
       <h2>등록 SW 성과</h2>
-      <p>연도별 SW 등록 성과를 기관, 저작자, 등록일과 등록번호 기준으로 정리했습니다.</p>
+      <p>연도별 SW 등록 성과를 기관, 저작자, 등록일과 등록번호 기준으로 정리했습니다. 등록번호·등록일은 보고서 기재값이며 외부 등록원부 대조는 미완료입니다. 2025년 14개 항목 중 1개는 등록 진행 중입니다.</p>
     </div>
 
     <div class="deliverables-stat-grid">
       {% for pair in software.counts %}
         <div class="deliverables-stat">
           <strong>{{ pair[1] }}</strong>
-          <span>{{ pair[0] }}년 등록 SW</span>
+          <span>{{ pair[0] }}년 SW등록 관련 항목</span>
         </div>
       {% endfor %}
     </div>
@@ -108,7 +109,8 @@ permalink: /sw-data/
                     {{ item.number }}
                   </div>
                 {% endif %}
-              {% include research_card_links.liquid kind="registered" item=item %}
+              {% if item.registration_source %}<p class="research-note">등록정보 근거: {{ item.registration_source }}</p>{% endif %}
+                {% include research_card_links.liquid kind="registered" item=item %}
                 </article>
             {% endfor %}
           </div>

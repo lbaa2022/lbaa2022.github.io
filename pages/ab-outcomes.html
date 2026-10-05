@@ -1,0 +1,51 @@
+---
+layout: default
+title: 성과 DB
+permalink: /outcomes/
+lang: ko
+description: 2022–2025 논문·특허·SW등록의 출처와 외부 존재 확인 결과를 검색합니다.
+---
+<link rel="stylesheet" href="{{ '/assets/css/research.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/outcomes.css' | relative_url }}">
+<script defer src="{{ '/assets/js/outcomes.js' | relative_url }}"></script>
+{% assign db = site.data.outcomes %}
+<main class="outcome-page research-page" lang="ko">
+  <header class="outcome-hero"><div class="research-shell"><p class="research-eyebrow">LBA AGENTS · EVIDENCE REGISTRY · 2022–2025</p><h1>연구성과 검증 DB</h1><p>논문·특허·SW등록의 원래 기록과 외부 확인 근거를 함께 살펴봅니다.<br>성과의 존재, 서지정보의 일치, 과제 기여 여부를 구분해 기록합니다.</p><div class="outcome-downloads"><a href="{{ '/assets/data/outcomes.json' | relative_url }}" download>JSON 다운로드 ↓</a><a href="{{ '/assets/data/outcomes.sqlite' | relative_url }}" download>SQLite DB 다운로드 ↓</a><a href="{{ '/research/' | relative_url }}">연구개발 성과 지도 ↗</a></div></div></header>
+  <div class="research-shell">
+    <section class="research-section" aria-labelledby="outcome-summary-heading"><h2 id="outcome-summary-heading">확인된 것과, 더 확인할 것</h2>
+      <div class="outcome-stats"><div><strong>{{ db.summary.by_kind.paper }}</strong><span>논문 제목 그룹</span></div><div><strong>{{ db.summary.by_kind.patent }}</strong><span>특허 국가별 권리 기록</span></div><div><strong>{{ db.summary.by_kind.software_registration }}</strong><span>SW등록 관련 항목 · 진행 중 포함</span></div><div><strong>{{ db.summary.by_status.verified }}</strong><span>외부 존재 확인</span></div></div>
+      <p class="research-note">확인일 {{ db.checked_at }} · 총 {{ db.summary.records }}개 성과 단위 / 출처 기록 {{ db.summary.source_claims }}건. 논문은 같은 제목의 발표 이력을 묶고, 특허는 확인된 동일 출원의 등록 이력을 연결합니다. 기존 연차 실적 집계와 단위가 다릅니다.</p>
+      <details class="outcome-policy"><summary>검증 상태와 집계 기준 읽기</summary><ul>{% for line in db.verification_policy %}<li>{{ line }}</li>{% endfor %}</ul><p><b>외부 존재 확인</b>은 DOI 메타데이터·공개공보·학회·기관 자료 등에서 동일 성과를 확인한 상태입니다. <b>공개 원고 확인</b>은 원고의 존재만 확인했으며 보고된 발표·게재 여부는 미확인입니다. <b>검색 후 미확인</b>은 존재하지 않는다는 판정이 아닙니다.</p><p>SW등록번호 50건은 보고서에서 확보했으며, 현재 외부 등록원부 확인은 완료되지 않았습니다. 등록 진행 중 1건은 등록 완료 실적에 포함하지 않습니다.</p></details>
+    </section>
+    <section class="research-section" id="outcome-results" aria-labelledby="outcome-list-heading"><h2 id="outcome-list-heading">성과와 확인 근거 검색</h2>
+      <form id="outcome-filters" class="research-filters" role="search">
+        <label>성과 종류<select name="kind"><option value="">전체 종류</option><option value="paper">논문</option><option value="patent">특허</option><option value="software_registration">SW등록</option></select></label>
+        <label>외부 확인 상태<select name="status"><option value="">전체 상태</option>{% for pair in db.status_definitions %}<option value="{{ pair[0] }}">{{ pair[1] }}</option>{% endfor %}</select></label>
+        <label>보고된 실적 연도<select name="year"><option value="">2022–2025 전체</option>{% for year in (2022..2025) %}<option value="{{ year }}">{{ year }}년</option>{% endfor %}</select></label>
+        <label class="research-search">제목·저자·번호<input type="search" name="q" placeholder="제목, DOI, 출원·등록번호" autocomplete="off"></label><button type="reset" class="research-reset">초기화</button>
+        <label class="outcome-issue-filter"><input type="checkbox" name="issues" value="1"> 서지정보 차이가 있는 항목만</label>
+      </form>
+      <p class="research-note" id="outcome-count" aria-live="polite">{{ db.records.size }}개 성과 · 제목을 열면 검증 근거와 출처별 기록이 나타납니다.</p>
+      <p class="research-note">연도는 보고서·기존 사이트의 실적 연도입니다. 검색 결과에 나온 다른 발표본이나 2026년 이후 공개정보는 별도의 확인 근거로 표시합니다.</p>
+      <p id="outcome-empty" class="research-empty" hidden>조건에 맞는 성과가 없습니다. 검색어나 필터를 변경해 주세요.</p>
+      <noscript><p>필터는 JavaScript를 사용합니다. 아래 모든 성과와 근거는 제목을 열어 확인할 수 있습니다.</p></noscript>
+      {% for item in db.records %}
+      <details class="outcome-record" id="{{ item.id }}" data-kind="{{ item.kind }}" data-status="{{ item.verification.status }}" data-years="{{ item.reported_years | join: ' ' }}" data-issues="{{ item.metadata_issues.size }}">
+        <summary><span class="outcome-summary-text"><span class="outcome-meta">{{ item.kind_label }} · {{ item.reported_years | join: ' / ' }}</span><strong>{{ item.title | escape }}</strong>{% if item.identifiers.size > 0 %}<span class="outcome-identifiers">{% for ident in item.identifiers %}{{ ident.value | escape }}{% unless forloop.last %} · {% endunless %}{% endfor %}</span>{% endif %}</span><span class="outcome-status outcome-status-{{ item.verification.status }}">{{ item.verification.status_label }}</span></summary>
+        <div class="outcome-body">
+          <p class="outcome-verdict">{{ item.verification.basis }}</p>
+          <div class="outcome-facts"><div><span>보고된 저자·기관</span><p>{{ item.authors | join: ' / ' | escape }}{% if item.organizations.size > 0 %}<br>{{ item.organizations | join: ' / ' | escape }}{% endif %}</p></div><div><span>과제 기여 확인</span><p>{% if item.project_attribution == 'external_project_code_confirmed' %}외부 기관 자료에서 본 과제 코드 확인 · 기여율 미검증{% else %}보고서·과제 사이트 수록 근거 · 외부 사사·기여율 미검증{% endif %}</p></div></div>
+          {% if item.kind == 'software_registration' %}<p class="research-note">보고서상 등록일: {{ item.reported_registration_date }} · {% if item.registration_status_reported == 'pending' %}등록 진행 중{% else %}등록번호는 보고서 기재값이며 외부 등록원부 미검증{% endif %}</p>{% endif %}
+          {% if item.metadata_issues.size > 0 %}<div class="outcome-discrepancies"><h3>서지정보 대조 메모</h3><ul>{% for issue in item.metadata_issues %}<li>{{ issue.reason }}{% if issue.values %}<code>{{ issue.values | jsonify | escape }}</code>{% endif %}{% if issue.source_url %}<a href="{{ issue.source_url }}" target="_blank" rel="noopener noreferrer">근거 ↗</a>{% endif %}</li>{% endfor %}</ul></div>{% endif %}
+          <h3>외부 확인 근거</h3>
+          {% if item.verification.evidence.size == 0 %}<p class="research-note">검색한 공개 출처에서 동일 항목의 존재를 확정할 근거를 확보하지 못했습니다.{% if item.kind == 'software_registration' %} 등록증 또는 한국저작권위원회 등록원부 대조가 필요합니다.{% endif %}</p>{% endif %}
+          <div class="outcome-evidence-list">{% for evidence in item.verification.evidence %}<div class="outcome-evidence"><span>{{ evidence.source }}{% if evidence.match == 'title_variant_candidate' %} · 일치 후보{% endif %}{% if evidence.source_type == 'preprint' %} · 공개 원고{% endif %}</span><a href="{{ evidence.url }}" target="_blank" rel="noopener noreferrer">{{ evidence.title | escape }} ↗</a>{% if evidence.years.size > 0 %}<p>외부 자료 연도 · {{ evidence.years | join: ', ' }}</p>{% endif %}{% if evidence.authors.size > 0 %}<p>{{ evidence.authors | join: ', ' | escape }}</p>{% endif %}{% if evidence.venues.size > 0 %}<p>{{ evidence.venues | join: ' / ' | escape }}</p>{% endif %}{% if evidence.identifiers.doi %}<p>DOI · {{ evidence.identifiers.doi }}</p>{% endif %}{% if evidence.review_note %}<p>{{ evidence.review_note }}</p>{% endif %}</div>{% endfor %}</div>
+          <details class="outcome-subdetail"><summary>검색 이력 · {{ item.search_attempt_count }}회</summary><ul>{% for attempt in item.verification.attempts %}<li><b>{{ attempt.provider }}</b> · {{ attempt.checked_at }}<br>{{ attempt.query | escape }}{% if attempt.result == 'access_error' %}<br>접근 실패{% endif %}</li>{% endfor %}</ul></details>
+          <details class="outcome-subdetail"><summary>보고서·사이트 출처 기록 · {{ item.source_claim_ids.size }}건</summary><div class="outcome-claims">{% for cid in item.source_claim_ids %}{% assign claim = db.source_claims | where: 'id', cid | first %}<div><b>{% if claim.source_type == 'report' %}보고서{% else %}기존 과제 사이트{% endif %} · {{ claim.year }}</b><p>{{ claim.title | escape }}</p>{% if claim.source_type == 'report' %}{% for ref in claim.reference %}<p class="research-note">{{ ref.document }} · PDF {{ ref.pdf_pages | join: ', ' }}쪽</p>{% endfor %}{% endif %}<dl>{% for field in claim.details %}{% if field[1] != nil and field[1] != '' %}<dt>{{ site.data.outcome_field_labels[field[0]] | default: field[0] }}</dt><dd>{{ field[1] | join: ', ' | escape }}</dd>{% endif %}{% endfor %}</dl></div>{% endfor %}</div></details>
+          <div class="research-output-links">{% for item_link in item.links %}<a href="{{ item_link.url | relative_url }}">{{ item_link.label }} ↗</a>{% endfor %}{% for tid in item.technology_ids %}{% assign tech = site.data.research.technologies | where: 'id', tid | first %}{% if tech %}<a href="{{ '/research/' | relative_url }}?tech={{ tid }}#technology-{{ tid }}">{{ tech.name }} ↗</a>{% endif %}{% endfor %}<a class="outcome-permalink" href="{{ '/outcomes/' | relative_url }}?id={{ item.id }}#{{ item.id }}">이 항목 링크 ↗</a></div>
+          <p class="research-note">주제 분류는 기존 분석에 따른 연결이며, 외부 존재 확인과 별개의 판단입니다. 확인일 {{ item.verification.checked_at }}.</p>
+        </div>
+      </details>{% endfor %}
+    </section>
+  </div>
+</main>

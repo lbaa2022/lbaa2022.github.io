@@ -22,3 +22,5 @@
 </div>
 {% endif %}
 {% endif %}
+
+{% if include.kind != 'software' %}{% include outcome_card_links.liquid kind=include.kind item=include.item %}{% endif %}

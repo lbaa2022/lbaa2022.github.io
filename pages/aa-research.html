@@ -48,7 +48,7 @@ description: 지식체계 구축, 불확실성 지각, 질문 생성, 성장학�
       <p class="research-note">제안서의 UMC는 지식체계 구축·불확실성 지각에, UQG는 질문 생성에, OCL2는 성장학습에 대응합니다.</p>
     </section>
     <section class="research-section" id="research-results" aria-labelledby="research-results-heading">
-      <div class="research-section-title"><div><p class="research-kicker">02 / 연구 주제와 발전 과정</p><h2 id="research-results-heading">문제에서 방법으로, 방법에서 성과로</h2></div><a class="research-text-link" href="{{ '/assets/data/research.json' | relative_url }}" download="lba-research-2022-2025.json">공개 데이터 JSON <span aria-hidden="true">↓</span></a></div>
+      <div class="research-section-title"><div><p class="research-kicker">02 / 연구 주제와 발전 과정</p><h2 id="research-results-heading">문제에서 방법으로, 방법에서 성과로</h2></div><a class="research-text-link" href="{{ '/outcomes/' | relative_url }}">성과 검증 DB ↗</a><a class="research-text-link" href="{{ '/assets/data/research.json' | relative_url }}" download="lba-research-2022-2025.json">공개 데이터 JSON <span aria-hidden="true">↓</span></a></div>
       <form class="research-filters" id="research-filters" role="search">
         <label>적용 분야<select id="research-vertical" name="vertical"><option value="">전체 분야</option>{% for v in research.vertical_axes %}<option value="{{ v.id }}">{{ v.label }}</option>{% endfor %}<option value="common">공통 기반 기술</option></select></label>
         <label>기술 단계<select id="research-horizontal" name="horizontal"><option value="">전체 기술</option>{% for h in research.horizontal_axes %}<option value="{{ h.id }}">{{ h.label }}</option>{% endfor %}</select></label>

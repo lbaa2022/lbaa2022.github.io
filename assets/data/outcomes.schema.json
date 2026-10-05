@@ -1,0 +1,153 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LBA Research Outcome Registry",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "coverage",
+    "records",
+    "source_claims",
+    "summary",
+    "status_definitions",
+    "verification_policy"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "coverage": {
+      "type": "object",
+      "required": [
+        "start",
+        "end"
+      ],
+      "properties": {
+        "start": {
+          "type": "integer"
+        },
+        "end": {
+          "type": "integer"
+        }
+      }
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "kind",
+          "title",
+          "source_claim_ids",
+          "verification",
+          "metadata_issues",
+          "project_attribution"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "enum": [
+              "paper",
+              "patent",
+              "software_registration"
+            ]
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_claim_ids": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            }
+          },
+          "reported_years": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 2022,
+              "maximum": 2025
+            }
+          },
+          "verification": {
+            "type": "object",
+            "required": [
+              "status",
+              "checked_at",
+              "basis",
+              "evidence",
+              "attempts"
+            ],
+            "properties": {
+              "status": {
+                "enum": [
+                  "verified",
+                  "preprint_only",
+                  "candidate",
+                  "unconfirmed",
+                  "pending_registration",
+                  "not_checked"
+                ]
+              },
+              "checked_at": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "evidence": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "url",
+                    "source",
+                    "match",
+                    "checked_at"
+                  ],
+                  "properties": {
+                    "url": {
+                      "type": "string",
+                      "pattern": "^https://"
+                    }
+                  }
+                }
+              },
+              "attempts": {
+                "type": "array"
+              }
+            }
+          }
+        }
+      }
+    },
+    "source_claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "outcome_id",
+          "source_type",
+          "title",
+          "details",
+          "reference"
+        ],
+        "properties": {
+          "source_type": {
+            "enum": [
+              "report",
+              "project_site"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

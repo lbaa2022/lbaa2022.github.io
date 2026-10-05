@@ -7,6 +7,7 @@ permalink: /publications/
 
 {% include deliverables_styles.liquid %}
 {% include research_assets.liquid %}
+<link rel="stylesheet" href="{{ '/assets/css/outcomes.css' | relative_url }}">
 {% assign publications = site.data.deliverables.papers %}
 
 <div class="deliverables-page">

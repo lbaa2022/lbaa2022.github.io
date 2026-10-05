@@ -1,0 +1,4 @@
+{% assign outcome_key = include.item.title %}
+{% if include.kind == 'patent' %}{% assign outcome_key = include.item.numbers | join: '|' %}{% endif %}
+{% assign outcome_matches = site.data.outcome_links[include.kind][outcome_key] %}
+{% if outcome_matches.size > 0 %}<div class="outcome-card-links">{% for outcome in outcome_matches %}<a href="{{ '/outcomes/' | relative_url }}?id={{ outcome.id }}#{{ outcome.id }}">검증 DB{% if outcome_matches.size > 1 %} {{ forloop.index }}{% endif %} ↗ <span class="outcome-status outcome-status-{{ outcome.status }}">{{ outcome.label }}</span></a>{% endfor %}</div>{% endif %}
