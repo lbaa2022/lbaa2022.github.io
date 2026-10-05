@@ -84,13 +84,13 @@
       "phase": "질문에서 실제 행동으로",
       "summary": "응답 가능성 판단과 자문자답 추론을 고도화하고 실제 로봇까지 검증했습니다.",
       "highlight_ids": [
-        "highlight-2025-cliprt",
         "highlight-2025-answerability",
         "highlight-2025-c2r",
         "highlight-2025-composition",
-        "highlight-2025-socratic"
+        "highlight-2025-socratic",
+        "highlight-2025-cliprt"
       ],
-      "lead_id": "highlight-2025-cliprt"
+      "lead_id": "highlight-2025-answerability"
     }
   ],
   "highlights": [
@@ -1275,84 +1275,9 @@
       "mapping_note": "대표성과 설명의 기능을 기준으로 수평 축을 보완한 편집적 연결; 원 성과 DB의 주제 분류는 보존."
     },
     {
-      "id": "highlight-2025-cliprt",
-      "year": 2025,
-      "display_order": 1,
-      "title": "사람의 말로 로봇 행동을 가르치다",
-      "short_name": "CLIP-RT",
-      "outcome_ids": [
-        "paper-c6a59d646cdf"
-      ],
-      "technology_ids": [
-        "T08"
-      ],
-      "horizontal_ids": [
-        "H1",
-        "H3",
-        "H4"
-      ],
-      "vertical_ids": [
-        "V2"
-      ],
-      "recognition": {
-        "label": "RSS 2025 · 본학회",
-        "track": "main_conference",
-        "verification": "primary_source_confirmed"
-      },
-      "headline": {
-        "value": "1B 파라미터",
-        "label": "자연어 감독을 실제 로봇 정책으로",
-        "context": "논문은 7B OpenVLA와 비교한 실물 로봇 평가 및 LIBERO 시뮬레이션 평가를 보고.",
-        "source_url": "https://www.roboticsproceedings.org/rss21/p016.html"
-      },
-      "assessment": {
-        "prior_limitation": "로봇 시연 데이터 수집에는 전문 조작 기술이나 특수 장비가 필요해 비전문가 참여가 어렵습니다.",
-        "novelty": "자연어 지시로 시연을 수집·증강하고, CLIP을 활용한 대조 모방학습으로 언어 조건 행동 정책을 학습합니다.",
-        "maturity": "실물 로봇의 새로운 조작 기술, 소수 예제 일반화·협력 시나리오와 LIBERO를 평가했습니다.",
-        "contribution": "사람이 제공하는 언어 정보를 로봇의 실행 가능한 행동 지식으로 전환했습니다.",
-        "selection_reason": "RSS 본학회 발표, 경량 정책 설계, 실물 로봇까지 이어진 검증으로 완성도를 높게 평가했습니다.",
-        "scope_note": "1B 대 7B는 비교 모델의 파라미터 수입니다. 모든 과제의 속도나 학습비용이 7배 개선됐다는 뜻은 아닙니다."
-      },
-      "outputs": [
-        {
-          "outcome_id": "paper-c6a59d646cdf",
-          "title": "CLIP-RT: Learning Language-Conditioned Robotic Policies from Natural Language Supervision",
-          "role": "primary",
-          "verification_status": "verified",
-          "reported_years": [
-            2025
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "label": "RSS 2025 · 본학회 · 원문",
-          "url": "https://www.roboticsproceedings.org/rss21/p016.html",
-          "supports": [
-            "publication",
-            "novelty",
-            "validation"
-          ],
-          "checked_at": "2026-10-05"
-        }
-      ],
-      "patent_evidence": [],
-      "report_references": [
-        {
-          "document": "251224 4차년도 연차보고서",
-          "pdf_pages": [
-            35
-          ]
-        }
-      ],
-      "project_attribution": "report_or_project_site_only",
-      "assessment_basis": "논문·기관 원문의 비교 실험과 보고서 연결에 근거한 편집적 선정. 독립 재현 실험 또는 특허 신규성 심사 결과가 아님.",
-      "mapping_note": "대표성과 설명의 기능을 기준으로 수평 축을 보완한 편집적 연결; 원 성과 DB의 주제 분류는 보존."
-    },
-    {
       "id": "highlight-2025-answerability",
       "year": 2025,
-      "display_order": 2,
+      "display_order": 1,
       "title": "답할 수 없는 비디오 질문을 알아차리다",
       "short_name": "Alignment for Answerability",
       "outcome_ids": [
@@ -1431,7 +1356,7 @@
     {
       "id": "highlight-2025-c2r",
       "year": 2025,
-      "display_order": 3,
+      "display_order": 2,
       "title": "질문을 만들고 답을 다시 검토하는 추론",
       "short_name": "C2R · INQUIRER",
       "outcome_ids": [
@@ -1539,7 +1464,7 @@
     {
       "id": "highlight-2025-composition",
       "year": 2025,
-      "display_order": 4,
+      "display_order": 3,
       "title": "배우지 않은 객체·행동 조합까지 이해",
       "short_name": "Zero-shot Compositional Video Learning",
       "outcome_ids": [
@@ -1618,7 +1543,7 @@
     {
       "id": "highlight-2025-socratic",
       "year": 2025,
-      "display_order": 5,
+      "display_order": 4,
       "title": "자문자답과 시각 피드백으로 장기 임무 수행",
       "short_name": "Socratic Planner",
       "outcome_ids": [
@@ -1689,9 +1614,90 @@
       "project_attribution": "report_or_project_site_only",
       "assessment_basis": "논문·기관 원문의 비교 실험과 보고서 연결에 근거한 편집적 선정. 독립 재현 실험 또는 특허 신규성 심사 결과가 아님.",
       "mapping_note": "대표성과 설명의 기능을 기준으로 수평 축을 보완한 편집적 연결; 원 성과 DB의 주제 분류는 보존."
+    },
+    {
+      "id": "highlight-2025-cliprt",
+      "year": 2025,
+      "display_order": 5,
+      "title": "사람의 말로 로봇 행동을 가르치다",
+      "short_name": "CLIP-RT",
+      "outcome_ids": [
+        "paper-c6a59d646cdf"
+      ],
+      "technology_ids": [
+        "T08"
+      ],
+      "horizontal_ids": [
+        "H1",
+        "H3",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V2"
+      ],
+      "recognition": {
+        "label": "RSS 2025 · 본학회",
+        "track": "main_conference",
+        "verification": "primary_source_confirmed"
+      },
+      "headline": {
+        "value": "1B 파라미터",
+        "label": "자연어 감독을 실제 로봇 정책으로",
+        "context": "논문은 7B OpenVLA와 비교한 실물 로봇 평가 및 LIBERO 시뮬레이션 평가를 보고.",
+        "source_url": "https://www.roboticsproceedings.org/rss21/p016.html"
+      },
+      "assessment": {
+        "prior_limitation": "로봇 시연 데이터 수집에는 전문 조작 기술이나 특수 장비가 필요해 비전문가 참여가 어렵습니다.",
+        "novelty": "자연어 지시로 시연을 수집·증강하고, CLIP을 활용한 대조 모방학습으로 언어 조건 행동 정책을 학습합니다.",
+        "maturity": "실물 로봇의 새로운 조작 기술, 소수 예제 일반화·협력 시나리오와 LIBERO를 평가했습니다.",
+        "contribution": "사람이 제공하는 언어 정보를 로봇의 실행 가능한 행동 지식으로 전환했습니다.",
+        "selection_reason": "RSS 본학회 발표, 경량 정책 설계, 실물 로봇까지 이어진 검증으로 완성도를 높게 평가했습니다.",
+        "scope_note": "1B 대 7B는 비교 모델의 파라미터 수입니다. 모든 과제의 속도나 학습비용이 7배 개선됐다는 뜻은 아닙니다."
+      },
+      "outputs": [
+        {
+          "outcome_id": "paper-c6a59d646cdf",
+          "title": "CLIP-RT: Learning Language-Conditioned Robotic Policies from Natural Language Supervision",
+          "role": "primary",
+          "verification_status": "verified",
+          "reported_years": [
+            2025
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "label": "RSS 2025 · 본학회 · 원문",
+          "url": "https://www.roboticsproceedings.org/rss21/p016.html",
+          "supports": [
+            "publication",
+            "novelty",
+            "validation"
+          ],
+          "checked_at": "2026-10-05"
+        }
+      ],
+      "patent_evidence": [],
+      "report_references": [
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            35
+          ]
+        }
+      ],
+      "project_attribution": "report_or_project_site_only",
+      "assessment_basis": "논문·기관 원문의 비교 실험과 보고서 연결에 근거한 편집적 선정. 독립 재현 실험 또는 특허 신규성 심사 결과가 아님.",
+      "mapping_note": "대표성과 설명의 기능을 기준으로 수평 축을 보완한 편집적 연결; 원 성과 DB의 주제 분류는 보존."
     }
   ],
   "review_notes": [
+    {
+      "outcome_id": "paper-c6a59d646cdf",
+      "decision": "display_order_adjusted",
+      "reason": "과제 기여도에 대한 사용자 검토 의견을 반영해 2025년 UVQA를 첫 번째, CLIP-RT를 다섯 번째로 배치. 학술적 우수성에 따른 선정은 유지하며, 기여율 수치를 새로 추정하지 않음.",
+      "evidence_basis": "user_editorial_review"
+    },
     {
       "outcome_id": "paper-ec7ba9e6d02d",
       "decision": "not_selected",
