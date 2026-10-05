@@ -42356,5 +42356,248 @@
       }
     },
     "with_metadata_issues": 37
+  },
+  "taxonomy": {
+    "horizontal_axes": [
+      {
+        "id": "H1",
+        "label": "지식체계 구축",
+        "definition": "관찰·텍스트·영상에서 표상을 추출하고 지식그래프·공간지도·절차를 구성·검색·확장"
+      },
+      {
+        "id": "H2",
+        "label": "불확실성 지각",
+        "definition": "모델·데이터·질의·상황의 불확실성, OOD, 응답 불가능성, 모호성 및 보정 상태 판단"
+      },
+      {
+        "id": "H3",
+        "label": "질문 생성",
+        "definition": "불확실성을 줄이기 위한 질문 내용·형태·대상·시점·횟수 결정 및 응답 해석"
+      },
+      {
+        "id": "H4",
+        "label": "질의응답 기반 성장학습",
+        "definition": "응답·피드백·에이전트 지식 전달을 통한 추론 개선, 지식 확장, 모델 갱신; 일반 지속학습은 기반 기여로 구분"
+      }
+    ],
+    "vertical_axes": [
+      {
+        "id": "V1",
+        "label": "장면과 비디오 이해"
+      },
+      {
+        "id": "V2",
+        "label": "실세계와 절차 이해"
+      },
+      {
+        "id": "V3",
+        "label": "의료진단 의사결정 지원"
+      },
+      {
+        "id": "V4",
+        "label": "데이터 정제",
+        "definition": "데이터셋 품질 평가와 내용·라벨 정제; 의료 데이터는 V3와 중복 연결 가능"
+      }
+    ],
+    "technologies": [
+      {
+        "id": "T01",
+        "name": "멀티모달 지식그래프 구축·결합·검색",
+        "horizontal_ids": [
+          "H1"
+        ],
+        "vertical_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "T02",
+        "name": "비디오 시간·공간 표상과 장면 이해",
+        "horizontal_ids": [
+          "H1"
+        ],
+        "vertical_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "T03",
+        "name": "비디오 질의 응답 가능성·모호성·시간 불확실성",
+        "horizontal_ids": [
+          "H2"
+        ],
+        "vertical_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "T04",
+        "name": "질문 생성 사후학습·명확화·응답 해석",
+        "horizontal_ids": [
+          "H3",
+          "H1"
+        ],
+        "vertical_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "T05",
+        "name": "지식그래프·자문자답 기반 영상 추론 성장",
+        "horizontal_ids": [
+          "H4",
+          "H3",
+          "H1",
+          "H2"
+        ],
+        "vertical_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "T06",
+        "name": "질의응답 기반 절차계획·계층 추론·평가",
+        "horizontal_ids": [
+          "H1",
+          "H2",
+          "H3",
+          "H4"
+        ],
+        "vertical_ids": [
+          "V2"
+        ]
+      },
+      {
+        "id": "T07",
+        "name": "열린 세계 객체·행위 인지와 시맨틱 지도",
+        "horizontal_ids": [
+          "H1",
+          "H2",
+          "H4"
+        ],
+        "vertical_ids": [
+          "V2"
+        ]
+      },
+      {
+        "id": "T08",
+        "name": "언어·시각 그라운딩과 로봇 상호작용",
+        "horizontal_ids": [
+          "H1",
+          "H3",
+          "H4"
+        ],
+        "vertical_ids": [
+          "V2"
+        ]
+      },
+      {
+        "id": "T09",
+        "name": "체화 에이전트 지속학습·행동 적응",
+        "horizontal_ids": [
+          "H4"
+        ],
+        "vertical_ids": [
+          "V2"
+        ]
+      },
+      {
+        "id": "T10",
+        "name": "의료 모델 추론 보정·시험 시점 적응",
+        "horizontal_ids": [
+          "H2",
+          "H4"
+        ],
+        "vertical_ids": [
+          "V3"
+        ]
+      },
+      {
+        "id": "T11",
+        "name": "전문가·복수 에이전트 지식 전이",
+        "horizontal_ids": [
+          "H4",
+          "H3"
+        ],
+        "vertical_ids": [
+          "V3"
+        ]
+      },
+      {
+        "id": "T12",
+        "name": "치과 진단 지원 데이터·플랫폼·피드백",
+        "horizontal_ids": [
+          "H1",
+          "H4"
+        ],
+        "vertical_ids": [
+          "V3"
+        ]
+      },
+      {
+        "id": "T13",
+        "name": "노이즈 라벨 탐지·수정과 강건 학습",
+        "horizontal_ids": [
+          "H2",
+          "H4"
+        ],
+        "vertical_ids": [
+          "V4",
+          "V3"
+        ]
+      },
+      {
+        "id": "T14",
+        "name": "능동 데이터 선별·메모리 품질 관리",
+        "horizontal_ids": [
+          "H2",
+          "H4"
+        ],
+        "vertical_ids": [
+          "V4"
+        ]
+      },
+      {
+        "id": "T15",
+        "name": "분할 불확실성 예측·자가 데이터 수집",
+        "horizontal_ids": [
+          "H2",
+          "H4"
+        ],
+        "vertical_ids": [
+          "V2",
+          "V4"
+        ]
+      },
+      {
+        "id": "T16",
+        "name": "인지 기반 질문 품질·사회적 상호작용 실증",
+        "horizontal_ids": [
+          "H3",
+          "H2"
+        ],
+        "vertical_ids": [
+          "V2",
+          "V1"
+        ]
+      },
+      {
+        "id": "T17",
+        "name": "공통 표상·학습·생성 및 추론 기반",
+        "horizontal_ids": [
+          "H1",
+          "H4"
+        ],
+        "vertical_ids": []
+      },
+      {
+        "id": "T18",
+        "name": "범용 이미지 OOD·이상 탐지·신뢰도",
+        "horizontal_ids": [
+          "H2"
+        ],
+        "vertical_ids": []
+      }
+    ]
   }
 }
