@@ -1,0 +1,6 @@
+<section class="home-section" aria-labelledby="home-research-heading">
+  <div class="research-home">
+    <div><p class="research-eyebrow">RESEARCH ATLAS · 2022–2025</p><h2 id="home-research-heading">연구개발 성과 지도</h2><p>지식체계 구축 → 불확실성 지각 → 질문 생성 → 성장학습.<br>네 가지 적용 분야의 연구 흐름과 연차별 기여를 논문·특허·공개 자산에 연결했습니다.</p><a class="research-button research-button-light" href="{{ '/research/' | relative_url }}">전체 성과 지도 보기 <span aria-hidden="true">↗</span></a></div>
+    <div class="research-home-domains">{% for domain in site.data.research.vertical_axes %}<a href="{{ '/research/' | relative_url }}?vertical={{ domain.id }}#research-results"><span>0{{ forloop.index }} / 적용 분야</span>{{ domain.label }} ↗</a>{% endfor %}</div>
+  </div>
+</section>

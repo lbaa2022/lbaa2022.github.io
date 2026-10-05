@@ -6,9 +6,11 @@ permalink: /patents/
 ---
 
 {% include deliverables_styles.liquid %}
+{% include research_assets.liquid %}
 {% assign patents = site.data.deliverables.patents %}
 
 <div class="deliverables-page">
+  <p class="research-catalog-link"><a href="{{ '/research/' | relative_url }}">연구개발 성과 지도에서 연구의 맥락 살펴보기 ↗</a></p>
   <p class="deliverables-lead">
     2025년까지의 특허 성과를 정리했습니다.
     동일 발명의 국가별 출원과 등록 이력은 한 카드 안에서 함께 확인할 수 있도록 구성했습니다.
@@ -54,7 +56,8 @@ permalink: /patents/
                   {{ date }}{% unless forloop.last %}<br>{% endunless %}
                 {% endfor %}
               </div>
-            </article>
+            {% include research_card_links.liquid kind="patent" item=item %}
+                </article>
           {% endfor %}
         </div>
       </div>

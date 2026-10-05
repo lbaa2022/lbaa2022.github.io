@@ -2,6 +2,7 @@
 layout: default
 ---
 
+{% include research_assets.liquid %}
 <div class="home">
   <style scoped>
     {% assign image = site.header_feature_image | relative_url | split: '.' %}
@@ -336,6 +337,8 @@ layout: default
       </article>
     </div>
   </section>
+
+  {% include research_home.liquid %}
 
   <section class="home-section">
     <h2 class="section-heading">검증 및 실증 전략</h2>

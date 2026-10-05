@@ -1,0 +1,24 @@
+{% if include.kind == 'paper' %}
+  {% assign research_key = include.item.title %}
+{% elsif include.kind == 'patent' %}
+  {% assign research_key = include.item.numbers | join: '|' %}
+{% elsif include.kind == 'software' %}
+  {% assign research_key = include.item.title | append: '|' | append: include.item.url %}
+{% else %}
+  {% assign research_key = include.item.number %}
+{% endif %}
+{% assign research_link = site.data.research_links[include.kind][research_key] %}
+{% if research_link %}
+{% unless research_anchors_seen contains research_link.anchor %}
+<span class="research-anchor" id="{{ research_link.anchor }}"></span>
+{% assign research_anchors_seen = research_anchors_seen | append: research_link.anchor | append: '|' %}
+{% endunless %}
+{% if research_link.technologies.size > 0 %}
+<div class="research-backlinks" aria-label="관련 연구 주제">
+  <span>성과 지도에서 살펴보기</span>
+  {% for research_tech in research_link.technologies %}
+  <a href="{{ '/research/' | relative_url }}?tech={{ research_tech.id }}#technology-{{ research_tech.id }}">{{ research_tech.name }} <span aria-hidden="true">↗</span></a>
+  {% endfor %}
+</div>
+{% endif %}
+{% endif %}

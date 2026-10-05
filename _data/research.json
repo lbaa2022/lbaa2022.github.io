@@ -1,0 +1,4868 @@
+{
+  "schema_version": "1.0",
+  "title": "연구개발 성과 지도",
+  "coverage": {
+    "start": 2022,
+    "end": 2025,
+    "label": "2022–2025 연구성과"
+  },
+  "updated": "2026-10-05",
+  "horizontal_axes": [
+    {
+      "id": "H1",
+      "label": "지식체계 구축",
+      "definition": "관찰·텍스트·영상에서 표상을 추출하고 지식그래프·공간지도·절차를 구성·검색·확장"
+    },
+    {
+      "id": "H2",
+      "label": "불확실성 지각",
+      "definition": "모델·데이터·질의·상황의 불확실성, OOD, 응답 불가능성, 모호성 및 보정 상태 판단"
+    },
+    {
+      "id": "H3",
+      "label": "질문 생성",
+      "definition": "불확실성을 줄이기 위한 질문 내용·형태·대상·시점·횟수 결정 및 응답 해석"
+    },
+    {
+      "id": "H4",
+      "label": "질의응답 기반 성장학습",
+      "definition": "응답·피드백·에이전트 지식 전달을 통한 추론 개선, 지식 확장, 모델 갱신; 일반 지속학습은 기반 기여로 구분"
+    }
+  ],
+  "vertical_axes": [
+    {
+      "id": "V1",
+      "label": "장면과 비디오 이해"
+    },
+    {
+      "id": "V2",
+      "label": "실세계와 절차 이해"
+    },
+    {
+      "id": "V3",
+      "label": "의료진단 의사결정 지원"
+    },
+    {
+      "id": "V4",
+      "label": "데이터 정제",
+      "definition": "데이터셋 품질 평가와 내용·라벨 정제; 의료 데이터는 V3와 중복 연결 가능"
+    }
+  ],
+  "technologies": [
+    {
+      "id": "T01",
+      "name": "멀티모달 지식그래프 구축·결합·검색",
+      "horizontal_ids": [
+        "H1"
+      ],
+      "vertical_ids": [
+        "V1"
+      ],
+      "issue": "서로 다른 모달리티와 긴 시간 맥락의 지식을 일관되게 표현·검색",
+      "contribution": "장면·인물·상식 그래프의 결합에서 과제별 검색과 새 개념 조합으로 확장",
+      "organizations": [
+        "한양대학교",
+        "서울대학교"
+      ],
+      "activity_ids": [
+        "A-T01-2022",
+        "A-T01-2023",
+        "A-T01-2024",
+        "A-T01-2025"
+      ],
+      "artifact_ids": [
+        "PAPER-241227-C075",
+        "PAPER-251224-C056",
+        "patent-4f9495b1d21d",
+        "patent-bcb4cff352a4",
+        "patent-4ecddefe8ece",
+        "patent-c96eb8cbed91",
+        "asset-b50e965daab3",
+        "asset-014e2000e397",
+        "asset-04f0dd07d41a"
+      ]
+    },
+    {
+      "id": "T02",
+      "name": "비디오 시간·공간 표상과 장면 이해",
+      "horizontal_ids": [
+        "H1"
+      ],
+      "vertical_ids": [
+        "V1"
+      ],
+      "issue": "장면 경계·사건 순서·객체와 행동의 조합 및 시간적 일관성",
+      "contribution": "영상 지식체계에 사용할 표상과 장면·행동 이해 기반 확보",
+      "organizations": [
+        "한양대학교",
+        "서울대학교"
+      ],
+      "activity_ids": [
+        "A-T02-2022",
+        "A-T02-2023",
+        "A-T02-2024",
+        "A-T02-2025"
+      ],
+      "artifact_ids": [
+        "PAPER-241227-C001",
+        "PAPER-241227-C076",
+        "asset-0d88fed06d0f"
+      ]
+    },
+    {
+      "id": "T03",
+      "name": "비디오 질의 응답 가능성·모호성·시간 불확실성",
+      "horizontal_ids": [
+        "H2"
+      ],
+      "vertical_ids": [
+        "V1"
+      ],
+      "issue": "영상에 근거가 없거나 관계·시간 정보가 모호한 질문에 대한 과신",
+      "contribution": "대답 불가능성 판단과 근거 제시, 정렬 학습, 키프레임 선택으로 신뢰성 향상",
+      "organizations": [
+        "한국과학기술원"
+      ],
+      "activity_ids": [
+        "A-T03-2022",
+        "A-T03-2023",
+        "A-T03-2024",
+        "A-T03-2025"
+      ],
+      "artifact_ids": [
+        "PAPER-251224-C053",
+        "patent-9e7f70dac333",
+        "patent-0de2b3e7f042",
+        "asset-3f86a4748358",
+        "asset-19ad6573bfe6",
+        "asset-c69288b8f26f",
+        "asset-59b14e34b70a",
+        "asset-8dcd38743564"
+      ]
+    },
+    {
+      "id": "T04",
+      "name": "질문 생성 사후학습·명확화·응답 해석",
+      "horizontal_ids": [
+        "H3",
+        "H1"
+      ],
+      "vertical_ids": [
+        "V1"
+      ],
+      "issue": "불확실한 개체·지시 표현을 명확하게 질문하고 응답을 지식으로 연결",
+      "contribution": "사후학습에서 LoRA·멀티턴 명확화와 relation linking으로 질문-응답-지식 확장 연결",
+      "organizations": [
+        "경희대학교"
+      ],
+      "activity_ids": [
+        "A-T04-2022",
+        "A-T04-2023",
+        "A-T04-2024",
+        "A-T04-2025"
+      ],
+      "artifact_ids": [
+        "PAPER-241227-C007",
+        "PAPER-251224-J005",
+        "patent-baecf9db5edb",
+        "patent-2a326859596c",
+        "patent-d42892c6652d",
+        "patent-9c1208104af4",
+        "asset-8f3da4631514",
+        "asset-58be747e6378",
+        "asset-ee543ca1cd81",
+        "asset-5088dbdb1687"
+      ]
+    },
+    {
+      "id": "T05",
+      "name": "지식그래프·자문자답 기반 영상 추론 성장",
+      "horizontal_ids": [
+        "H4",
+        "H3",
+        "H1",
+        "H2"
+      ],
+      "vertical_ids": [
+        "V1"
+      ],
+      "issue": "외부 지식과 보조 질문을 활용하면서 불필요한 질문 횟수 억제",
+      "contribution": "자가 질문·신뢰도 기반 답변 정제와 지식그래프 기반 질문 데이터로 VideoQA 성능 개선",
+      "organizations": [
+        "서울대학교"
+      ],
+      "activity_ids": [
+        "A-T05-2022",
+        "A-T05-2023",
+        "A-T05-2024",
+        "A-T05-2025"
+      ],
+      "artifact_ids": [
+        "PAPER-251224-J004",
+        "PAPER-251224-C042",
+        "patent-c81e4ab5a21e",
+        "patent-8824fbe7d8ec",
+        "patent-75bcaec55843",
+        "asset-0a120c3caf3e",
+        "asset-77e8fef73bff",
+        "asset-38c53305923e",
+        "asset-ce29490250b1",
+        "asset-42e9b01b2091",
+        "asset-2094ab657dfa"
+      ]
+    },
+    {
+      "id": "T06",
+      "name": "질의응답 기반 절차계획·계층 추론·평가",
+      "horizontal_ids": [
+        "H1",
+        "H2",
+        "H3",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V2"
+      ],
+      "issue": "불완전한 지시와 부분 관찰 하에서 긴 작업 절차의 오류를 발견·수정",
+      "contribution": "LLM 플래너 자동 평가에서 자연어 피드백·ReActQ·계층 계획 및 안전성 평가로 확장",
+      "organizations": [
+        "한국전자통신연구원",
+        "서울대학교",
+        "연세대학교"
+      ],
+      "activity_ids": [
+        "A-T06-2022",
+        "A-T06-2023",
+        "A-T06-2024",
+        "A-T06-2025"
+      ],
+      "artifact_ids": [
+        "PAPER-241227-C002",
+        "PAPER-241227-C017",
+        "PAPER-241227-C020",
+        "PAPER-241227-C078",
+        "PAPER-241227-C102",
+        "PAPER-241227-C104",
+        "PAPER-251224-C001",
+        "patent-944e7727925c",
+        "patent-77eb7fad6c3a",
+        "patent-4fdcebdac54e",
+        "asset-4b8c2e6b39ee",
+        "asset-916c5e7f1e97",
+        "asset-4964603491c0",
+        "asset-6cb01dcefae5",
+        "asset-e55188f7c89e",
+        "asset-5d50c4210827",
+        "asset-297d490ce629"
+      ]
+    },
+    {
+      "id": "T07",
+      "name": "열린 세계 객체·행위 인지와 시맨틱 지도",
+      "horizontal_ids": [
+        "H1",
+        "H2",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V2"
+      ],
+      "issue": "미지 객체·행위와 도메인 변화, 변화하는 공간에 대한 인지",
+      "contribution": "오픈셋 검출·도메인 적응·사용자 지식 지도를 로봇의 실세계 인지에 결합",
+      "organizations": [
+        "한국전자통신연구원",
+        "서울대학교"
+      ],
+      "activity_ids": [
+        "A-T07-2022",
+        "A-T07-2023",
+        "A-T07-2024",
+        "A-T07-2025"
+      ],
+      "artifact_ids": [
+        "PAPER-251224-C003",
+        "patent-3aa6beeba577",
+        "patent-de0ebdf93e5c"
+      ]
+    },
+    {
+      "id": "T08",
+      "name": "언어·시각 그라운딩과 로봇 상호작용",
+      "horizontal_ids": [
+        "H1",
+        "H3",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V2"
+      ],
+      "issue": "자연어의 지시 대상과 실제 물체·행동을 연결",
+      "contribution": "대화·시각 표상·피드백을 통한 대상 특정과 조작 수행 기반 확보",
+      "organizations": [
+        "서울대학교",
+        "한국전자통신연구원"
+      ],
+      "activity_ids": [
+        "A-T08-2022",
+        "A-T08-2023",
+        "A-T08-2024",
+        "A-T08-2025"
+      ],
+      "artifact_ids": []
+    },
+    {
+      "id": "T09",
+      "name": "체화 에이전트 지속학습·행동 적응",
+      "horizontal_ids": [
+        "H4"
+      ],
+      "vertical_ids": [
+        "V2"
+      ],
+      "issue": "새 작업·환경 학습 시 기존 지식 망각과 행동 정책의 일반화",
+      "contribution": "경계 없는 지속학습·환경 피드백·행동 학습으로 성장학습 기반 제공",
+      "organizations": [
+        "서울대학교",
+        "연세대학교"
+      ],
+      "activity_ids": [
+        "A-T09-2023",
+        "A-T09-2024",
+        "A-T09-2025"
+      ],
+      "artifact_ids": [
+        "PAPER-241227-C021",
+        "PAPER-241227-C100",
+        "PAPER-241227-C103",
+        "asset-8d8e1c9241c2",
+        "asset-8e0c344c515d"
+      ]
+    },
+    {
+      "id": "T10",
+      "name": "의료 모델 추론 보정·시험 시점 적응",
+      "horizontal_ids": [
+        "H2",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V3"
+      ],
+      "issue": "미학습 입력·환경 변화·지속학습에서 모델의 과신",
+      "contribution": "특징 기반 보정과 블록 선택·어댑터 결합으로 신뢰도와 적응성 개선",
+      "organizations": [
+        "광주과학기술원"
+      ],
+      "activity_ids": [
+        "A-T10-2022",
+        "A-T10-2023",
+        "A-T10-2024",
+        "A-T10-2025"
+      ],
+      "artifact_ids": [
+        "PAPER-241227-C013",
+        "PAPER-241227-C070",
+        "patent-6e1c4c6d5a1f",
+        "patent-36dd8f6964be",
+        "asset-ed2a3a7577f3",
+        "asset-656ed43df1c8"
+      ]
+    },
+    {
+      "id": "T11",
+      "name": "전문가·복수 에이전트 지식 전이",
+      "horizontal_ids": [
+        "H4",
+        "H3"
+      ],
+      "vertical_ids": [
+        "V3"
+      ],
+      "issue": "전문가와 개별 모델의 지식을 효율적으로 전달·통합",
+      "contribution": "Point guidance에서 모델 가중치 결합·Branch Soup·연합학습으로 협업적 성장",
+      "organizations": [
+        "광주과학기술원"
+      ],
+      "activity_ids": [
+        "A-T11-2023",
+        "A-T11-2024",
+        "A-T11-2025"
+      ],
+      "artifact_ids": [
+        "asset-dfed001bcb97"
+      ]
+    },
+    {
+      "id": "T12",
+      "name": "치과 진단 지원 데이터·플랫폼·피드백",
+      "horizontal_ids": [
+        "H1",
+        "H4",
+        "H3"
+      ],
+      "vertical_ids": [
+        "V3",
+        "V4"
+      ],
+      "issue": "치과 영상·판독·전문가 피드백을 학습 및 진단 흐름에 연결",
+      "contribution": "파노라마 라벨링에서 진단·수정·지속학습·지식 공유 플랫폼으로 통합",
+      "organizations": [
+        "조선대학교",
+        "광주과학기술원"
+      ],
+      "activity_ids": [
+        "A-T12-2022",
+        "A-T12-2023",
+        "A-T12-2024",
+        "A-T12-2025"
+      ],
+      "artifact_ids": [
+        "patent-f95ad678d80f",
+        "asset-780b4d74af52"
+      ],
+      "mapping_note": "의료 데이터 정제·라벨 수정 플랫폼을 데이터 정제 분야에도 연결했습니다. 질문 생성 축에는 전문가 확인·피드백을 위한 상호작용 기반으로 포함했습니다."
+    },
+    {
+      "id": "T13",
+      "name": "노이즈 라벨 탐지·수정과 강건 학습",
+      "horizontal_ids": [
+        "H2",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V4",
+        "V3"
+      ],
+      "issue": "오류 라벨을 암기하는 현상과 의료·멀티모달 데이터의 품질 저하",
+      "contribution": "앙상블·특징 정규화·커리큘럼 어댑터로 오류 탐지·보정 및 학습 강인성 확보",
+      "organizations": [
+        "광주과학기술원",
+        "한국과학기술원"
+      ],
+      "activity_ids": [
+        "A-T13-2022",
+        "A-T13-2023",
+        "A-T13-2024",
+        "A-T13-2025"
+      ],
+      "artifact_ids": [
+        "PAPER-241227-C071",
+        "PAPER-251224-C059",
+        "asset-1bdffe578761",
+        "asset-76f975f13bb4"
+      ]
+    },
+    {
+      "id": "T14",
+      "name": "능동 데이터 선별·메모리 품질 관리",
+      "horizontal_ids": [
+        "H2",
+        "H4",
+        "H3"
+      ],
+      "vertical_ids": [
+        "V4"
+      ],
+      "issue": "제한된 라벨링 비용과 중복·불균형 표본",
+      "contribution": "예측 차이·모델 불일치·엔트로피·중복 제거로 우선순위와 표본 구성을 개선",
+      "organizations": [
+        "광주과학기술원",
+        "서울대학교"
+      ],
+      "activity_ids": [
+        "A-T14-2022",
+        "A-T14-2023",
+        "A-T14-2024",
+        "A-T14-2025"
+      ],
+      "artifact_ids": [
+        "asset-d05905a072fd"
+      ],
+      "mapping_note": "질문 생성 축의 연결은 자연어 질문 생성이 아니라, 사람에게 라벨을 요청할 데이터의 선택을 뜻합니다."
+    },
+    {
+      "id": "T15",
+      "name": "분할 불확실성 예측·자가 데이터 수집",
+      "horizontal_ids": [
+        "H2",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V2",
+        "V4"
+      ],
+      "issue": "픽셀 단위 불확실성 추정 비용과 불확실한 관측의 학습 활용",
+      "contribution": "쌍대 모델 보간과 웹 검색·VLM 교류를 연결해 자율 수집 학습 기반 마련",
+      "organizations": [
+        "한국전자통신연구원"
+      ],
+      "activity_ids": [
+        "A-T15-2022",
+        "A-T15-2023",
+        "A-T15-2024",
+        "A-T15-2025"
+      ],
+      "artifact_ids": []
+    },
+    {
+      "id": "T16",
+      "name": "인지 기반 질문 품질·사회적 상호작용 실증",
+      "horizontal_ids": [
+        "H3",
+        "H2"
+      ],
+      "vertical_ids": [
+        "V2",
+        "V1"
+      ],
+      "issue": "어떤 질문이 불확실성을 효과적으로 해소하며 사용자에게 수용되는가",
+      "contribution": "질문 유형·CAUS·평가 루브릭과 고령자 돌봄 실증으로 질문 정책의 사용성 평가",
+      "organizations": [
+        "한국전자통신연구원",
+        "서울대학교"
+      ],
+      "activity_ids": [
+        "A-T16-2022",
+        "A-T16-2023",
+        "A-T16-2024",
+        "A-T16-2025"
+      ],
+      "artifact_ids": [
+        "PAPER-241227-C080",
+        "patent-dff7dcc014f7",
+        "asset-bc01494bf6d3"
+      ]
+    },
+    {
+      "id": "T18",
+      "name": "범용 이미지 OOD·이상 탐지·신뢰도",
+      "horizontal_ids": [
+        "H2"
+      ],
+      "vertical_ids": [],
+      "issue": "학습 분포 밖 입력과 비정상 관측을 구분하고 확률 신뢰도를 개선",
+      "contribution": "확산모델·의사 이상·프롬프트 보정 등의 범용 불확실성 지각 기반; 특정 수직 실증은 별도 증거 필요",
+      "organizations": [
+        "한국전자통신연구원",
+        "한국과학기술원"
+      ],
+      "activity_ids": [],
+      "artifact_ids": [
+        "asset-80829e0c0f37"
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "id": "A-T01-2022",
+      "technology_id": "T01",
+      "year": 2022,
+      "title": "세 종류 지식그래프 정의",
+      "issue": "드라마의 장면·상식·인물 정보를 결합할 표현 필요",
+      "work": "장면 그래프, 일반 지식 체계, 인물 그래프 정의 및 추출; Cross Graph Attention 설계",
+      "contribution": "멀티모달 지식 통합의 표현 단위와 결합 기반 확보",
+      "horizontal_ids": [
+        "H1"
+      ],
+      "vertical_ids": [
+        "V1"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            29
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T01-2023",
+      "technology_id": "T01",
+      "year": 2023,
+      "title": "이질 그래프 결합",
+      "issue": "외부 지식이 필요한 VQA에서 그래프 간 상호참조",
+      "work": "Heterogeneous Graph 3종을 Cross-Attention Transformer로 결합; 구조·지역 특징 기반 그래프 거리 연구",
+      "contribution": "단일 장면 정보를 외부 지식과 결합하는 추론 기반 마련",
+      "horizontal_ids": [
+        "H1"
+      ],
+      "vertical_ids": [
+        "V1"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            29
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T01-2024",
+      "technology_id": "T01",
+      "year": 2024,
+      "title": "과제별 그래프 검색과 확장",
+      "issue": "긴 시계열에서 필요한 지식 검색 및 미학습 개념 처리",
+      "work": "그래프 기반 RAG와 long-term graph 학습; 멀티모달 대화 생성 및 zero-shot 행동 이해",
+      "contribution": "대용량 지식 활용과 신규 개념 조합 이해로 확장",
+      "horizontal_ids": [
+        "H1"
+      ],
+      "vertical_ids": [
+        "V1"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            29
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T01-2025",
+      "technology_id": "T01",
+      "year": 2025,
+      "title": "시간·공간 개념 분리와 조합",
+      "issue": "학습하지 않은 객체-행위 조합 이해",
+      "work": "시간(행위)·공간(객체) 잠재 표현과 암묵적 검색을 이용한 Transformer 개발",
+      "contribution": "새로운 개념 조합으로 일반화하는 지식체계 학습",
+      "horizontal_ids": [
+        "H1"
+      ],
+      "vertical_ids": [
+        "V1"
+      ],
+      "references": [
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T02-2022",
+      "technology_id": "T02",
+      "year": 2022,
+      "title": "장면 경계와 영상 표상",
+      "issue": "시간적 일관성과 장면 단위의 분할",
+      "work": "BaSSL과 비디오 장면 그래프 생성 연구",
+      "contribution": "지식 추출에 필요한 시간적 장면 구획 기반 제공",
+      "horizontal_ids": [
+        "H1"
+      ],
+      "vertical_ids": [
+        "V1"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            29,
+            45
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T02-2023",
+      "technology_id": "T02",
+      "year": 2023,
+      "title": "비디오 이벤트 이해 기반",
+      "issue": "영상 이벤트의 시간 위치와 맥락 이해",
+      "work": "모달별 의사 쿼리 기반 이벤트 검색 및 장면 사이 관계 학습",
+      "contribution": "영상에서 지식 검색의 시간적 근거 개선",
+      "horizontal_ids": [
+        "H1"
+      ],
+      "vertical_ids": [
+        "V1"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            37
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T02-2024",
+      "technology_id": "T02",
+      "year": 2024,
+      "title": "구조화된 시공간 조합 이해",
+      "issue": "새로운 행동·객체 조합 일반화",
+      "work": "Spatiotemporal 구조 Transformer와 영상 표상 학습",
+      "contribution": "객체-행동 관계의 조합적 이해 지원",
+      "horizontal_ids": [
+        "H1"
+      ],
+      "vertical_ids": [
+        "V1"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            29,
+            47
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T02-2025",
+      "technology_id": "T02",
+      "year": 2025,
+      "title": "영상 시간 이해 일관성",
+      "issue": "긴 비디오와 시간 관계의 일관된 해석",
+      "work": "시간 이해 일관성 분석, moment retrieval, 객체 운동학 비디오 예측 연구",
+      "contribution": "시간·운동 정보를 다루는 비디오 지식 기반 강화",
+      "horizontal_ids": [
+        "H1"
+      ],
+      "vertical_ids": [
+        "V1"
+      ],
+      "references": [
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            34,
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T03-2022",
+      "technology_id": "T03",
+      "year": 2022,
+      "title": "이미지 질의 응답 가능성 판단",
+      "issue": "존재하지 않는 물체를 묻는 질문",
+      "work": "BERT 계열 언어모델로 물체 중심 대답 가능성 판단과 근거 출력; GQA 기반 데이터 구축",
+      "contribution": "답할 수 없는 질문의 명시적 인지 기반",
+      "horizontal_ids": [
+        "H2"
+      ],
+      "vertical_ids": [
+        "V1"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            31
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T03-2023",
+      "technology_id": "T03",
+      "year": 2023,
+      "title": "비디오 응답 가능성으로 확장",
+      "issue": "시간을 포함한 영상의 물체 질문",
+      "work": "비디오 압축 및 DramaQA 장면 그래프를 활용한 판단; 27K/5K 데이터 구축",
+      "contribution": "이미지 수준 불확실성 판단을 비디오로 확장",
+      "horizontal_ids": [
+        "H2"
+      ],
+      "vertical_ids": [
+        "V1"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            31,
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T03-2024",
+      "technology_id": "T03",
+      "year": 2024,
+      "title": "Video LLM 응답 가능성 정렬",
+      "issue": "물체·관계·특징에 대한 환각 응답",
+      "work": "UVQA 구성 및 비디오 언어모델의 응답 가능성 정렬 훈련; 응답 불가능 근거 생성",
+      "contribution": "모르는 질문에 무리하게 응답하는 동작을 억제",
+      "horizontal_ids": [
+        "H2"
+      ],
+      "vertical_ids": [
+        "V1"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            32,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T03-2025",
+      "technology_id": "T03",
+      "year": 2025,
+      "title": "모호성 감지와 질문 기반 프레임 선택",
+      "issue": "행위·지각·공간·지시·시간 모호성과 불필요한 입력 프레임",
+      "work": "Ambiguous-VideoQA 5K, 관계 모호성 감지 및 키프레임 선택; 응답 가능성 정렬 논문 발표",
+      "contribution": "질문의 대답 가능성과 필요한 시각 증거를 함께 다루는 방향으로 확장",
+      "horizontal_ids": [
+        "H2"
+      ],
+      "vertical_ids": [
+        "V1"
+      ],
+      "references": [
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            29
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T04-2022",
+      "technology_id": "T04",
+      "year": 2022,
+      "title": "질문 생성 사후학습",
+      "issue": "선학습과 질문 생성 목적의 차이",
+      "work": "질문 특화 post-training, 비디오 질문 생성 참조모델, 응답 정보 추출",
+      "contribution": "질문 형식에 맞춘 언어모델 적응 기반 확보",
+      "horizontal_ids": [
+        "H3"
+      ],
+      "vertical_ids": [
+        "V1"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            32,
+            33
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T04-2023",
+      "technology_id": "T04",
+      "year": 2023,
+      "title": "불확실한 정보에 대한 질문",
+      "issue": "질문의 난이도와 모호한 정보 정의",
+      "work": "FLAN-T5 사후학습, BLIP-2 기반 질의 생성 및 질문 난이도 추정; 정제된 질문 데이터",
+      "contribution": "정답 기반 생성에서 불확실성 해소 목적의 질문으로 확장",
+      "horizontal_ids": [
+        "H3"
+      ],
+      "vertical_ids": [
+        "V1"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            33
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T04-2024",
+      "technology_id": "T04",
+      "year": 2024,
+      "title": "효율적 학습과 응답의 지식화",
+      "issue": "큰 언어모델의 훈련 비용 및 기존 그래프와의 연결",
+      "work": "LoRA 사후학습·미세조정, 불확실성 질의 데이터 확장, triple 추출·relation linking",
+      "contribution": "질문 생성 효율성과 응답을 통한 지식체계 확장 연결",
+      "horizontal_ids": [
+        "H3",
+        "H1"
+      ],
+      "vertical_ids": [
+        "V1"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            33
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T04-2025",
+      "technology_id": "T04",
+      "year": 2025,
+      "title": "멀티턴 명확화와 스키마 확장",
+      "issue": "지시 대명사와 모호한 질문의 반복 해소",
+      "work": "GQA-Q2Q 73K 구축; VLM 미세조정, 명확화 질문, 엔티티 관계 생성·정제",
+      "contribution": "질문-응답을 반복하며 지식을 획득하고 그래프 스키마 확장",
+      "horizontal_ids": [
+        "H3",
+        "H1"
+      ],
+      "vertical_ids": [
+        "V1"
+      ],
+      "references": [
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T05-2022",
+      "technology_id": "T05",
+      "year": 2022,
+      "title": "영상 질의응답 성장 태스크 설계",
+      "issue": "외부 대상에게 물어 영상 속 인물·물체 지식 획득",
+      "work": "멀티모달 지식 표상 학습 및 상호작용 태스크 설계",
+      "contribution": "지식 성장 학습을 검증할 문제·플랫폼 기반 정의",
+      "horizontal_ids": [
+        "H4",
+        "H3",
+        "H1",
+        "H2"
+      ],
+      "vertical_ids": [
+        "V1"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            34,
+            37
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T05-2023",
+      "technology_id": "T05",
+      "year": 2023,
+      "title": "Self-Questioning 적용",
+      "issue": "기존 VideoQA가 놓친 정보의 보조 질문 확보",
+      "work": "DramaQA에 Self-Questioning 확장 및 보조 질문 쌍 구축",
+      "contribution": "질문을 통한 정보 보완의 실험 경로 확보",
+      "horizontal_ids": [
+        "H4",
+        "H3",
+        "H1",
+        "H2"
+      ],
+      "vertical_ids": [
+        "V1"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            34
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T05-2024",
+      "technology_id": "T05",
+      "year": 2024,
+      "title": "불확실성 기반 다중 보조 질문",
+      "issue": "모델 답변의 불확실성과 추론 개선",
+      "work": "답변 불확실성 측정 및 보조 질문 프레임워크; DramaQA 모듈 통합",
+      "contribution": "VideoQA 정답률 67.4%에서 72.5%로 개선했다고 보고",
+      "horizontal_ids": [
+        "H4",
+        "H3",
+        "H1",
+        "H2"
+      ],
+      "vertical_ids": [
+        "V1"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            34,
+            37,
+            41
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T05-2025",
+      "technology_id": "T05",
+      "year": 2025,
+      "title": "INQUIRER와 C2R",
+      "issue": "질문 종류와 질문 횟수의 효율적 선택",
+      "work": "지식그래프·18개 질문 체계 기반 훈련 데이터 생성, 신뢰도 기반 답변 정제; 실험에서 보조 질문 2개 선택",
+      "contribution": "지식 기반 질문 훈련과 추론 시 자문자답 정제를 구체화",
+      "horizontal_ids": [
+        "H4",
+        "H3",
+        "H1",
+        "H2"
+      ],
+      "vertical_ids": [
+        "V1"
+      ],
+      "references": [
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            29
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T06-2022",
+      "technology_id": "T06",
+      "year": 2022,
+      "title": "절차 추론 태스크·시뮬레이터",
+      "issue": "로봇이 불확실성을 느껴 도움을 요청할 시점",
+      "work": "가정환경 태스크·행동 정의, AI2THOR·VirtualHome 연동, 초기 LLM 플래너 및 Ask4Help",
+      "contribution": "질문 정책과 절차 실행을 시험할 기본 환경 구축",
+      "horizontal_ids": [
+        "H1",
+        "H2",
+        "H3",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V2"
+      ],
+      "references": [
+        {
+          "document": "221227 1차년도 연차보고서",
+          "pdf_pages": [
+            46
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T06-2023",
+      "technology_id": "T06",
+      "year": 2023,
+      "title": "자연어 피드백과 자동 평가",
+      "issue": "LLM이 만든 절차의 실행 가능성 평가 및 실패 복구",
+      "work": "LoTa-Bench 기반 자동 평가; WAH-NL; 자연어 실패 원인으로 재계획",
+      "contribution": "실행 검증과 피드백 기반 절차 수정의 재현 가능한 기반 마련",
+      "horizontal_ids": [
+        "H1",
+        "H2",
+        "H3",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V2"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            35,
+            38,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T06-2024",
+      "technology_id": "T06",
+      "year": 2024,
+      "title": "ReActQ와 계층적 절차 추론",
+      "issue": "장기 복합 임무의 분해와 질문에 의한 오류 수정",
+      "work": "제어흐름·LLM 노드의 계층 계획, 추론-행동-질문 ReActQ, 응답 오라클 개발",
+      "contribution": "WAH-NL에서 질의응답을 통해 성공률 23%→39% 보고",
+      "horizontal_ids": [
+        "H1",
+        "H2",
+        "H3",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V2"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            35,
+            38,
+            41
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T06-2025",
+      "technology_id": "T06",
+      "year": 2025,
+      "title": "질문 정책·ReAcTree·부분관찰 평가",
+      "issue": "질문 비용과 장기 임무 성공률 및 안전 제약",
+      "work": "질문 시점·내용·이유 2.1K 데이터, ReActQ, 동적 트리 계획 ReAcTree; 부분관찰·안전 계획 연구",
+      "contribution": "질문 시점·내용을 정책 학습 데이터로 구체화하고, 동적 트리 확장을 통해 장기 임무의 계획·실행을 개선",
+      "horizontal_ids": [
+        "H1",
+        "H2",
+        "H3",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V2"
+      ],
+      "references": [
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            28,
+            33,
+            34
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T07-2022",
+      "technology_id": "T07",
+      "year": 2022,
+      "title": "오픈셋 객체·행위 인지 설계",
+      "issue": "학습 밖 객체와 행위 및 가정환경 도메인 변화",
+      "work": "공개 데이터 확보, 클래스 독립 검출, Open-Set TAL·시맨틱맵 참조기술",
+      "contribution": "실세계 불확실성을 다루는 인지 구성요소 확보",
+      "horizontal_ids": [
+        "H1",
+        "H2",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V2"
+      ],
+      "references": [
+        {
+          "document": "221227 1차년도 연차보고서",
+          "pdf_pages": [
+            46
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T07-2023",
+      "technology_id": "T07",
+      "year": 2023,
+      "title": "SAM 활용 미지 객체 탐지",
+      "issue": "미지 객체에 대한 학습 표본과 라벨 부족",
+      "work": "SAM으로 270,382 객체 영역 확보 후 알려진 K개/미지 1개 클래스 분류",
+      "contribution": "클래스 비종속 검출과 미지 판별을 분리한 파이프라인",
+      "horizontal_ids": [
+        "H1",
+        "H2",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V2"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T07-2024",
+      "technology_id": "T07",
+      "year": 2024,
+      "title": "홈로봇 도메인 적응",
+      "issue": "어두운 실내 환경 등 입력 분포 변화",
+      "work": "Exclusive Dark 평가 및 객체·이미지 수준 도메인 분류기 추가",
+      "contribution": "오픈셋 검출의 도메인 적응 확장",
+      "horizontal_ids": [
+        "H1",
+        "H2",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V2"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T07-2025",
+      "technology_id": "T07",
+      "year": 2025,
+      "title": "열린 객체 검출과 지도 확장",
+      "issue": "훈련자료 오류·새로운 사물·공간 변화",
+      "work": "훈련 데이터 필터링, 검출과 VLM 결합, OmniGibson SLAM 시맨틱 지도 구축·확장",
+      "contribution": "미지 사물 인지와 작업계획용 공간 지식 갱신 연결",
+      "horizontal_ids": [
+        "H1",
+        "H2",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V2"
+      ],
+      "references": [
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            28
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T08-2022",
+      "technology_id": "T08",
+      "year": 2022,
+      "title": "물체·사용자 지식 기반 상호작용 설계",
+      "issue": "말로 지시한 물체와 실제 조작 대상 연결",
+      "work": "관찰 기반 사용자 지식·절차 스킬의 상호작용 정의",
+      "contribution": "로봇 질의응답의 접지 문제를 연구 대상으로 설정",
+      "horizontal_ids": [
+        "H1"
+      ],
+      "vertical_ids": [
+        "V2"
+      ],
+      "references": [
+        {
+          "document": "221227 1차년도 연차보고서",
+          "pdf_pages": [
+            46
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T08-2023",
+      "technology_id": "T08",
+      "year": 2023,
+      "title": "화용론적 의사소통·시각 그라운딩",
+      "issue": "사용자가 의도한 물체의 불확실성",
+      "work": "물체 파악을 위한 사람-로봇 의사소통, GVCCI 및 시각 표상·추적 연구",
+      "contribution": "언어-시각-행동 사이 연결과 대화 기반 대상 지정 강화",
+      "horizontal_ids": [
+        "H1",
+        "H3",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V2"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            36,
+            37,
+            46
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T08-2024",
+      "technology_id": "T08",
+      "year": 2024,
+      "title": "대화 기반 라벨링과 조작",
+      "issue": "사물 특성을 표현하는 질문과 응답의 활용",
+      "work": "실시간 대화 기반 라벨링, 다중 회차 질의응답 및 시각언어 파지 연구",
+      "contribution": "로봇 조작에 필요한 물체 구분과 지식 획득 연결",
+      "horizontal_ids": [
+        "H1",
+        "H3",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V2"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            41,
+            45,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T08-2025",
+      "technology_id": "T08",
+      "year": 2025,
+      "title": "언어 조건 로봇 정책",
+      "issue": "언어 지시의 일반화와 미지 객체 조작",
+      "work": "CLIP-RT, RGB-D 융합·3D 인스턴스 분할·자연어 정책 학습",
+      "contribution": "새로운 언어·객체 조건에서 행동 수행을 위한 인지 기반 확대",
+      "horizontal_ids": [
+        "H1",
+        "H3",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V2"
+      ],
+      "references": [
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            34,
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T09-2023",
+      "technology_id": "T09",
+      "year": 2023,
+      "title": "경계 없는 연속학습",
+      "issue": "명확한 태스크 구분 없이 변화하는 데이터 스트림",
+      "work": "Scheduled Data Prior와 지식 유지·획득 평가 지표 개발",
+      "contribution": "성장학습에서 과거 지식과 새 지식 간 균형 기반",
+      "horizontal_ids": [
+        "H4"
+      ],
+      "vertical_ids": [
+        "V2"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T09-2024",
+      "technology_id": "T09",
+      "year": 2024,
+      "title": "온라인 지속학습과 환경 피드백",
+      "issue": "새 행동·환경 적응 시 망각과 계획 불일치",
+      "work": "ETF 기반 온라인 CL, CAMA, PRED 환경 피드백 행동 수정",
+      "contribution": "기존 지식 유지와 실환경 변화 대응을 성장 에이전트에 결합",
+      "horizontal_ids": [
+        "H4"
+      ],
+      "vertical_ids": [
+        "V2"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            35,
+            36
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T09-2025",
+      "technology_id": "T09",
+      "year": 2025,
+      "title": "언어·시각 피드백 정책 학습",
+      "issue": "보상모델과 시연 비용 및 일반화",
+      "work": "Socratic Planner, 자연어 감독·VLM 피드백, 행동 모방·시연 증강 연구",
+      "contribution": "상호작용 정보를 행동 정책 학습에 활용하는 기반 확대",
+      "horizontal_ids": [
+        "H4"
+      ],
+      "vertical_ids": [
+        "V2"
+      ],
+      "references": [
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            34,
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T10-2022",
+      "technology_id": "T10",
+      "year": 2022,
+      "title": "블록 선택 기반 보정",
+      "issue": "학습하지 않은 이미지에서 과신",
+      "work": "직소 이미지에 민감한 CNN 블록과 특징 크기 선택",
+      "contribution": "이미지 분류 불확실성 자각의 기반 확보",
+      "horizontal_ids": [
+        "H2",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V3"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T10-2023",
+      "technology_id": "T10",
+      "year": 2023,
+      "title": "의료 도메인 보정 적용",
+      "issue": "일반 이미지에서 개발한 보정 기술의 의료 전이",
+      "work": "Feature Norm·블록 선택 기술의 의료영상 적용 및 성능 고도화",
+      "contribution": "의료 추론 신뢰도 관리로 확장",
+      "horizontal_ids": [
+        "H2",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V3"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T10-2024",
+      "technology_id": "T10",
+      "year": 2024,
+      "title": "온라인 시험 시점 적응",
+      "issue": "라벨 없는 새 환경으로의 적응",
+      "work": "블록 선택·paired-view pseudo-labeling 기반 Test-time adaptation",
+      "contribution": "추가 라벨 없이 운용 환경 변화에 적응하는 학습 지원",
+      "horizontal_ids": [
+        "H2",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V3"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            34,
+            35,
+            47
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T10-2025",
+      "technology_id": "T10",
+      "year": 2025,
+      "title": "지속학습 중 보정 유지",
+      "issue": "새 데이터 학습 중 정확도와 신뢰도 동시 유지",
+      "work": "DINOv2 어댑터 결합 및 ECE 최적화; HAM10000 평가",
+      "contribution": "보고값 정확도 83.27%, ECE 1.91%의 보정된 지속학습",
+      "horizontal_ids": [
+        "H2",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V3"
+      ],
+      "references": [
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            29
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T11-2023",
+      "technology_id": "T11",
+      "year": 2023,
+      "title": "전문가 Point guidance",
+      "issue": "클래스 라벨만으로 부족한 위치 정보",
+      "work": "전문가의 물체 위치 점 정보와 attention loss를 통한 지식 전달",
+      "contribution": "전문가의 추가 정보가 분류 학습을 개선하는 경로 확보",
+      "horizontal_ids": [
+        "H4",
+        "H3"
+      ],
+      "vertical_ids": [
+        "V3"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            34
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T11-2024",
+      "technology_id": "T11",
+      "year": 2024,
+      "title": "외부 모델 가중치 결합",
+      "issue": "여러 에이전트 지식 활용의 추론 비용",
+      "work": "에이전트의 weight ensemble로 유용한 지식 취합",
+      "contribution": "모델 수만큼 추론 비용을 늘리지 않는 지식 전이 연구",
+      "horizontal_ids": [
+        "H4",
+        "H3"
+      ],
+      "vertical_ids": [
+        "V3"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T11-2025",
+      "technology_id": "T11",
+      "year": 2025,
+      "title": "Branch Soup와 협력 학습",
+      "issue": "개별 의사 모델의 지식 통합과 노이즈",
+      "work": "Branch Soup, 경량 어댑터·Leave-One-Out Teacher 기반 연합학습",
+      "contribution": "의사 비서 모델 간 지식 공유와 협업 지속학습 기반",
+      "horizontal_ids": [
+        "H4",
+        "H3"
+      ],
+      "vertical_ids": [
+        "V3"
+      ],
+      "references": [
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            29
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T12-2022",
+      "technology_id": "T12",
+      "year": 2022,
+      "title": "치과 데이터·라벨링 체계",
+      "issue": "치과 질환과 영상 입력의 정의",
+      "work": "1K 이상 파노라마 수집, 질환별 이미지 및 Supervisely 라벨링 가이드",
+      "contribution": "진단 지원을 위한 초기 데이터와 전문가 참여 환경",
+      "horizontal_ids": [
+        "H1"
+      ],
+      "vertical_ids": [
+        "V3"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            38
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T12-2023",
+      "technology_id": "T12",
+      "year": 2023,
+      "title": "의료 데이터 정제 테스트베드",
+      "issue": "의료 라벨 오류를 사용자가 수정할 환경",
+      "work": "FracAtlas 기반 정제 플랫폼 시연; 환자 정보 정의 및 파노라마 7K 라벨링",
+      "contribution": "전문가가 오류 라벨을 고치는 실증 기반 확보",
+      "horizontal_ids": [
+        "H1",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V3"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            38
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T12-2024",
+      "technology_id": "T12",
+      "year": 2024,
+      "title": "치과 데이터 기반 GUI",
+      "issue": "불확실성 지각 기술을 실제 의료 의사결정에 적용",
+      "work": "치과 데이터 정제·검증 GUI와 사용자 의사결정 프레임워크",
+      "contribution": "요소 알고리즘에서 사용자 피드백 시스템으로 통합",
+      "horizontal_ids": [
+        "H1",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V3"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            38
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T12-2025",
+      "technology_id": "T12",
+      "year": 2025,
+      "title": "지속 성장형 의사 비서 플랫폼",
+      "issue": "판독·학습·진단·피드백을 하나의 흐름으로 연결",
+      "work": "의료 플랫폼 및 PACS 연계 시나리오, 파노라마 판독·실증 데이터 구축",
+      "contribution": "전문의 피드백 기반 지속학습과 의료 업무 적용 검증 기반",
+      "horizontal_ids": [
+        "H1",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V3"
+      ],
+      "references": [
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            29,
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T13-2022",
+      "technology_id": "T13",
+      "year": 2022,
+      "title": "앙상블 기반 오류 라벨 탐지",
+      "issue": "노이즈 라벨 암기와 모델 과신",
+      "work": "모델 예측 일치도·memorization effect 활용; HAM10000 검증",
+      "contribution": "라벨 오류를 추정·수정하는 데이터 품질 관리 기반",
+      "horizontal_ids": [
+        "H2",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V4",
+        "V3"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            31
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T13-2023",
+      "technology_id": "T13",
+      "year": 2023,
+      "title": "특징 정규화와 반자동 라벨링",
+      "issue": "의료 노이즈 라벨 학습 강인성",
+      "work": "Feature Normalization, HAM10000 평가, SAM 치과 반자동 라벨링; KAIST 정규화 손실",
+      "contribution": "노이즈 암기를 줄이고 라벨링 인력 부담 완화",
+      "horizontal_ids": [
+        "H2",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V4",
+        "V3"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            30,
+            31
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T13-2024",
+      "technology_id": "T13",
+      "year": 2024,
+      "title": "VFM 커리큘럼 미세조정",
+      "issue": "기초모델의 의료 데이터 적응 중 라벨 오류",
+      "work": "서로 다른 adapter의 memorization 차이를 이용한 집단 에이전트 학습",
+      "contribution": "의료 기초모델 학습에서 노이즈 탐지·강건성 확보",
+      "horizontal_ids": [
+        "H2",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V4",
+        "V3"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            31
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T13-2025",
+      "technology_id": "T13",
+      "year": 2025,
+      "title": "멀티모달 라벨 불확실성 보정",
+      "issue": "RGB 영상과 마스크의 결합 및 높은 라벨 오류",
+      "work": "4채널 입력·커리큘럼 어댑터, 라벨 스무딩 및 피드백 기반 통합 시스템",
+      "contribution": "의료 영상과 분할 정보를 결합해 노이즈 라벨에 강건한 학습을 지원",
+      "horizontal_ids": [
+        "H2",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V4",
+        "V3"
+      ],
+      "references": [
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            29
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T14-2022",
+      "technology_id": "T14",
+      "year": 2022,
+      "title": "라벨링 우선순위와 중복 제거",
+      "issue": "라벨 없는 자료 중 가치가 높은 표본 선택",
+      "work": "현재·이전 모델 예측 분포 차이로 능동 선별; DUEL 메모리 중복 제거",
+      "contribution": "라벨링 자원과 메모리 구성의 효율화 기반",
+      "horizontal_ids": [
+        "H2",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V4"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            31,
+            46
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T14-2023",
+      "technology_id": "T14",
+      "year": 2023,
+      "title": "의료 클래스 불균형 대응",
+      "issue": "특정 클래스 편중 선택의 부작용",
+      "work": "HAM10000에서 예측 분포 차이 기반 우선순위 고도화",
+      "contribution": "의료 불균형 상황의 능동학습 성능 저하 완화",
+      "horizontal_ids": [
+        "H2",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V4"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            31
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T14-2024",
+      "technology_id": "T14",
+      "year": 2024,
+      "title": "능동 메모리 기반 불균형 학습",
+      "issue": "자기지도학습 표본의 중복과 불균형",
+      "work": "DUEL 중복 제거 및 능동 메모리 관련 특허",
+      "contribution": "데이터 선택·저장 품질 관리의 기반 기여",
+      "horizontal_ids": [
+        "H2",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V4"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            48,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T14-2025",
+      "technology_id": "T14",
+      "year": 2025,
+      "title": "집단 의견 기반 데이터 선별",
+      "issue": "복수 모델의 불일치를 라벨링 우선순위에 활용",
+      "work": "모델 의견 불일치·엔트로피 기반 능동학습 선별",
+      "contribution": "복수 모델의 판단 차이를 이용해 우선 라벨링할 데이터 선정",
+      "horizontal_ids": [
+        "H2",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V4"
+      ],
+      "references": [
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            29
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T15-2022",
+      "technology_id": "T15",
+      "year": 2022,
+      "title": "분할 불확실성 예측 기반",
+      "issue": "반복 샘플링 비용과 정확도",
+      "work": "MC Dropout·Bayesian NN 참조, Network Mix-up·Ordered Representation",
+      "contribution": "저비용 불확실성 예측 접근 제안",
+      "horizontal_ids": [
+        "H2",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V2",
+        "V4"
+      ],
+      "references": [
+        {
+          "document": "221227 1차년도 연차보고서",
+          "pdf_pages": [
+            46
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T15-2023",
+      "technology_id": "T15",
+      "year": 2023,
+      "title": "쌍대 모델 보간",
+      "issue": "추정 정확도를 유지하며 반복 연산 감소",
+      "work": "두 모델 동시 학습·가중치 보간·중요 특징 선택",
+      "contribution": "불확실성 예측의 정확도와 연산 효율성 개선",
+      "horizontal_ids": [
+        "H2",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V2",
+        "V4"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            29
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T15-2024",
+      "technology_id": "T15",
+      "year": 2024,
+      "title": "분포 조정과 검증",
+      "issue": "MC Dropout 정확도 저하 원인",
+      "work": "쌍대 모델 분포 regularizer 및 가중치 보간 검증",
+      "contribution": "전체 수렴점 분포를 반영하는 불확실성 예측 개선",
+      "horizontal_ids": [
+        "H2",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V2",
+        "V4"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            29,
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T15-2025",
+      "technology_id": "T15",
+      "year": 2025,
+      "title": "웹·VLM 기반 자가 수집",
+      "issue": "불확실한 관측에서 신뢰할 정답 확보",
+      "work": "웹 이미지 획득, VLM 정답 확보, 이미지 재검색 파이프라인",
+      "contribution": "인지한 불확실성을 새 학습 데이터 수집으로 연결",
+      "horizontal_ids": [
+        "H2",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V2",
+        "V4"
+      ],
+      "references": [
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            28
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T16-2022",
+      "technology_id": "T16",
+      "year": 2022,
+      "title": "질문 인지과정·분류체계",
+      "issue": "불확실성 해소에 좋은 질문의 정의",
+      "work": "인지과정 분석, Q·K·C 관점 분류 및 데이터셋 설계",
+      "contribution": "질문 정책을 설계·평가할 인지적 기준 마련",
+      "horizontal_ids": [
+        "H3",
+        "H2"
+      ],
+      "vertical_ids": [
+        "V2",
+        "V1"
+      ],
+      "references": [
+        {
+          "document": "221227 1차년도 연차보고서",
+          "pdf_pages": [
+            46
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T16-2023",
+      "technology_id": "T16",
+      "year": 2023,
+      "title": "질문 맥락과 사회 로봇 시나리오",
+      "issue": "질문 발생 맥락과 실증 사용성",
+      "work": "LLM을 이용한 인지과정 모사 및 질문 분류; 고령자 설문 서비스 설계",
+      "contribution": "인간의 질문 전략을 데이터·서비스 형태로 구체화",
+      "horizontal_ids": [
+        "H3",
+        "H2"
+      ],
+      "vertical_ids": [
+        "V2",
+        "V1"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            32,
+            39
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T16-2024",
+      "technology_id": "T16",
+      "year": 2024,
+      "title": "CAUS와 평가 루브릭",
+      "issue": "적절성과 효과성에 근거한 질문 평가",
+      "work": "CAUS 5K 구축, 질문 평가 항목·LLM 자동평가; 대화형 설문 시범 적용",
+      "contribution": "질문 품질 검증과 로봇 실증의 공통 기반 마련",
+      "horizontal_ids": [
+        "H3",
+        "H2"
+      ],
+      "vertical_ids": [
+        "V2",
+        "V1"
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            32,
+            39,
+            42
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-T16-2025",
+      "technology_id": "T16",
+      "year": 2025,
+      "title": "적응형 질문 평가와 고령자 실증",
+      "issue": "실제 사용자의 질문 수용성과 상호작용 품질",
+      "work": "6대 질문 평가 항목·동적 루브릭, LG Q9 고령자 정서지원 통합 및 5명 대상 실증",
+      "contribution": "질문 기반 기술을 생활지원 서비스로 검증",
+      "horizontal_ids": [
+        "H3",
+        "H2"
+      ],
+      "vertical_ids": [
+        "V2",
+        "V1"
+      ],
+      "references": [
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            28
+          ]
+        }
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "PAPER-241227-C001",
+      "kind": "paper",
+      "kind_label": "논문",
+      "mapping_basis": "report_content",
+      "mapping_note": "보고서 본문과 논문 제목을 대조한 연결",
+      "title": "BaSSL: Boundary-aware Self-Supervised Learning for Video Scene Segmentation",
+      "technology_ids": [
+        "T02"
+      ],
+      "year": 2022,
+      "research_years": [
+        2022
+      ],
+      "venue": "ACCV14) ‘22",
+      "description": "자기지도 장면 경계 학습으로 비디오의 장면 단위 지식 추출 기반을 제공한다.",
+      "links": [
+        {
+          "label": "논문 목록에서 보기",
+          "url": "/publications/#paper-e615a14f412a"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/scholar?q=%22BaSSL%3A+Boundary-aware+Self-Supervised+Learning+for+Video+Scene+Segmentation%22"
+        },
+        {
+          "label": "DBpia",
+          "url": "https://www.dbpia.co.kr/search/topSearch?query=BaSSL%3A+Boundary-aware+Self-Supervised+Learning+for+Video+Scene+Segmentation"
+        }
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            29,
+            45
+          ]
+        },
+        {
+          "document": "221227 1차년도 연차보고서",
+          "pdf_pages": [
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PAPER-241227-C002",
+      "kind": "paper",
+      "kind_label": "논문",
+      "mapping_basis": "report_content",
+      "mapping_note": "보고서 본문과 논문 제목을 대조한 연결",
+      "title": "Ask4Help: Learning to Leverage an Expert for Embodied Tasks",
+      "technology_ids": [
+        "T06"
+      ],
+      "year": 2022,
+      "research_years": [
+        2022
+      ],
+      "venue": "NeurIPS15) ‘22 (IF4, Top10)",
+      "description": "전문가 도움 요청 정책을 학습하여 적은 개입으로 체화 태스크 성공률을 높이는 기반을 제공한다.",
+      "links": [
+        {
+          "label": "논문 목록에서 보기",
+          "url": "/publications/#paper-865a0883edba"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/scholar?q=%22Ask4Help%3A+Learning+to+Leverage+an+Expert+for+Embodied+Tasks%22"
+        },
+        {
+          "label": "DBpia",
+          "url": "https://www.dbpia.co.kr/search/topSearch?query=Ask4Help%3A+Learning+to+Leverage+an+Expert+for+Embodied+Tasks"
+        }
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            35,
+            45
+          ]
+        },
+        {
+          "document": "221227 1차년도 연차보고서",
+          "pdf_pages": [
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PAPER-241227-C007",
+      "kind": "paper",
+      "kind_label": "논문",
+      "mapping_basis": "report_content",
+      "mapping_note": "보고서 본문과 논문 제목을 대조한 연결",
+      "title": "Post-Training with Interrogative Sentences for Enhancing BART-based Korean Question Generator",
+      "technology_ids": [
+        "T04"
+      ],
+      "year": 2022,
+      "research_years": [
+        2022
+      ],
+      "venue": "AACL-IJCNLP17) ‘22",
+      "description": "의문문 사후학습으로 질문 생성 과제에 적응한다.",
+      "links": [
+        {
+          "label": "논문 목록에서 보기",
+          "url": "/publications/#paper-872ac3399842"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/scholar?q=%22Post-Training+with+Interrogative+Sentences+for+Enhancing+BART-based+Korean+Question+Generator%22"
+        },
+        {
+          "label": "DBpia",
+          "url": "https://www.dbpia.co.kr/search/topSearch?query=Post-Training+with+Interrogative+Sentences+for+Enhancing+BART-based+Korean+Question+Generator"
+        }
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            32,
+            33,
+            46
+          ]
+        },
+        {
+          "document": "221227 1차년도 연차보고서",
+          "pdf_pages": [
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PAPER-241227-C013",
+      "kind": "paper",
+      "kind_label": "논문",
+      "mapping_basis": "report_content",
+      "mapping_note": "보고서 본문과 논문 제목을 대조한 연결",
+      "title": "Block Selection Method for Using Feature Norm in Out-of-distribution Detection",
+      "technology_ids": [
+        "T10"
+      ],
+      "year": 2023,
+      "research_years": [
+        2022
+      ],
+      "venue": "CVPR18) 2023 (IF4, Top10)",
+      "description": "미학습 입력에 민감한 CNN 블록의 특징 노름을 사용해 OOD 과신을 줄인다.",
+      "links": [
+        {
+          "label": "논문 목록에서 보기",
+          "url": "/publications/#paper-96a6090965b5"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/scholar?q=%22Block+Selection+Method+for+Using+Feature+Norm+in+Out-of-Distribution+Detection%22"
+        },
+        {
+          "label": "DBpia",
+          "url": "https://www.dbpia.co.kr/search/topSearch?query=Block+Selection+Method+for+Using+Feature+Norm+in+Out-of-Distribution+Detection"
+        }
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            30,
+            46
+          ]
+        },
+        {
+          "document": "231226 2차년도 연차보고서",
+          "pdf_pages": [
+            50,
+            51,
+            52
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PAPER-241227-C017",
+      "kind": "paper",
+      "kind_label": "논문",
+      "mapping_basis": "report_content",
+      "mapping_note": "보고서 본문과 논문 제목을 대조한 연결",
+      "title": "Context-Aware Planning and Environment-Aware Memory for Instruction Following Embodied Agents",
+      "technology_ids": [
+        "T06"
+      ],
+      "year": 2023,
+      "research_years": [
+        2023
+      ],
+      "venue": "ICCV 2023 (IF4, Top10)",
+      "description": "맥락 기반 계획과 환경 메모리로 지시 추종 행동을 개선한다.",
+      "links": [
+        {
+          "label": "논문 목록에서 보기",
+          "url": "/publications/#paper-b836b76b4664"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/scholar?q=%22Context-Aware+Planning+and+Environment-Aware+Memory+for+Instruction+Following+Embodied+Agents%22"
+        },
+        {
+          "label": "DBpia",
+          "url": "https://www.dbpia.co.kr/search/topSearch?query=Context-Aware+Planning+and+Environment-Aware+Memory+for+Instruction+Following+Embodied+Agents"
+        }
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            36,
+            46
+          ]
+        },
+        {
+          "document": "231226 2차년도 연차보고서",
+          "pdf_pages": [
+            50,
+            51,
+            52
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PAPER-241227-C020",
+      "kind": "paper",
+      "kind_label": "논문",
+      "mapping_basis": "report_content",
+      "mapping_note": "보고서 본문과 논문 제목을 대조한 연결",
+      "title": "Multi-Level Compositional Reasoning for Interactive Instruction Following",
+      "technology_ids": [
+        "T06"
+      ],
+      "year": 2023,
+      "research_years": [
+        2023
+      ],
+      "venue": "AAAI20) 2023 (IF4, Top10)",
+      "description": "상위 목표·이동·상호작용의 계층적 추론으로 복합 지시를 수행한다.",
+      "links": [
+        {
+          "label": "논문 목록에서 보기",
+          "url": "/publications/#paper-8a79f46649bb"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/scholar?q=%22Multi-Level+Compositional+Reasoning+for+Interactive+Instruction+Following%22"
+        },
+        {
+          "label": "DBpia",
+          "url": "https://www.dbpia.co.kr/search/topSearch?query=Multi-Level+Compositional+Reasoning+for+Interactive+Instruction+Following"
+        }
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            36,
+            46
+          ]
+        },
+        {
+          "document": "231226 2차년도 연차보고서",
+          "pdf_pages": [
+            50,
+            51,
+            52
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PAPER-241227-C021",
+      "kind": "paper",
+      "kind_label": "논문",
+      "mapping_basis": "report_content",
+      "mapping_note": "보고서 본문과 논문 제목을 대조한 연결",
+      "title": "Online Boundary-Free Continual Learning by Scheduled Data Prior",
+      "technology_ids": [
+        "T09"
+      ],
+      "year": 2023,
+      "research_years": [
+        2023
+      ],
+      "venue": "ICLR21) 2023 (IF4, Top10)",
+      "description": "태스크 경계 없는 스트림에서 기존 지식을 유지하는 지속학습 기반을 제공한다.",
+      "links": [
+        {
+          "label": "논문 목록에서 보기",
+          "url": "/publications/#paper-e59af5f76f13"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/scholar?q=%22Online+Boundary-Free+Continual+Learning+by+Scheduled+Data+Prior%22"
+        },
+        {
+          "label": "DBpia",
+          "url": "https://www.dbpia.co.kr/search/topSearch?query=Online+Boundary-Free+Continual+Learning+by+Scheduled+Data+Prior"
+        }
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            35,
+            46
+          ]
+        },
+        {
+          "document": "231226 2차년도 연차보고서",
+          "pdf_pages": [
+            50,
+            51,
+            52
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PAPER-241227-C070",
+      "kind": "paper",
+      "kind_label": "논문",
+      "mapping_basis": "report_content",
+      "mapping_note": "보고서 본문과 논문 제목을 대조한 연결",
+      "title": "Domain-Specific Block Selection and Paired-View Pseudo-Labeling for Online Test-Time Adaptation",
+      "technology_ids": [
+        "T10"
+      ],
+      "year": 2024,
+      "research_years": [
+        2024
+      ],
+      "venue": "CVPR 2024 (IF4, Top10)",
+      "description": "블록 선택과 쌍별 시점 의사 라벨을 이용해 운용 환경에서 온라인 적응한다.",
+      "links": [
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/scholar?q=%22Domain-Specific%20Block%20Selection%20and%20Paired-View%20Pseudo-Labeling%20for%20Online%20Test-Time%20Adaptation%22"
+        }
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            34,
+            35,
+            47
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PAPER-241227-C071",
+      "kind": "paper",
+      "kind_label": "논문",
+      "mapping_basis": "report_content",
+      "mapping_note": "보고서 본문과 논문 제목을 대조한 연결",
+      "title": "Curriculum Fine-tuning of Vision Foundation Model for Medical Image Classification Under Label Noise",
+      "technology_ids": [
+        "T13"
+      ],
+      "year": 2024,
+      "research_years": [
+        2024
+      ],
+      "venue": "NeurIPS 2024 (IF4, Top10)",
+      "description": "의료 라벨 노이즈에 대응해 기초모델을 단계적으로 미세조정한다.",
+      "links": [
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/scholar?q=%22Curriculum%20Fine-tuning%20of%20Vision%20Foundation%20Model%20for%20Medical%20Image%20Classification%20Under%20Label%20Noise%22"
+        }
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            31,
+            41,
+            47
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PAPER-241227-C075",
+      "kind": "paper",
+      "kind_label": "논문",
+      "mapping_basis": "report_content",
+      "mapping_note": "보고서 본문과 논문 제목을 대조한 연결",
+      "title": "Structure-aware Multimodal Sequential Learning for Visual Dialog",
+      "technology_ids": [
+        "T01"
+      ],
+      "year": 2024,
+      "research_years": [
+        2024
+      ],
+      "venue": "AAAI 2024 (IF4, Top10)",
+      "description": "구조화된 멀티모달 시계열 지식을 대화 생성에 활용한다.",
+      "links": [
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/scholar?q=%22Structure-aware%20Multimodal%20Sequential%20Learning%20for%20Visual%20Dialog%22"
+        }
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            29,
+            40,
+            47
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PAPER-241227-C076",
+      "kind": "paper",
+      "kind_label": "논문",
+      "mapping_basis": "report_content",
+      "mapping_note": "보고서 본문과 논문 제목을 대조한 연결",
+      "title": "Compositional Video Understanding with Spatiotemporal Structured-based Transformers",
+      "technology_ids": [
+        "T02"
+      ],
+      "year": 2024,
+      "research_years": [
+        2024
+      ],
+      "venue": "CVPR 2024 (IF4, Top10)",
+      "description": "시공간 구조 표상으로 미학습 객체·행동 조합 이해를 지원한다.",
+      "links": [
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/scholar?q=%22Compositional%20Video%20Understanding%20with%20Spatiotemporal%20Structured-based%20Transformers%2C%20Computer%20Vision%20and%20Pattern%20Recognition%20Conference%22"
+        }
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            29,
+            41,
+            47
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PAPER-241227-C078",
+      "kind": "paper",
+      "kind_label": "논문",
+      "mapping_basis": "report_content",
+      "mapping_note": "보고서 본문과 논문 제목을 대조한 연결",
+      "title": "LoTa-Bench: Benchmarking Language-oriented Task Planners for Embodied Agents",
+      "technology_ids": [
+        "T06"
+      ],
+      "year": 2024,
+      "research_years": [
+        2023
+      ],
+      "venue": "ICLR 2024 (IF4, Top10)",
+      "description": "시뮬레이터 실행으로 언어모델 작업계획을 자동 평가하는 기반을 제공한다.",
+      "links": [
+        {
+          "label": "논문 목록에서 보기",
+          "url": "/publications/#paper-003664fc4d0a"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/scholar?q=%22LoTa-Bench%3A+Benchmarking+Language-oriented+Task+Planners+for+Embodied+Agents%22"
+        },
+        {
+          "label": "DBpia",
+          "url": "https://www.dbpia.co.kr/search/topSearch?query=LoTa-Bench%3A+Benchmarking+Language-oriented+Task+Planners+for+Embodied+Agents"
+        }
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            38,
+            40,
+            47
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PAPER-241227-C080",
+      "kind": "paper",
+      "kind_label": "논문",
+      "mapping_basis": "report_content",
+      "mapping_note": "보고서 본문과 논문 제목을 대조한 연결",
+      "title": "CAUS: A Dataset for Question Generation based on Human Cognition Leveraging Large Language Models.",
+      "technology_ids": [
+        "T16"
+      ],
+      "year": 2024,
+      "research_years": [
+        2024
+      ],
+      "venue": "COGSCI 2024",
+      "description": "불확실한 장면에서 인간 인지에 기반한 질문 생성의 훈련·평가 데이터를 제공한다.",
+      "links": [
+        {
+          "label": "논문 목록에서 보기",
+          "url": "/publications/#paper-e90d74d3eda2"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/scholar?q=%22CAUS%3A+A+Dataset+for+Question+Generation+based+on+Human+Cognition+Leveraging+Large+Language+Models%22"
+        },
+        {
+          "label": "DBpia",
+          "url": "https://www.dbpia.co.kr/search/topSearch?query=CAUS%3A+A+Dataset+for+Question+Generation+based+on+Human+Cognition+Leveraging+Large+Language+Models"
+        }
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            32,
+            42,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PAPER-241227-C100",
+      "kind": "paper",
+      "kind_label": "논문",
+      "mapping_basis": "report_content",
+      "mapping_note": "보고서 본문과 논문 제목을 대조한 연결",
+      "title": "Learning Equi-angular Representations for Online Continual Learning",
+      "technology_ids": [
+        "T09"
+      ],
+      "year": 2024,
+      "research_years": [
+        2024
+      ],
+      "venue": "CVPR 2024 (IF4, Top10)",
+      "description": "ETF 분류기와 잔차 보정으로 온라인 지속학습을 지원한다.",
+      "links": [
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/scholar?q=%22Learning%20Equi-angular%20Representations%20for%20Online%20Continual%20Learning%22"
+        }
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            35,
+            36,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PAPER-241227-C102",
+      "kind": "paper",
+      "kind_label": "논문",
+      "mapping_basis": "report_content",
+      "mapping_note": "보고서 본문과 논문 제목을 대조한 연결",
+      "title": "ReALFRED: An Embodied Instruction Following Benchmark in Photo-Realistic Environments",
+      "technology_ids": [
+        "T06"
+      ],
+      "year": 2024,
+      "research_years": [
+        2024
+      ],
+      "venue": "ECCV 2024 (IF4, Top10)",
+      "description": "실공간 스캔 기반 지시 추종 환경에서 현실적인 작업계획을 검증한다.",
+      "links": [
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/scholar?q=%22ReALFRED%3A%20An%20Embodied%20Instruction%20Following%20Benchmark%20in%20Photo-Realistic%20Environments%22"
+        }
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            36,
+            37,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PAPER-241227-C103",
+      "kind": "paper",
+      "kind_label": "논문",
+      "mapping_basis": "report_content",
+      "mapping_note": "보고서 본문과 논문 제목을 대조한 연결",
+      "title": "Online Continual Learning for Interactive Instruction Following Agents",
+      "technology_ids": [
+        "T09"
+      ],
+      "year": null,
+      "research_years": [
+        2024
+      ],
+      "venue": "ICLR 2024 (IF4, Top10)",
+      "description": "행동·환경 증분학습과 CAMA로 체화 에이전트의 망각을 완화한다.",
+      "links": [
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/scholar?q=%22Online%20Continual%20Learning%20for%20Interactive%20Instruction%20Following%20Agents%22"
+        }
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            36,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PAPER-241227-C104",
+      "kind": "paper",
+      "kind_label": "논문",
+      "mapping_basis": "report_content",
+      "mapping_note": "보고서 본문과 논문 제목을 대조한 연결",
+      "title": "Pre-emptive Action Revision by Environmental Feedback for Embodied Instruction Following Agents",
+      "technology_ids": [
+        "T06"
+      ],
+      "year": 2024,
+      "research_years": [
+        2024
+      ],
+      "venue": "CoRL29) 2024",
+      "description": "환경 불일치 피드백을 사용해 행동 계획을 사전 수정한다.",
+      "links": [
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/scholar?q=%22Pre-emptive%20Action%20Revision%20by%20Environmental%20Feedback%20for%20Embodied%20Instruction%20Following%20Agents%22"
+        }
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            36,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PAPER-251224-J004",
+      "kind": "paper",
+      "kind_label": "논문",
+      "mapping_basis": "report_content",
+      "mapping_note": "보고서 본문과 논문 제목을 대조한 연결",
+      "title": "INQUIRER: Harnessing internal knowledge graphs for video question generation",
+      "technology_ids": [
+        "T05"
+      ],
+      "year": 2025,
+      "research_years": [
+        2025
+      ],
+      "venue": "Knowledge-Based Systems",
+      "description": "지식그래프와 18개 질문 체계로 질문을 생성·선별하고 VideoQA 모델을 훈련한다.",
+      "links": [
+        {
+          "label": "논문 목록에서 보기",
+          "url": "/publications/#paper-fda971590af1"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/scholar?q=%22INQUIRER%3A+Harnessing+internal+knowledge+graphs+for+video+question+generation%22"
+        },
+        {
+          "label": "DBpia",
+          "url": "https://www.dbpia.co.kr/search/topSearch?query=INQUIRER%3A+Harnessing+internal+knowledge+graphs+for+video+question+generation"
+        }
+      ],
+      "references": [
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            29,
+            33
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PAPER-251224-J005",
+      "kind": "paper",
+      "kind_label": "논문",
+      "mapping_basis": "report_content",
+      "mapping_note": "보고서 본문과 논문 제목을 대조한 연결",
+      "title": "반복적 질의응답 기반 명확화 프레임워크를 통한 시각적 질의 응답 내 모호성 해소",
+      "technology_ids": [
+        "T04"
+      ],
+      "year": 2025,
+      "research_years": [
+        2025
+      ],
+      "venue": "정보과학회논문지",
+      "description": "명확화 질문과 반복 질의응답을 통해 시각 질의의 모호성을 줄인다.",
+      "links": [
+        {
+          "label": "논문 목록에서 보기",
+          "url": "/publications/#paper-341be739adc8"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/scholar?q=%22%EB%B0%98%EB%B3%B5%EC%A0%81+%EC%A7%88%EC%9D%98%EC%9D%91%EB%8B%B5+%EA%B8%B0%EB%B0%98+%EB%AA%85%ED%99%95%ED%99%94+%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC%EB%A5%BC+%ED%86%B5%ED%95%9C+%EC%8B%9C%EA%B0%81%EC%A0%81+%EC%A7%88%EC%9D%98+%EC%9D%91%EB%8B%B5+%EB%82%B4+%EB%AA%A8%ED%98%B8%EC%84%B1+%ED%95%B4%EC%86%8C%22"
+        },
+        {
+          "label": "DBpia",
+          "url": "https://www.dbpia.co.kr/search/topSearch?query=%EB%B0%98%EB%B3%B5%EC%A0%81+%EC%A7%88%EC%9D%98%EC%9D%91%EB%8B%B5+%EA%B8%B0%EB%B0%98+%EB%AA%85%ED%99%95%ED%99%94+%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC%EB%A5%BC+%ED%86%B5%ED%95%9C+%EC%8B%9C%EA%B0%81%EC%A0%81+%EC%A7%88%EC%9D%98+%EC%9D%91%EB%8B%B5+%EB%82%B4+%EB%AA%A8%ED%98%B8%EC%84%B1+%ED%95%B4%EC%86%8C"
+        }
+      ],
+      "references": [
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            30,
+            33
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PAPER-251224-C001",
+      "kind": "paper",
+      "kind_label": "논문",
+      "mapping_basis": "report_content",
+      "mapping_note": "보고서 본문과 논문 제목을 대조한 연결",
+      "title": "ReActQ와 Answer 에이전트: 질의응답 기반 불확실성 해소 태스크 플래너",
+      "technology_ids": [
+        "T06"
+      ],
+      "year": 2025,
+      "research_years": [
+        2025
+      ],
+      "venue": "한국방송미디어공학회 하계학술대회",
+      "description": "추론-행동-질문과 Answer 에이전트의 응답을 결합해 절차계획 불확실성을 해소한다.",
+      "links": [
+        {
+          "label": "논문 목록에서 보기",
+          "url": "/publications/#paper-447ac73e0257"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/scholar?q=%22ReActQ%EC%99%80+Answer+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%3A+%EC%A7%88%EC%9D%98%EC%9D%91%EB%8B%B5+%EA%B8%B0%EB%B0%98+%EB%B6%88%ED%99%95%EC%8B%A4%EC%84%B1+%ED%95%B4%EC%86%8C+%ED%83%9C%EC%8A%A4%ED%81%AC+%ED%94%8C%EB%9E%98%EB%84%88%22"
+        },
+        {
+          "label": "DBpia",
+          "url": "https://www.dbpia.co.kr/search/topSearch?query=ReActQ%EC%99%80+Answer+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%3A+%EC%A7%88%EC%9D%98%EC%9D%91%EB%8B%B5+%EA%B8%B0%EB%B0%98+%EB%B6%88%ED%99%95%EC%8B%A4%EC%84%B1+%ED%95%B4%EC%86%8C+%ED%83%9C%EC%8A%A4%ED%81%AC+%ED%94%8C%EB%9E%98%EB%84%88"
+        }
+      ],
+      "references": [
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            28,
+            33
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PAPER-251224-C003",
+      "kind": "paper",
+      "kind_label": "논문",
+      "mapping_basis": "report_content",
+      "mapping_note": "보고서 본문과 논문 제목을 대조한 연결",
+      "title": "Unknown object detection by leveraging Segment Anything Model for labeling the OOD objects",
+      "technology_ids": [
+        "T07"
+      ],
+      "year": 2025,
+      "research_years": [
+        2025
+      ],
+      "venue": "International Conference on Information and Communication Technology Convergence",
+      "description": "SAM 기반 미지 객체 라벨링을 활용하는 열린 세계 객체 인지 계열이다.",
+      "links": [
+        {
+          "label": "논문 목록에서 보기",
+          "url": "/publications/#paper-ace5e7b14db4"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/scholar?q=%22Unknown+object+detection+by+leveraging+Segment+Anything+Model+for+labeling+the+OOD+objects%22"
+        },
+        {
+          "label": "DBpia",
+          "url": "https://www.dbpia.co.kr/search/topSearch?query=Unknown+object+detection+by+leveraging+Segment+Anything+Model+for+labeling+the+OOD+objects"
+        }
+      ],
+      "references": [
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            28,
+            33
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PAPER-251224-C042",
+      "kind": "paper",
+      "kind_label": "논문",
+      "mapping_basis": "report_content",
+      "mapping_note": "보고서 본문과 논문 제목을 대조한 연결",
+      "title": "Confidence-guided Refinement Reasoning for Zero-shot Question Answering",
+      "technology_ids": [
+        "T05"
+      ],
+      "year": 2025,
+      "research_years": [
+        2025
+      ],
+      "venue": "EMNLP",
+      "description": "모의 보조 질문과 모델 신뢰도로 답을 정제하고 질문 횟수의 효과를 평가한다.",
+      "links": [
+        {
+          "label": "논문 목록에서 보기",
+          "url": "/publications/#paper-84b90c665602"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/scholar?q=%22Confidence-guided+Refinement+Reasoning+for+Zero-shot+Question+Answering%22"
+        },
+        {
+          "label": "DBpia",
+          "url": "https://www.dbpia.co.kr/search/topSearch?query=Confidence-guided+Refinement+Reasoning+for+Zero-shot+Question+Answering"
+        }
+      ],
+      "references": [
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            29,
+            34
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PAPER-251224-C053",
+      "kind": "paper",
+      "kind_label": "논문",
+      "mapping_basis": "report_content",
+      "mapping_note": "보고서 본문과 논문 제목을 대조한 연결",
+      "title": "Can Video LLMs Refuse to Answer? Alignment for Answerability in Video Large Language Models",
+      "technology_ids": [
+        "T03"
+      ],
+      "year": 2025,
+      "research_years": [
+        2024
+      ],
+      "venue": "ICLR",
+      "description": "대답 불가능한 질의를 포함한 데이터로 비디오 언어모델을 정렬하여 응답 신뢰성을 높인다.",
+      "links": [
+        {
+          "label": "논문 목록에서 보기",
+          "url": "/publications/#paper-8f8abb0d4d40"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/scholar?q=%22Can+Video+LLMs+Refuse+to+Answer%3F+Alignment+for+Answerability+in+Video+Large+Language+Models%22"
+        },
+        {
+          "label": "DBpia",
+          "url": "https://www.dbpia.co.kr/search/topSearch?query=Can+Video+LLMs+Refuse+to+Answer%3F+Alignment+for+Answerability+in+Video+Large+Language+Models"
+        }
+      ],
+      "references": [
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            35,
+            71
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PAPER-251224-C056",
+      "kind": "paper",
+      "kind_label": "논문",
+      "mapping_basis": "report_content",
+      "mapping_note": "보고서 본문과 논문 제목을 대조한 연결",
+      "title": "Zero-Shot Compositional Video Learning with Coding Rate Reduction",
+      "technology_ids": [
+        "T01"
+      ],
+      "year": 2025,
+      "research_years": [
+        2025
+      ],
+      "venue": "ICCV",
+      "description": "객체와 행위 개념을 분리·조합하여 미학습 객체-행위 조합을 이해한다.",
+      "links": [
+        {
+          "label": "논문 목록에서 보기",
+          "url": "/publications/#paper-d5908313bb06"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/scholar?q=%22Zero-Shot+Compositional+Video+Learning+with+Coding+Rate+Reduction%22"
+        },
+        {
+          "label": "DBpia",
+          "url": "https://www.dbpia.co.kr/search/topSearch?query=Zero-Shot+Compositional+Video+Learning+with+Coding+Rate+Reduction"
+        }
+      ],
+      "references": [
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            30,
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PAPER-251224-C059",
+      "kind": "paper",
+      "kind_label": "논문",
+      "mapping_basis": "report_content",
+      "mapping_note": "보고서 본문과 논문 제목을 대조한 연결",
+      "title": "노이즈 라벨을 고려한 의료 데이터 학습을 위한 파운데이션 모델 기반 라벨 스무딩",
+      "technology_ids": [
+        "T13"
+      ],
+      "year": 2025,
+      "research_years": [
+        2025
+      ],
+      "venue": "한국방송미디어공학회 하계학술대회",
+      "description": "의료 라벨 노이즈를 고려한 파운데이션 모델 학습 계열의 라벨 스무딩 연구이다.",
+      "links": [
+        {
+          "label": "논문 목록에서 보기",
+          "url": "/publications/#paper-10b8acddc76d"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/scholar?q=%22%EB%85%B8%EC%9D%B4%EC%A6%88+%EB%9D%BC%EB%B2%A8%EC%9D%84+%EA%B3%A0%EB%A0%A4%ED%95%9C+%EC%9D%98%EB%A3%8C+%EB%8D%B0%EC%9D%B4%ED%84%B0+%ED%95%99%EC%8A%B5%EC%9D%84+%EC%9C%84%ED%95%9C+%ED%8C%8C%EC%9A%B4%EB%8D%B0%EC%9D%B4%EC%85%98+%EB%AA%A8%EB%8D%B8+%EA%B8%B0%EB%B0%98+%EB%9D%BC%EB%B2%A8+%EC%8A%A4%EB%AC%B4%EB%94%A9%22"
+        },
+        {
+          "label": "DBpia",
+          "url": "https://www.dbpia.co.kr/search/topSearch?query=%EB%85%B8%EC%9D%B4%EC%A6%88+%EB%9D%BC%EB%B2%A8%EC%9D%84+%EA%B3%A0%EB%A0%A4%ED%95%9C+%EC%9D%98%EB%A3%8C+%EB%8D%B0%EC%9D%B4%ED%84%B0+%ED%95%99%EC%8A%B5%EC%9D%84+%EC%9C%84%ED%95%9C+%ED%8C%8C%EC%9A%B4%EB%8D%B0%EC%9D%B4%EC%85%98+%EB%AA%A8%EB%8D%B8+%EA%B8%B0%EB%B0%98+%EB%9D%BC%EB%B2%A8+%EC%8A%A4%EB%AC%B4%EB%94%A9"
+        }
+      ],
+      "references": [
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            29,
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "id": "patent-944e7727925c",
+      "kind": "patent",
+      "kind_label": "관련 특허",
+      "mapping_basis": "title_and_identifiers",
+      "mapping_note": "특허 제목과 출원·등록번호에 기반한 주제 연결",
+      "title": "APPARATUS AND METHOD FOR PERFORMING ROBOT TASK PLANNING BASED ON LARGE LANGUAGE MODEL",
+      "technology_ids": [
+        "T06"
+      ],
+      "year": 2025,
+      "research_years": [],
+      "venue": "미국 출원",
+      "description": "관련 기술 주제: 질의응답 기반 절차계획·계층 추론·평가",
+      "links": [
+        {
+          "label": "출원·등록 이력 보기",
+          "url": "/patents/#patent-944e7727925c"
+        }
+      ],
+      "references": [
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "id": "patent-dff7dcc014f7",
+      "kind": "patent",
+      "kind_label": "관련 특허",
+      "mapping_basis": "title_and_identifiers",
+      "mapping_note": "특허 제목과 출원·등록번호에 기반한 주제 연결",
+      "title": "고령자의 정서지원을 위한 표현 생성장치, 이를 이용한 정서지원 방법 및 이를 포함하는 로봇",
+      "technology_ids": [
+        "T16"
+      ],
+      "year": 2025,
+      "research_years": [],
+      "venue": "대한민국 출원 · 미국 출원",
+      "description": "관련 기술 주제: 인지 기반 질문 품질·사회적 상호작용 실증",
+      "links": [
+        {
+          "label": "출원·등록 이력 보기",
+          "url": "/patents/#patent-dff7dcc014f7"
+        }
+      ],
+      "references": [
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            35,
+            36
+          ]
+        }
+      ]
+    },
+    {
+      "id": "patent-c81e4ab5a21e",
+      "kind": "patent",
+      "kind_label": "관련 특허",
+      "mapping_basis": "title_and_identifiers",
+      "mapping_note": "특허 제목과 출원·등록번호에 기반한 주제 연결",
+      "title": "로짓 기반 다단계 추론 프레임워크를 이용한 시각 질의 응답 장치 및 방법",
+      "technology_ids": [
+        "T05"
+      ],
+      "year": 2025,
+      "research_years": [],
+      "venue": "대한민국 출원",
+      "description": "관련 기술 주제: 지식그래프·자문자답 기반 영상 추론 성장",
+      "links": [
+        {
+          "label": "출원·등록 이력 보기",
+          "url": "/patents/#patent-c81e4ab5a21e"
+        }
+      ],
+      "references": [
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            36
+          ]
+        }
+      ]
+    },
+    {
+      "id": "patent-8824fbe7d8ec",
+      "kind": "patent",
+      "kind_label": "관련 특허",
+      "mapping_basis": "title_and_identifiers",
+      "mapping_note": "특허 제목과 출원·등록번호에 기반한 주제 연결",
+      "title": "멀티모달 추론을 위한 지침 학습을 통한 자가 질문 프레임워크",
+      "technology_ids": [
+        "T05"
+      ],
+      "year": 2025,
+      "research_years": [],
+      "venue": "대한민국 출원",
+      "description": "관련 기술 주제: 지식그래프·자문자답 기반 영상 추론 성장",
+      "links": [
+        {
+          "label": "출원·등록 이력 보기",
+          "url": "/patents/#patent-8824fbe7d8ec"
+        }
+      ],
+      "references": [
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            36
+          ]
+        }
+      ]
+    },
+    {
+      "id": "patent-9e7f70dac333",
+      "kind": "patent",
+      "kind_label": "관련 특허",
+      "mapping_basis": "title_and_identifiers",
+      "mapping_note": "특허 제목과 출원·등록번호에 기반한 주제 연결",
+      "title": "질의응답인지를 통한 키프레임 셀렉션 기술",
+      "technology_ids": [
+        "T03"
+      ],
+      "year": 2025,
+      "research_years": [],
+      "venue": "대한민국 출원",
+      "description": "관련 기술 주제: 비디오 질의 응답 가능성·모호성·시간 불확실성",
+      "links": [
+        {
+          "label": "출원·등록 이력 보기",
+          "url": "/patents/#patent-9e7f70dac333"
+        }
+      ],
+      "references": [
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            36
+          ]
+        }
+      ]
+    },
+    {
+      "id": "patent-0de2b3e7f042",
+      "kind": "patent",
+      "kind_label": "관련 특허",
+      "mapping_basis": "title_and_identifiers",
+      "mapping_note": "특허 제목과 출원·등록번호에 기반한 주제 연결",
+      "title": "비디오 기반의 대답 불가능한 질의 응답 데이터 구축 방법 및 비디오 기반 질의에 대한 응답 시스템",
+      "technology_ids": [
+        "T03"
+      ],
+      "year": 2025,
+      "research_years": [],
+      "venue": "대한민국 출원",
+      "description": "관련 기술 주제: 비디오 질의 응답 가능성·모호성·시간 불확실성",
+      "links": [
+        {
+          "label": "출원·등록 이력 보기",
+          "url": "/patents/#patent-0de2b3e7f042"
+        }
+      ],
+      "references": [
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            36
+          ]
+        }
+      ]
+    },
+    {
+      "id": "patent-f95ad678d80f",
+      "kind": "patent",
+      "kind_label": "관련 특허",
+      "mapping_basis": "title_and_identifiers",
+      "mapping_note": "특허 제목과 출원·등록번호에 기반한 주제 연결",
+      "title": "사용자 피드백을 활용한 데이터 라벨링·모델 학습 ·배포 통합 시스템",
+      "technology_ids": [
+        "T12"
+      ],
+      "year": 2025,
+      "research_years": [],
+      "venue": "대한민국 출원",
+      "description": "관련 기술 주제: 치과 진단 지원 데이터·플랫폼·피드백",
+      "links": [
+        {
+          "label": "출원·등록 이력 보기",
+          "url": "/patents/#patent-f95ad678d80f"
+        }
+      ],
+      "references": [
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            36
+          ]
+        }
+      ]
+    },
+    {
+      "id": "patent-baecf9db5edb",
+      "kind": "patent",
+      "kind_label": "관련 특허",
+      "mapping_basis": "title_and_identifiers",
+      "mapping_note": "특허 제목과 출원·등록번호에 기반한 주제 연결",
+      "title": "목표 단어 노이즈 제거를 통한 텍스트 생성 장치 및 텍스트 생성 모델 학습 방법",
+      "technology_ids": [
+        "T04"
+      ],
+      "year": 2025,
+      "research_years": [],
+      "venue": "PCT 출원",
+      "description": "관련 기술 주제: 질문 생성 사후학습·명확화·응답 해석",
+      "links": [
+        {
+          "label": "출원·등록 이력 보기",
+          "url": "/patents/#patent-baecf9db5edb"
+        }
+      ],
+      "references": [
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            36
+          ]
+        }
+      ]
+    },
+    {
+      "id": "patent-2a326859596c",
+      "kind": "patent",
+      "kind_label": "관련 특허",
+      "mapping_basis": "title_and_identifiers",
+      "mapping_note": "특허 제목과 출원·등록번호에 기반한 주제 연결",
+      "title": "시각적 질의 응답의 질의 정확도를 향상시키는 방법 및 전자 장치",
+      "technology_ids": [
+        "T04"
+      ],
+      "year": 2025,
+      "research_years": [],
+      "venue": "대한민국 출원",
+      "description": "관련 기술 주제: 질문 생성 사후학습·명확화·응답 해석",
+      "links": [
+        {
+          "label": "출원·등록 이력 보기",
+          "url": "/patents/#patent-2a326859596c"
+        }
+      ],
+      "references": [
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            36
+          ]
+        }
+      ]
+    },
+    {
+      "id": "patent-77eb7fad6c3a",
+      "kind": "patent",
+      "kind_label": "관련 특허",
+      "mapping_basis": "title_and_identifiers",
+      "mapping_note": "특허 제목과 출원·등록번호에 기반한 주제 연결",
+      "title": "거대 언어 모델을 이용한 스킬 불확실성 기반 로봇 스킬 수행 방법 및 장치",
+      "technology_ids": [
+        "T06"
+      ],
+      "year": 2025,
+      "research_years": [],
+      "venue": "대한민국 출원 · 대한민국 등록",
+      "description": "관련 기술 주제: 질의응답 기반 절차계획·계층 추론·평가",
+      "links": [
+        {
+          "label": "출원·등록 이력 보기",
+          "url": "/patents/#patent-77eb7fad6c3a"
+        }
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            49
+          ]
+        },
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            36
+          ]
+        }
+      ]
+    },
+    {
+      "id": "patent-75bcaec55843",
+      "kind": "patent",
+      "kind_label": "관련 특허",
+      "mapping_basis": "title_and_identifiers",
+      "mapping_note": "특허 제목과 출원·등록번호에 기반한 주제 연결",
+      "title": "멀티모달 추론을 위한 지침 학습을 통한 자가 질문 프레임워크",
+      "technology_ids": [
+        "T05"
+      ],
+      "year": 2024,
+      "research_years": [],
+      "venue": "대한민국",
+      "description": "관련 기술 주제: 지식그래프·자문자답 기반 영상 추론 성장",
+      "links": [
+        {
+          "label": "출원·등록 이력 보기",
+          "url": "/patents/#patent-75bcaec55843"
+        }
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "id": "patent-4f9495b1d21d",
+      "kind": "patent",
+      "kind_label": "관련 특허",
+      "mapping_basis": "title_and_identifiers",
+      "mapping_note": "특허 제목과 출원·등록번호에 기반한 주제 연결",
+      "title": "인공지능 대화 모델을 구축하는 대화 모델 구축 장치 및 방법",
+      "technology_ids": [
+        "T01"
+      ],
+      "year": 2024,
+      "research_years": [],
+      "venue": "대한민국",
+      "description": "관련 기술 주제: 멀티모달 지식그래프 구축·결합·검색",
+      "links": [
+        {
+          "label": "출원·등록 이력 보기",
+          "url": "/patents/#patent-4f9495b1d21d"
+        }
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "id": "patent-d42892c6652d",
+      "kind": "patent",
+      "kind_label": "관련 특허",
+      "mapping_basis": "title_and_identifiers",
+      "mapping_note": "특허 제목과 출원·등록번호에 기반한 주제 연결",
+      "title": "비디오 질의 응답을 위한 질의 난이도 추정장치 및 그 방법",
+      "technology_ids": [
+        "T04"
+      ],
+      "year": 2023,
+      "research_years": [],
+      "venue": "대한민국",
+      "description": "관련 기술 주제: 질문 생성 사후학습·명확화·응답 해석",
+      "links": [
+        {
+          "label": "출원·등록 이력 보기",
+          "url": "/patents/#patent-d42892c6652d"
+        }
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            49
+          ]
+        }
+      ]
+    },
+    {
+      "id": "patent-6e1c4c6d5a1f",
+      "kind": "patent",
+      "kind_label": "관련 특허",
+      "mapping_basis": "title_and_identifiers",
+      "mapping_note": "특허 제목과 출원·등록번호에 기반한 주제 연결",
+      "title": "OUT-OF-DISTRIBUTION DETECTION SYSTEM AND METHOD BASED ON FEATURE MAP OF CONVOLUTIONAL NEURAL NETWORK",
+      "technology_ids": [
+        "T10"
+      ],
+      "year": 2023,
+      "research_years": [],
+      "venue": "미국",
+      "description": "관련 기술 주제: 의료 모델 추론 보정·시험 시점 적응",
+      "links": [
+        {
+          "label": "출원·등록 이력 보기",
+          "url": "/patents/#patent-6e1c4c6d5a1f"
+        }
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            49
+          ]
+        }
+      ]
+    },
+    {
+      "id": "patent-36dd8f6964be",
+      "kind": "patent",
+      "kind_label": "관련 특허",
+      "mapping_basis": "title_and_identifiers",
+      "mapping_note": "특허 제목과 출원·등록번호에 기반한 주제 연결",
+      "title": "합성곱 신경망의 특징 맵에 기반한 분포 외 탐지 시스템 및 방법",
+      "technology_ids": [
+        "T10"
+      ],
+      "year": 2023,
+      "research_years": [],
+      "venue": "대한민국",
+      "description": "관련 기술 주제: 의료 모델 추론 보정·시험 시점 적응",
+      "links": [
+        {
+          "label": "출원·등록 이력 보기",
+          "url": "/patents/#patent-36dd8f6964be"
+        }
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            49
+          ]
+        }
+      ]
+    },
+    {
+      "id": "patent-bcb4cff352a4",
+      "kind": "patent",
+      "kind_label": "관련 특허",
+      "mapping_basis": "title_and_identifiers",
+      "mapping_note": "특허 제목과 출원·등록번호에 기반한 주제 연결",
+      "title": "멀티 모달 비디오 씬 그래프를 구축하는 장치 및 방법",
+      "technology_ids": [
+        "T01"
+      ],
+      "year": 2023,
+      "research_years": [],
+      "venue": "대한민국",
+      "description": "관련 기술 주제: 멀티모달 지식그래프 구축·결합·검색",
+      "links": [
+        {
+          "label": "출원·등록 이력 보기",
+          "url": "/patents/#patent-bcb4cff352a4"
+        }
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            49
+          ]
+        }
+      ]
+    },
+    {
+      "id": "patent-4ecddefe8ece",
+      "kind": "patent",
+      "kind_label": "관련 특허",
+      "mapping_basis": "title_and_identifiers",
+      "mapping_note": "특허 제목과 출원·등록번호에 기반한 주제 연결",
+      "title": "비디오 스토리 설명문 생성모델의 학습 방법 및 이를 수행하기 위한 컴퓨팅 장치",
+      "technology_ids": [
+        "T01"
+      ],
+      "year": 2023,
+      "research_years": [],
+      "venue": "대한민국",
+      "description": "관련 기술 주제: 멀티모달 지식그래프 구축·결합·검색",
+      "links": [
+        {
+          "label": "출원·등록 이력 보기",
+          "url": "/patents/#patent-4ecddefe8ece"
+        }
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            49
+          ]
+        }
+      ]
+    },
+    {
+      "id": "patent-3aa6beeba577",
+      "kind": "patent",
+      "kind_label": "관련 특허",
+      "mapping_basis": "title_and_identifiers",
+      "mapping_note": "특허 제목과 출원·등록번호에 기반한 주제 연결",
+      "title": "METHOD AND APPARATUS FOR RE-TRAINING MODEL BY RECOGNIZING UNCERTAINTY IN ONLINE USER ACTION DETECTION",
+      "technology_ids": [
+        "T07"
+      ],
+      "year": 2023,
+      "research_years": [],
+      "venue": "미국",
+      "description": "관련 기술 주제: 열린 세계 객체·행위 인지와 시맨틱 지도",
+      "links": [
+        {
+          "label": "출원·등록 이력 보기",
+          "url": "/patents/#patent-3aa6beeba577"
+        }
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            49
+          ]
+        }
+      ]
+    },
+    {
+      "id": "patent-4fdcebdac54e",
+      "kind": "patent",
+      "kind_label": "관련 특허",
+      "mapping_basis": "title_and_identifiers",
+      "mapping_note": "특허 제목과 출원·등록번호에 기반한 주제 연결",
+      "title": "거대 언어 모델을 이용한 스킬 불확실성 기반 로봇 스킬 수행 방법 및 장치",
+      "technology_ids": [
+        "T06"
+      ],
+      "year": 2023,
+      "research_years": [],
+      "venue": "대한민국 · 미국",
+      "description": "관련 기술 주제: 질의응답 기반 절차계획·계층 추론·평가",
+      "links": [
+        {
+          "label": "출원·등록 이력 보기",
+          "url": "/patents/#patent-4fdcebdac54e"
+        }
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            49
+          ]
+        },
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            36
+          ]
+        }
+      ]
+    },
+    {
+      "id": "patent-de0ebdf93e5c",
+      "kind": "patent",
+      "kind_label": "관련 특허",
+      "mapping_basis": "title_and_identifiers",
+      "mapping_note": "특허 제목과 출원·등록번호에 기반한 주제 연결",
+      "title": "실시간 사용자 행위 탐지의 불확실성 인지를 통해 모델의 재학습을 수행하는 방법 및 장치",
+      "technology_ids": [
+        "T07"
+      ],
+      "year": 2023,
+      "research_years": [],
+      "venue": "대한민국",
+      "description": "관련 기술 주제: 열린 세계 객체·행위 인지와 시맨틱 지도",
+      "links": [
+        {
+          "label": "출원·등록 이력 보기",
+          "url": "/patents/#patent-de0ebdf93e5c"
+        }
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            49
+          ]
+        }
+      ]
+    },
+    {
+      "id": "patent-9c1208104af4",
+      "kind": "patent",
+      "kind_label": "관련 특허",
+      "mapping_basis": "title_and_identifiers",
+      "mapping_note": "특허 제목과 출원·등록번호에 기반한 주제 연결",
+      "title": "질의문 생성 모델 학습 방법 및 그 장치",
+      "technology_ids": [
+        "T04"
+      ],
+      "year": 2022,
+      "research_years": [],
+      "venue": "대한민국",
+      "description": "관련 기술 주제: 질문 생성 사후학습·명확화·응답 해석",
+      "links": [
+        {
+          "label": "출원·등록 이력 보기",
+          "url": "/patents/#patent-9c1208104af4"
+        }
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            49
+          ]
+        },
+        {
+          "document": "221227 1차년도 연차보고서",
+          "pdf_pages": [
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "patent-c96eb8cbed91",
+      "kind": "patent",
+      "kind_label": "관련 특허",
+      "mapping_basis": "title_and_identifiers",
+      "mapping_note": "특허 제목과 출원·등록번호에 기반한 주제 연결",
+      "title": "지식 기반 질의 응답을 위한 구조적 주의 집중 기제 기반의 추론 방법 및 이를 수행하기 위한 컴퓨팅 장치",
+      "technology_ids": [
+        "T01"
+      ],
+      "year": 2022,
+      "research_years": [],
+      "venue": "대한민국",
+      "description": "관련 기술 주제: 멀티모달 지식그래프 구축·결합·검색",
+      "links": [
+        {
+          "label": "출원·등록 이력 보기",
+          "url": "/patents/#patent-c96eb8cbed91"
+        }
+      ],
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            49
+          ]
+        },
+        {
+          "document": "221227 1차년도 연차보고서",
+          "pdf_pages": [
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "asset-d05905a072fd",
+      "kind": "software",
+      "kind_label": "공개 SW",
+      "mapping_basis": "public_title_and_description",
+      "mapping_note": "공개 자산의 제목·용도와 연구 주제를 대조한 연결",
+      "title": "Active learning with uncertainty",
+      "technology_ids": [
+        "T14"
+      ],
+      "year": null,
+      "research_years": [],
+      "venue": "광주과학기술원",
+      "description": "예측 차이·모델 불일치·엔트로피·중복 제거로 우선순위와 표본 구성을 개선",
+      "links": [
+        {
+          "label": "SW+Data에서 보기",
+          "url": "/sw-data/#asset-d05905a072fd"
+        },
+        {
+          "label": "공개 저장소",
+          "url": "https://github.com/gist-ailab/uncertainty-activelearning"
+        }
+      ],
+      "references": []
+    },
+    {
+      "id": "asset-4b8c2e6b39ee",
+      "kind": "software",
+      "kind_label": "공개 SW",
+      "mapping_basis": "public_title_and_description",
+      "mapping_note": "공개 자산의 제목·용도와 연구 주제를 대조한 연결",
+      "title": "ALFRED 명령어 모호성 해소 데이터셋",
+      "technology_ids": [
+        "T06"
+      ],
+      "year": null,
+      "research_years": [],
+      "venue": "한국전자통신연구원",
+      "description": "LLM 플래너 자동 평가에서 자연어 피드백·ReActQ·계층 계획 및 안전성 평가로 확장",
+      "links": [
+        {
+          "label": "SW+Data에서 보기",
+          "url": "/sw-data/#asset-4b8c2e6b39ee"
+        },
+        {
+          "label": "공개 저장소",
+          "url": "https://github.com/zebehn/revisiting_alfred"
+        }
+      ],
+      "references": []
+    },
+    {
+      "id": "asset-0a120c3caf3e",
+      "kind": "software",
+      "kind_label": "공개 SW",
+      "mapping_basis": "public_title_and_description",
+      "mapping_note": "공개 자산의 제목·용도와 연구 주제를 대조한 연결",
+      "title": "C2R (모델 자기 확신도 기반 효율적인 추론 성능 향상 시스템)",
+      "technology_ids": [
+        "T05"
+      ],
+      "year": null,
+      "research_years": [],
+      "venue": "서울대학교",
+      "description": "자가 질문·신뢰도 기반 답변 정제와 지식그래프 기반 질문 데이터로 VideoQA 성능 개선",
+      "links": [
+        {
+          "label": "SW+Data에서 보기",
+          "url": "/sw-data/#asset-0a120c3caf3e"
+        },
+        {
+          "label": "공개 저장소",
+          "url": "https://github.com/greeksharifa/LBA_LAVIS/tree/LBA_2025"
+        }
+      ],
+      "references": []
+    },
+    {
+      "id": "asset-8d8e1c9241c2",
+      "kind": "software",
+      "kind_label": "공개 SW",
+      "mapping_basis": "public_title_and_description",
+      "mapping_note": "공개 자산의 제목·용도와 연구 주제를 대조한 연결",
+      "title": "cl-alfred",
+      "technology_ids": [
+        "T09"
+      ],
+      "year": null,
+      "research_years": [],
+      "venue": "서울대학교",
+      "description": "경계 없는 지속학습·환경 피드백·행동 학습으로 성장학습 기반 제공",
+      "links": [
+        {
+          "label": "SW+Data에서 보기",
+          "url": "/sw-data/#asset-8d8e1c9241c2"
+        },
+        {
+          "label": "공개 저장소",
+          "url": "https://github.com/snumprlab/cl-alfred"
+        }
+      ],
+      "references": []
+    },
+    {
+      "id": "asset-8e0c344c515d",
+      "kind": "software",
+      "kind_label": "공개 SW",
+      "mapping_basis": "public_title_and_description",
+      "mapping_note": "공개 자산의 제목·용도와 연구 주제를 대조한 연결",
+      "title": "earl",
+      "technology_ids": [
+        "T09"
+      ],
+      "year": null,
+      "research_years": [],
+      "venue": "서울대학교",
+      "description": "경계 없는 지속학습·환경 피드백·행동 학습으로 성장학습 기반 제공",
+      "links": [
+        {
+          "label": "SW+Data에서 보기",
+          "url": "/sw-data/#asset-8e0c344c515d"
+        },
+        {
+          "label": "공개 저장소",
+          "url": "https://github.com/snumprlab/earl"
+        }
+      ],
+      "references": []
+    },
+    {
+      "id": "asset-77e8fef73bff",
+      "kind": "software",
+      "kind_label": "공개 SW",
+      "mapping_basis": "public_title_and_description",
+      "mapping_note": "공개 자산의 제목·용도와 연구 주제를 대조한 연결",
+      "title": "INQUIRER (인콰이어러: 지식기반 질문생성 시스템 데이터셋)",
+      "technology_ids": [
+        "T05"
+      ],
+      "year": null,
+      "research_years": [],
+      "venue": "서울대학교",
+      "description": "자가 질문·신뢰도 기반 답변 정제와 지식그래프 기반 질문 데이터로 VideoQA 성능 개선",
+      "links": [
+        {
+          "label": "SW+Data에서 보기",
+          "url": "/sw-data/#asset-77e8fef73bff"
+        },
+        {
+          "label": "공개 저장소",
+          "url": "https://github.com/cws7777/INQUIRER"
+        }
+      ],
+      "references": []
+    },
+    {
+      "id": "asset-dfed001bcb97",
+      "kind": "software",
+      "kind_label": "공개 SW",
+      "mapping_basis": "public_title_and_description",
+      "mapping_note": "공개 자산의 제목·용도와 연구 주제를 대조한 연결",
+      "title": "Knowledge transfer with expert supervision",
+      "technology_ids": [
+        "T11"
+      ],
+      "year": null,
+      "research_years": [],
+      "venue": "광주과학기술원",
+      "description": "Point guidance에서 모델 가중치 결합·Branch Soup·연합학습으로 협업적 성장",
+      "links": [
+        {
+          "label": "SW+Data에서 보기",
+          "url": "/sw-data/#asset-dfed001bcb97"
+        },
+        {
+          "label": "공개 저장소",
+          "url": "https://github.com/gist-ailab/supervision-active-learning"
+        }
+      ],
+      "references": []
+    },
+    {
+      "id": "asset-780b4d74af52",
+      "kind": "software",
+      "kind_label": "공개 SW",
+      "mapping_basis": "public_title_and_description",
+      "mapping_note": "공개 자산의 제목·용도와 연구 주제를 대조한 연결",
+      "title": "LBA annotation framework",
+      "technology_ids": [
+        "T12"
+      ],
+      "year": null,
+      "research_years": [],
+      "venue": "광주과학기술원",
+      "description": "파노라마 라벨링에서 진단·수정·지속학습·지식 공유 플랫폼으로 통합",
+      "links": [
+        {
+          "label": "SW+Data에서 보기",
+          "url": "/sw-data/#asset-780b4d74af52"
+        },
+        {
+          "label": "공개 저장소",
+          "url": "https://github.com/gist-ailab/LBA-ann-framework"
+        }
+      ],
+      "references": []
+    },
+    {
+      "id": "asset-8f3da4631514",
+      "kind": "software",
+      "kind_label": "공개 SW",
+      "mapping_basis": "public_title_and_description",
+      "mapping_note": "공개 자산의 제목·용도와 연구 주제를 대조한 연결",
+      "title": "LBA-DramaQG",
+      "technology_ids": [
+        "T04"
+      ],
+      "year": null,
+      "research_years": [],
+      "venue": "경희대학교",
+      "description": "사후학습에서 LoRA·멀티턴 명확화와 relation linking으로 질문-응답-지식 확장 연결",
+      "links": [
+        {
+          "label": "SW+Data에서 보기",
+          "url": "/sw-data/#asset-8f3da4631514"
+        },
+        {
+          "label": "공개 저장소",
+          "url": "https://github.com/gminipark/LBA-DramaQG"
+        }
+      ],
+      "references": []
+    },
+    {
+      "id": "asset-58be747e6378",
+      "kind": "software",
+      "kind_label": "공개 SW",
+      "mapping_basis": "public_title_and_description",
+      "mapping_note": "공개 자산의 제목·용도와 연구 주제를 대조한 연결",
+      "title": "LBA-Q2Q",
+      "technology_ids": [
+        "T04"
+      ],
+      "year": null,
+      "research_years": [],
+      "venue": "경희대학교",
+      "description": "사후학습에서 LoRA·멀티턴 명확화와 relation linking으로 질문-응답-지식 확장 연결",
+      "links": [
+        {
+          "label": "SW+Data에서 보기",
+          "url": "/sw-data/#asset-58be747e6378"
+        },
+        {
+          "label": "공개 저장소",
+          "url": "https://github.com/gminipark/LBA-Q2Q"
+        }
+      ],
+      "references": []
+    },
+    {
+      "id": "asset-38c53305923e",
+      "kind": "software",
+      "kind_label": "공개 SW",
+      "mapping_basis": "public_title_and_description",
+      "mapping_note": "공개 자산의 제목·용도와 연구 주제를 대조한 연결",
+      "title": "Learning by Asking Dataset",
+      "technology_ids": [
+        "T05"
+      ],
+      "year": null,
+      "research_years": [],
+      "venue": "서울대학교",
+      "description": "자가 질문·신뢰도 기반 답변 정제와 지식그래프 기반 질문 데이터로 VideoQA 성능 개선",
+      "links": [
+        {
+          "label": "SW+Data에서 보기",
+          "url": "/sw-data/#asset-38c53305923e"
+        },
+        {
+          "label": "공개 저장소",
+          "url": "https://github.com/cws7777/lba_datasets"
+        }
+      ],
+      "references": []
+    },
+    {
+      "id": "asset-ce29490250b1",
+      "kind": "software",
+      "kind_label": "공개 SW",
+      "mapping_basis": "public_title_and_description",
+      "mapping_note": "공개 자산의 제목·용도와 연구 주제를 대조한 연결",
+      "title": "Learning By Asking, based on LAVIS",
+      "technology_ids": [
+        "T05"
+      ],
+      "year": null,
+      "research_years": [],
+      "venue": "서울대학교",
+      "description": "자가 질문·신뢰도 기반 답변 정제와 지식그래프 기반 질문 데이터로 VideoQA 성능 개선",
+      "links": [
+        {
+          "label": "SW+Data에서 보기",
+          "url": "/sw-data/#asset-ce29490250b1"
+        },
+        {
+          "label": "공개 저장소",
+          "url": "https://github.com/greeksharifa/LBA_LAVIS/tree/DramaQA"
+        }
+      ],
+      "references": []
+    },
+    {
+      "id": "asset-1bdffe578761",
+      "kind": "software",
+      "kind_label": "공개 SW",
+      "mapping_basis": "public_title_and_description",
+      "mapping_note": "공개 자산의 제목·용도와 연구 주제를 대조한 연결",
+      "title": "Learning with Noisy Label",
+      "technology_ids": [
+        "T13"
+      ],
+      "year": null,
+      "research_years": [],
+      "venue": "광주과학기술원",
+      "description": "앙상블·특징 정규화·커리큘럼 어댑터로 오류 탐지·보정 및 학습 강인성 확보",
+      "links": [
+        {
+          "label": "SW+Data에서 보기",
+          "url": "/sw-data/#asset-1bdffe578761"
+        },
+        {
+          "label": "공개 저장소",
+          "url": "https://github.com/gist-ailab/noise-adapter"
+        }
+      ],
+      "references": []
+    },
+    {
+      "id": "asset-916c5e7f1e97",
+      "kind": "software",
+      "kind_label": "공개 SW",
+      "mapping_basis": "public_title_and_description",
+      "mapping_note": "공개 자산의 제목·용도와 연구 주제를 대조한 연결",
+      "title": "LoTa-Bench (언어모델 기반 절차이해 능력 자동평가 벤치마크)",
+      "technology_ids": [
+        "T06"
+      ],
+      "year": null,
+      "research_years": [],
+      "venue": "한국전자통신연구원",
+      "description": "LLM 플래너 자동 평가에서 자연어 피드백·ReActQ·계층 계획 및 안전성 평가로 확장",
+      "links": [
+        {
+          "label": "SW+Data에서 보기",
+          "url": "/sw-data/#asset-916c5e7f1e97"
+        },
+        {
+          "label": "공개 저장소",
+          "url": "https://github.com/lbaa2022/LLMTaskPlanning"
+        }
+      ],
+      "references": []
+    },
+    {
+      "id": "asset-ed2a3a7577f3",
+      "kind": "software",
+      "kind_label": "공개 SW",
+      "mapping_basis": "public_title_and_description",
+      "mapping_note": "공개 자산의 제목·용도와 연구 주제를 대조한 연결",
+      "title": "Model calibration",
+      "technology_ids": [
+        "T10"
+      ],
+      "year": null,
+      "research_years": [],
+      "venue": "광주과학기술원",
+      "description": "특징 기반 보정과 블록 선택·어댑터 결합으로 신뢰도와 적응성 개선",
+      "links": [
+        {
+          "label": "SW+Data에서 보기",
+          "url": "/sw-data/#asset-ed2a3a7577f3"
+        },
+        {
+          "label": "공개 저장소",
+          "url": "https://github.com/gist-ailab/network_calibration"
+        }
+      ],
+      "references": []
+    },
+    {
+      "id": "asset-656ed43df1c8",
+      "kind": "software",
+      "kind_label": "공개 SW",
+      "mapping_basis": "public_title_and_description",
+      "mapping_note": "공개 자산의 제목·용도와 연구 주제를 대조한 연결",
+      "title": "OOD detection",
+      "technology_ids": [
+        "T10"
+      ],
+      "year": null,
+      "research_years": [],
+      "venue": "광주과학기술원",
+      "description": "특징 기반 보정과 블록 선택·어댑터 결합으로 신뢰도와 적응성 개선",
+      "links": [
+        {
+          "label": "SW+Data에서 보기",
+          "url": "/sw-data/#asset-656ed43df1c8"
+        },
+        {
+          "label": "공개 저장소",
+          "url": "https://github.com/gist-ailab/block-selection-for-OOD-detection"
+        }
+      ],
+      "references": []
+    },
+    {
+      "id": "asset-ee543ca1cd81",
+      "kind": "software",
+      "kind_label": "공개 SW",
+      "mapping_basis": "public_title_and_description",
+      "mapping_note": "공개 자산의 제목·용도와 연구 주제를 대조한 연결",
+      "title": "post_training_qg",
+      "technology_ids": [
+        "T04"
+      ],
+      "year": null,
+      "research_years": [],
+      "venue": "경희대학교",
+      "description": "사후학습에서 LoRA·멀티턴 명확화와 relation linking으로 질문-응답-지식 확장 연결",
+      "links": [
+        {
+          "label": "SW+Data에서 보기",
+          "url": "/sw-data/#asset-ee543ca1cd81"
+        },
+        {
+          "label": "공개 저장소",
+          "url": "https://github.com/gminipark/post_training_qg"
+        }
+      ],
+      "references": []
+    },
+    {
+      "id": "asset-4964603491c0",
+      "kind": "software",
+      "kind_label": "공개 SW",
+      "mapping_basis": "public_title_and_description",
+      "mapping_note": "공개 자산의 제목·용도와 연구 주제를 대조한 연결",
+      "title": "realfred",
+      "technology_ids": [
+        "T06"
+      ],
+      "year": null,
+      "research_years": [],
+      "venue": "서울대학교",
+      "description": "LLM 플래너 자동 평가에서 자연어 피드백·ReActQ·계층 계획 및 안전성 평가로 확장",
+      "links": [
+        {
+          "label": "SW+Data에서 보기",
+          "url": "/sw-data/#asset-4964603491c0"
+        },
+        {
+          "label": "공개 저장소",
+          "url": "https://github.com/snumprlab/realfred"
+        }
+      ],
+      "references": []
+    },
+    {
+      "id": "asset-0d88fed06d0f",
+      "kind": "software",
+      "kind_label": "공개 SW",
+      "mapping_basis": "public_title_and_description",
+      "mapping_note": "공개 자산의 제목·용도와 연구 주제를 대조한 연결",
+      "title": "vlm-rlaif",
+      "technology_ids": [
+        "T02"
+      ],
+      "year": null,
+      "research_years": [],
+      "venue": "서울대학교",
+      "description": "영상 지식체계에 사용할 표상과 장면·행동 이해 기반 확보",
+      "links": [
+        {
+          "label": "SW+Data에서 보기",
+          "url": "/sw-data/#asset-0d88fed06d0f"
+        },
+        {
+          "label": "공개 저장소",
+          "url": "https://github.com/snumprlab/vlm-rlaif"
+        }
+      ],
+      "references": []
+    },
+    {
+      "id": "asset-80829e0c0f37",
+      "kind": "software",
+      "kind_label": "공개 SW",
+      "mapping_basis": "public_title_and_description",
+      "mapping_note": "공개 자산의 제목·용도와 연구 주제를 대조한 연결",
+      "title": "기반의 Diffusion model 이미지 레벨 OOD 검출 SW",
+      "technology_ids": [
+        "T18"
+      ],
+      "year": null,
+      "research_years": [],
+      "venue": "한국과학기술원",
+      "description": "확산모델·의사 이상·프롬프트 보정 등의 범용 불확실성 지각 기반; 특정 수직 실증은 별도 증거 필요",
+      "links": [
+        {
+          "label": "SW+Data에서 보기",
+          "url": "/sw-data/#asset-80829e0c0f37"
+        },
+        {
+          "label": "공개 저장소",
+          "url": "https://github.com/hushon/ood-diffusion"
+        }
+      ],
+      "references": []
+    },
+    {
+      "id": "asset-b50e965daab3",
+      "kind": "software",
+      "kind_label": "공개 SW",
+      "mapping_basis": "public_title_and_description",
+      "mapping_note": "공개 자산의 제목·용도와 연구 주제를 대조한 연결",
+      "title": "긴 비디오 질의 응답에 필요한 지식 체계 검색 기술 개발",
+      "technology_ids": [
+        "T01"
+      ],
+      "year": null,
+      "research_years": [],
+      "venue": "한양대학교",
+      "description": "장면·인물·상식 그래프의 결합에서 과제별 검색과 새 개념 조합으로 확장",
+      "links": [
+        {
+          "label": "SW+Data에서 보기",
+          "url": "/sw-data/#asset-b50e965daab3"
+        },
+        {
+          "label": "공개 저장소",
+          "url": "https://github.com/khflower/STELLA"
+        }
+      ],
+      "references": []
+    },
+    {
+      "id": "asset-76f975f13bb4",
+      "kind": "software",
+      "kind_label": "공개 SW",
+      "mapping_basis": "public_title_and_description",
+      "mapping_note": "공개 자산의 제목·용도와 연구 주제를 대조한 연결",
+      "title": "데이터 필터링 및 Noisy Label 학습 라이브러리",
+      "technology_ids": [
+        "T13"
+      ],
+      "year": null,
+      "research_years": [],
+      "venue": "한국과학기술원",
+      "description": "앙상블·특징 정규화·커리큘럼 어댑터로 오류 탐지·보정 및 학습 강인성 확보",
+      "links": [
+        {
+          "label": "SW+Data에서 보기",
+          "url": "/sw-data/#asset-76f975f13bb4"
+        },
+        {
+          "label": "공개 저장소",
+          "url": "https://github.com/hushon/noisy-label"
+        }
+      ],
+      "references": []
+    },
+    {
+      "id": "asset-014e2000e397",
+      "kind": "software",
+      "kind_label": "공개 SW",
+      "mapping_basis": "public_title_and_description",
+      "mapping_note": "공개 자산의 제목·용도와 연구 주제를 대조한 연결",
+      "title": "멀티모달 구축을 위한 장면 그래프 생성",
+      "technology_ids": [
+        "T01"
+      ],
+      "year": null,
+      "research_years": [],
+      "venue": "한양대학교",
+      "description": "장면·인물·상식 그래프의 결합에서 과제별 검색과 새 개념 조합으로 확장",
+      "links": [
+        {
+          "label": "SW+Data에서 보기",
+          "url": "/sw-data/#asset-014e2000e397"
+        },
+        {
+          "label": "공개 저장소",
+          "url": "https://github.com/youngyoung1021/cross-graph-attention"
+        }
+      ],
+      "references": []
+    },
+    {
+      "id": "asset-04f0dd07d41a",
+      "kind": "software",
+      "kind_label": "공개 SW",
+      "mapping_basis": "public_title_and_description",
+      "mapping_note": "공개 자산의 제목·용도와 연구 주제를 대조한 연결",
+      "title": "멀티모달 구축을 위한 지식 그래프 생성",
+      "technology_ids": [
+        "T01"
+      ],
+      "year": null,
+      "research_years": [],
+      "venue": "한양대학교",
+      "description": "장면·인물·상식 그래프의 결합에서 과제별 검색과 새 개념 조합으로 확장",
+      "links": [
+        {
+          "label": "SW+Data에서 보기",
+          "url": "/sw-data/#asset-04f0dd07d41a"
+        },
+        {
+          "label": "공개 저장소",
+          "url": "https://github.com/kyunghwan7949/DramaQA"
+        }
+      ],
+      "references": []
+    },
+    {
+      "id": "asset-3f86a4748358",
+      "kind": "software",
+      "kind_label": "공개 SW",
+      "mapping_basis": "public_title_and_description",
+      "mapping_note": "공개 자산의 제목·용도와 연구 주제를 대조한 연결",
+      "title": "비디오 기반의 대답이 모호한 질의에 대한 판단 및 추가 정보를 활용한 모호한 질의에 대한 응답 시스템 SW",
+      "technology_ids": [
+        "T03"
+      ],
+      "year": null,
+      "research_years": [],
+      "venue": "한국과학기술원",
+      "description": "대답 불가능성 판단과 근거 제시, 정렬 학습, 키프레임 선택으로 신뢰성 향상",
+      "links": [
+        {
+          "label": "SW+Data에서 보기",
+          "url": "/sw-data/#asset-3f86a4748358"
+        },
+        {
+          "label": "공개 저장소",
+          "url": "https://github.com/hee-suk-yoon/LBA-ARVQA"
+        }
+      ],
+      "references": []
+    },
+    {
+      "id": "asset-19ad6573bfe6",
+      "kind": "software",
+      "kind_label": "공개 SW",
+      "mapping_basis": "public_title_and_description",
+      "mapping_note": "공개 자산의 제목·용도와 연구 주제를 대조한 연결",
+      "title": "비디오 질의응답을 위한 질문 인식 및 합성 지도 기반 키프레임 선택 학습 알고리즘",
+      "technology_ids": [
+        "T03"
+      ],
+      "year": null,
+      "research_years": [],
+      "venue": "한국과학기술원",
+      "description": "대답 불가능성 판단과 근거 제시, 정렬 학습, 키프레임 선택으로 신뢰성 향상",
+      "links": [
+        {
+          "label": "SW+Data에서 보기",
+          "url": "/sw-data/#asset-19ad6573bfe6"
+        },
+        {
+          "label": "공개 저장소",
+          "url": "https://github.com/hushon/SKS-QCCR"
+        }
+      ],
+      "references": []
+    },
+    {
+      "id": "asset-42e9b01b2091",
+      "kind": "software",
+      "kind_label": "공개 SW",
+      "mapping_basis": "public_title_and_description",
+      "mapping_note": "공개 자산의 제목·용도와 연구 주제를 대조한 연결",
+      "title": "스스로 질의응답하며 성장하는 Self-Questioning Framework",
+      "technology_ids": [
+        "T05"
+      ],
+      "year": null,
+      "research_years": [],
+      "venue": "서울대학교",
+      "description": "자가 질문·신뢰도 기반 답변 정제와 지식그래프 기반 질문 데이터로 VideoQA 성능 개선",
+      "links": [
+        {
+          "label": "SW+Data에서 보기",
+          "url": "/sw-data/#asset-42e9b01b2091"
+        },
+        {
+          "label": "공개 저장소",
+          "url": "https://github.com/greeksharifa/LBA_LAVIS/tree/SQ-InstructBLIP"
+        }
+      ],
+      "references": []
+    },
+    {
+      "id": "asset-6cb01dcefae5",
+      "kind": "software",
+      "kind_label": "공개 SW",
+      "mapping_basis": "public_title_and_description",
+      "mapping_note": "공개 자산의 제목·용도와 연구 주제를 대조한 연결",
+      "title": "장기 복합 임무 수행을 위한 계층적 절차 추론 기술",
+      "technology_ids": [
+        "T06"
+      ],
+      "year": null,
+      "research_years": [],
+      "venue": "한국전자통신연구원",
+      "description": "LLM 플래너 자동 평가에서 자연어 피드백·ReActQ·계층 계획 및 안전성 평가로 확장",
+      "links": [
+        {
+          "label": "SW+Data에서 보기",
+          "url": "/sw-data/#asset-6cb01dcefae5"
+        },
+        {
+          "label": "공개 저장소",
+          "url": "https://github.com/Choi-JaeWoo/ReAcTree"
+        }
+      ],
+      "references": []
+    },
+    {
+      "id": "asset-c69288b8f26f",
+      "kind": "software",
+      "kind_label": "데이터셋",
+      "mapping_basis": "public_title_and_description",
+      "mapping_note": "공개 자산의 제목·용도와 연구 주제를 대조한 연결",
+      "title": "Ambiguous-VideoQA",
+      "technology_ids": [
+        "T03"
+      ],
+      "year": null,
+      "research_years": [],
+      "venue": "한국과학기술원",
+      "description": "비디오 기반의 모호한 질의와 응답을 다루기 위한 질의응답 데이터셋입니다.",
+      "links": [
+        {
+          "label": "SW+Data에서 보기",
+          "url": "/sw-data/#asset-c69288b8f26f"
+        },
+        {
+          "label": "공개 저장소",
+          "url": "https://github.com/hee-suk-yoon/LBA-ARVQA"
+        }
+      ],
+      "references": []
+    },
+    {
+      "id": "asset-bc01494bf6d3",
+      "kind": "software",
+      "kind_label": "데이터셋",
+      "mapping_basis": "public_title_and_description",
+      "mapping_note": "공개 자산의 제목·용도와 연구 주제를 대조한 연결",
+      "title": "CAUS",
+      "technology_ids": [
+        "T16"
+      ],
+      "year": null,
+      "research_years": [],
+      "venue": "한국전자통신연구원",
+      "description": "인간 질의 인지과정을 모사한 질문 생성 벤치마킹 데이터셋입니다.",
+      "links": [
+        {
+          "label": "SW+Data에서 보기",
+          "url": "/sw-data/#asset-bc01494bf6d3"
+        },
+        {
+          "label": "공개 저장소",
+          "url": "https://github.com/lbaa2022/CAUS_v1"
+        }
+      ],
+      "references": []
+    },
+    {
+      "id": "asset-5088dbdb1687",
+      "kind": "software",
+      "kind_label": "데이터셋",
+      "mapping_basis": "public_title_and_description",
+      "mapping_note": "공개 자산의 제목·용도와 연구 주제를 대조한 연결",
+      "title": "GQA_SubQ",
+      "technology_ids": [
+        "T04"
+      ],
+      "year": null,
+      "research_years": [],
+      "venue": "경희대학교",
+      "description": "멀티모달 환경에서 질의의 불확실성을 해소하기 위한 질문 생성 학습 및 평가 데이터셋입니다.",
+      "links": [
+        {
+          "label": "SW+Data에서 보기",
+          "url": "/sw-data/#asset-5088dbdb1687"
+        },
+        {
+          "label": "공개 저장소",
+          "url": "https://huggingface.co/datasets/gminipark/GQA_SubQ"
+        }
+      ],
+      "references": []
+    },
+    {
+      "id": "asset-2094ab657dfa",
+      "kind": "software",
+      "kind_label": "데이터셋",
+      "mapping_basis": "public_title_and_description",
+      "mapping_note": "공개 자산의 제목·용도와 연구 주제를 대조한 연결",
+      "title": "Learning by Asking dataset",
+      "technology_ids": [
+        "T05"
+      ],
+      "year": null,
+      "research_years": [],
+      "venue": "서울대학교",
+      "description": "캐릭터 간 사실관계와 상식, 고증 등을 학습하고 질의를 통해 지식성장을 검증하는 데이터셋입니다.",
+      "links": [
+        {
+          "label": "SW+Data에서 보기",
+          "url": "/sw-data/#asset-2094ab657dfa"
+        },
+        {
+          "label": "공개 저장소",
+          "url": "https://github.com/cws7777/lba_datasets"
+        }
+      ],
+      "references": []
+    },
+    {
+      "id": "asset-e55188f7c89e",
+      "kind": "software",
+      "kind_label": "데이터셋",
+      "mapping_basis": "public_title_and_description",
+      "mapping_note": "공개 자산의 제목·용도와 연구 주제를 대조한 연결",
+      "title": "LLM 에이전트 의사결정 궤적 데이터셋",
+      "technology_ids": [
+        "T06"
+      ],
+      "year": null,
+      "research_years": [],
+      "venue": "한국전자통신연구원",
+      "description": "성공 및 실패 궤적을 함께 활용해 절차 계획 성능 향상과 절차 추론 불확실성 활용을 지원하는 데이터셋입니다.",
+      "links": [
+        {
+          "label": "SW+Data에서 보기",
+          "url": "/sw-data/#asset-e55188f7c89e"
+        },
+        {
+          "label": "공개 저장소",
+          "url": "https://github.com/Choi-JaeWoo/ReAcTree"
+        }
+      ],
+      "references": []
+    },
+    {
+      "id": "asset-5d50c4210827",
+      "kind": "software",
+      "kind_label": "데이터셋",
+      "mapping_basis": "public_title_and_description",
+      "mapping_note": "공개 자산의 제목·용도와 연구 주제를 대조한 연결",
+      "title": "ReALFRED",
+      "technology_ids": [
+        "T06"
+      ],
+      "year": null,
+      "research_years": [],
+      "venue": "서울대학교",
+      "description": "Embodied Agent의 real-world simulation을 위한 데이터셋입니다.",
+      "links": [
+        {
+          "label": "SW+Data에서 보기",
+          "url": "/sw-data/#asset-5d50c4210827"
+        },
+        {
+          "label": "공개 저장소",
+          "url": "https://github.com/snumprlab/realfred"
+        }
+      ],
+      "references": []
+    },
+    {
+      "id": "asset-59b14e34b70a",
+      "kind": "software",
+      "kind_label": "데이터셋",
+      "mapping_basis": "public_title_and_description",
+      "mapping_note": "공개 자산의 제목·용도와 연구 주제를 대조한 연결",
+      "title": "Unanswerable DramaQA",
+      "technology_ids": [
+        "T03"
+      ],
+      "year": null,
+      "research_years": [],
+      "venue": "한국과학기술원",
+      "description": "DramaQA 기반 대답 불가능한 질의응답 데이터셋입니다.",
+      "links": [
+        {
+          "label": "SW+Data에서 보기",
+          "url": "/sw-data/#asset-59b14e34b70a"
+        },
+        {
+          "label": "공개 저장소",
+          "url": "https://github.com/hee-suk-yoon/LBA-ARVQA"
+        }
+      ],
+      "references": []
+    },
+    {
+      "id": "asset-8dcd38743564",
+      "kind": "software",
+      "kind_label": "데이터셋",
+      "mapping_basis": "public_title_and_description",
+      "mapping_note": "공개 자산의 제목·용도와 연구 주제를 대조한 연결",
+      "title": "Unanswerable GQA",
+      "technology_ids": [
+        "T03"
+      ],
+      "year": null,
+      "research_years": [],
+      "venue": "한국과학기술원",
+      "description": "이미지 기반 대답 불가능한 질의응답 데이터셋입니다.",
+      "links": [
+        {
+          "label": "SW+Data에서 보기",
+          "url": "/sw-data/#asset-8dcd38743564"
+        },
+        {
+          "label": "공개 저장소",
+          "url": "https://github.com/hee-suk-yoon/LBA-ARVQA"
+        }
+      ],
+      "references": []
+    },
+    {
+      "id": "asset-297d490ce629",
+      "kind": "software",
+      "kind_label": "데이터셋",
+      "mapping_basis": "public_title_and_description",
+      "mapping_note": "공개 자산의 제목·용도와 연구 주제를 대조한 연결",
+      "title": "WAH-NL",
+      "technology_ids": [
+        "T06"
+      ],
+      "year": null,
+      "research_years": [],
+      "venue": "한국전자통신연구원",
+      "description": "가정환경 임무 데이터셋으로 목표 조건, 초기 환경, 자연어 명령어를 포함하며 VirtualHome과 연동됩니다.",
+      "links": [
+        {
+          "label": "SW+Data에서 보기",
+          "url": "/sw-data/#asset-297d490ce629"
+        },
+        {
+          "label": "공개 저장소",
+          "url": "https://github.com/lbaa2022/LLMTaskPlanning"
+        }
+      ],
+      "references": []
+    }
+  ],
+  "matrix": [
+    {
+      "vertical_id": "V1",
+      "horizontal_id": "H1",
+      "topics": [
+        "장면·인물·상식 그래프",
+        "시간·공간 개념의 결합"
+      ]
+    },
+    {
+      "vertical_id": "V1",
+      "horizontal_id": "H2",
+      "topics": [
+        "응답 가능성 판단",
+        "관계·시간 모호성"
+      ]
+    },
+    {
+      "vertical_id": "V1",
+      "horizontal_id": "H3",
+      "topics": [
+        "명확화 질문",
+        "질문 생성 사후학습"
+      ]
+    },
+    {
+      "vertical_id": "V1",
+      "horizontal_id": "H4",
+      "topics": [
+        "보조 질문으로 추론 개선",
+        "지식 기반 질문 훈련"
+      ]
+    },
+    {
+      "vertical_id": "V2",
+      "horizontal_id": "H1",
+      "topics": [
+        "시맨틱 지도",
+        "행동·절차 지식"
+      ]
+    },
+    {
+      "vertical_id": "V2",
+      "horizontal_id": "H2",
+      "topics": [
+        "미지 객체·행위 탐지",
+        "계획의 불확실성"
+      ]
+    },
+    {
+      "vertical_id": "V2",
+      "horizontal_id": "H3",
+      "topics": [
+        "도움 요청 시점",
+        "질문 정책과 품질"
+      ]
+    },
+    {
+      "vertical_id": "V2",
+      "horizontal_id": "H4",
+      "topics": [
+        "피드백 기반 재계획",
+        "장기 임무·지속학습"
+      ]
+    },
+    {
+      "vertical_id": "V3",
+      "horizontal_id": "H1",
+      "topics": [
+        "의료영상·판독 정보",
+        "치과 지식 기반"
+      ]
+    },
+    {
+      "vertical_id": "V3",
+      "horizontal_id": "H2",
+      "topics": [
+        "모델 신뢰도 보정",
+        "환경 변화 적응"
+      ]
+    },
+    {
+      "vertical_id": "V3",
+      "horizontal_id": "H3",
+      "topics": [
+        "전문가에게 정보 요청",
+        "피드백 해석"
+      ]
+    },
+    {
+      "vertical_id": "V3",
+      "horizontal_id": "H4",
+      "topics": [
+        "에이전트 간 지식 전이",
+        "지속 성장형 진단 지원"
+      ]
+    },
+    {
+      "vertical_id": "V4",
+      "horizontal_id": "H1",
+      "topics": [
+        "학습 데이터·라벨 구조",
+        "데이터셋 품질 기반"
+      ]
+    },
+    {
+      "vertical_id": "V4",
+      "horizontal_id": "H2",
+      "topics": [
+        "오류 라벨·중복 탐지",
+        "데이터 불확실성"
+      ]
+    },
+    {
+      "vertical_id": "V4",
+      "horizontal_id": "H3",
+      "topics": [
+        "라벨링 대상 선정",
+        "사용자 확인·수정"
+      ]
+    },
+    {
+      "vertical_id": "V4",
+      "horizontal_id": "H4",
+      "topics": [
+        "정제 데이터로 재학습",
+        "노이즈에 강건한 학습"
+      ]
+    }
+  ],
+  "editorial_note": "제안서와 2022–2025 보고서를 바탕으로 연구 주제의 발전과 대표 산출물을 연결했습니다. 연차 간 연결은 주제의 발전 흐름이며, 개별 논문 간 직접 계승을 뜻하지 않습니다. 연구 수행연도와 발표연도를 구분하며, 목록은 전체 성과의 일부입니다.",
+  "sources": [
+    {
+      "title": "220205 (과제신청)연구개발계획서",
+      "type": "proposal"
+    },
+    {
+      "title": "221227 1차년도 연차보고서",
+      "type": "annual_report"
+    },
+    {
+      "title": "231226 2차년도 연차보고서",
+      "type": "annual_report"
+    },
+    {
+      "title": "241227 3차년도 단계보고서",
+      "type": "stage_report"
+    },
+    {
+      "title": "251224 4차년도 연차보고서",
+      "type": "annual_report"
+    }
+  ]
+}

@@ -6,9 +6,11 @@ permalink: /publications/
 ---
 
 {% include deliverables_styles.liquid %}
+{% include research_assets.liquid %}
 {% assign publications = site.data.deliverables.papers %}
 
 <div class="deliverables-page">
+  <p class="research-catalog-link"><a href="{{ '/research/' | relative_url }}">연구개발 성과 지도에서 연구의 맥락 살펴보기 ↗</a></p>
   <p class="deliverables-lead">
     2025년까지의 논문 및 학술대회 성과를 정리했습니다.
     동일 제목의 성과는 중복 없이 통합했고, 과제의 핵심 기술 분야 관점에서 다시 분류해 연도순으로 살펴볼 수 있도록 구성했습니다.
@@ -118,6 +120,7 @@ permalink: /publications/
                       {% endif %}
                     </div>
                   {% endif %}
+                {% include research_card_links.liquid kind="paper" item=item %}
                 </article>
               {% endfor %}
             </div>

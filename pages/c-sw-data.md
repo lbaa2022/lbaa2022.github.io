@@ -6,9 +6,11 @@ permalink: /sw-data/
 ---
 
 {% include deliverables_styles.liquid %}
+{% include research_assets.liquid %}
 {% assign software = site.data.deliverables.software %}
 
 <div class="deliverables-page">
+  <p class="research-catalog-link"><a href="{{ '/research/' | relative_url }}">연구개발 성과 지도에서 연구의 맥락 살펴보기 ↗</a></p>
   <p class="deliverables-lead">
     공개 SW와 데이터셋, 등록 SW 성과를 함께 정리했습니다.
     공개 SW+Data는 연도 구분 없이 중복을 제거해 한 번에 살펴볼 수 있도록 구성했습니다.
@@ -56,7 +58,8 @@ permalink: /sw-data/
               <a class="deliverables-link" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">바로가기</a>
             </div>
           {% endif %}
-        </article>
+        {% include research_card_links.liquid kind="software" item=item %}
+                </article>
       {% endfor %}
     </div>
   </section>
@@ -105,7 +108,8 @@ permalink: /sw-data/
                     {{ item.number }}
                   </div>
                 {% endif %}
-              </article>
+              {% include research_card_links.liquid kind="registered" item=item %}
+                </article>
             {% endfor %}
           </div>
         </div>

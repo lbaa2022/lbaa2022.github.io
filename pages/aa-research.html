@@ -1,0 +1,96 @@
+---
+layout: default
+title: 연구개발 성과 지도
+permalink: /research/
+lang: ko
+description: 지식체계 구축, 불확실성 지각, 질문 생성, 성장학습이 네 가지 응용 분야에서 발전한 과정과 대표 연구성과를 탐색합니다.
+---
+{% include research_assets.liquid %}
+{% assign research = site.data.research %}
+<main class="research-page" id="research-top" lang="ko">
+  <header class="research-hero">
+    <div class="research-shell research-hero-grid">
+      <div>
+        <p class="research-eyebrow">LBA AGENTS · RESEARCH ATLAS</p>
+        <h1>연구개발<br>성과 지도<span class="research-period">2022 — 2025</span></h1>
+        <p class="research-intro">모르는 것을 알아차리고, 질문하고, 답을 통해 성장하기까지.<br>네 가지 기술이 네 가지 현장에서 발전한 과정을 살펴봅니다.</p>
+        <a class="research-button research-button-light" href="#research-map">전체 기술 지도 보기 <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="research-cycle" aria-label="질문하며 성장하는 에이전트의 네 가지 기술">
+        <p>질문하며 성장하는 에이전트</p>
+        <ol>
+          <li><span>01</span><strong>지식체계 구축</strong><small>관찰한 세계를 지식으로</small></li>
+          <li><span>02</span><strong>불확실성 지각</strong><small>아는 것과 모르는 것 구분</small></li>
+          <li><span>03</span><strong>질문 생성</strong><small>필요한 정보를 질문으로</small></li>
+          <li><span>04</span><strong>질의응답 기반 성장학습</strong><small>얻은 답을 지식과 행동으로</small></li>
+        </ol>
+        <div class="research-cycle-return">새로운 지식으로, 다시 세계를 이해합니다 <span aria-hidden="true">↺</span></div>
+      </div>
+    </div>
+  </header>
+  <div class="research-shell">
+    <section class="research-section" id="research-map" aria-labelledby="map-heading">
+      <p class="research-kicker">01 / 전체 기술 지도</p>
+      <h2 id="map-heading">어떤 분야에서, 어떤 문제를 풀었을까요?</h2>
+      <p class="research-lead">관심 있는 칸을 선택하면 관련 연구 주제와 연차별 발전 과정이 펼쳐집니다.</p>
+      <div class="research-matrix-wrap">
+        <table class="research-matrix">
+          <caption class="research-sr-only">수직 적용 분야와 수평 기술의 교차 지도</caption>
+          <thead><tr><th scope="col">적용 분야 <span aria-hidden="true">↓</span> / 기술 <span aria-hidden="true">→</span></th>{% for h in research.horizontal_axes %}<th scope="col"><span class="research-step">0{{ forloop.index }}</span>{{ h.label }}</th>{% endfor %}</tr></thead>
+          <tbody>{% for v in research.vertical_axes %}<tr>
+            <th scope="row"><span class="research-domain-number">0{{ forloop.index }}</span>{{ v.label }}</th>
+            {% for h in research.horizontal_axes %}{% assign matching_cell = research.matrix | where: 'vertical_id', v.id | where: 'horizontal_id', h.id | first %}
+            <td><a class="research-cell" href="{{ '/research/' | relative_url }}?vertical={{ v.id }}&amp;horizontal={{ h.id }}#research-results" data-map-vertical="{{ v.id }}" data-map-horizontal="{{ h.id }}"><span class="research-mobile-label">{{ h.label }}</span>{% for topic in matching_cell.topics %}<span>{{ topic }}</span>{% endfor %}<span class="research-cell-arrow" aria-hidden="true">↗</span></a></td>
+            {% endfor %}
+          </tr>{% endfor %}</tbody>
+        </table>
+      </div>
+      <p class="research-note">제안서의 UMC는 지식체계 구축·불확실성 지각에, UQG는 질문 생성에, OCL2는 성장학습에 대응합니다.</p>
+    </section>
+    <section class="research-section" id="research-results" aria-labelledby="research-results-heading">
+      <div class="research-section-title"><div><p class="research-kicker">02 / 연구 주제와 발전 과정</p><h2 id="research-results-heading">문제에서 방법으로, 방법에서 성과로</h2></div><a class="research-text-link" href="{{ '/assets/data/research.json' | relative_url }}" download="lba-research-2022-2025.json">공개 데이터 JSON <span aria-hidden="true">↓</span></a></div>
+      <form class="research-filters" id="research-filters" role="search">
+        <label>적용 분야<select id="research-vertical" name="vertical"><option value="">전체 분야</option>{% for v in research.vertical_axes %}<option value="{{ v.id }}">{{ v.label }}</option>{% endfor %}<option value="common">공통 기반 기술</option></select></label>
+        <label>기술 단계<select id="research-horizontal" name="horizontal"><option value="">전체 기술</option>{% for h in research.horizontal_axes %}<option value="{{ h.id }}">{{ h.label }}</option>{% endfor %}</select></label>
+        <label>연구 연도<select id="research-year" name="year"><option value="">2022–2025 전체</option>{% for year in (2022..2025) %}<option value="{{ year }}">{{ year }}년</option>{% endfor %}</select></label>
+        <label class="research-search">주제·성과 검색<input id="research-query" name="q" type="search" placeholder="예: 비디오, ReActQ, 의료, 질문" autocomplete="off"></label>
+        <button class="research-reset" type="reset">초기화</button>
+      </form>
+      <p id="research-result-count" class="research-note" aria-live="polite">{{ research.technologies.size }}개 연구 주제 · 제목을 열면 연차별 연구내용과 대표 성과를 볼 수 있습니다.</p>
+      <p class="research-note">연도 필터는 연구활동의 수행연도를 기준으로 합니다. 관련 성과는 주제의 맥락을 위해 함께 표시하며, 논문 발표연도는 별도로 표기합니다.</p>
+      <noscript><p>검색·필터는 JavaScript를 사용합니다. 아래의 모든 연구 주제와 연차별 내용은 그대로 열람할 수 있습니다.</p></noscript>
+      <p id="research-empty" class="research-empty" hidden>조건에 맞는 연구 주제가 없습니다. 검색어나 필터를 변경해 주세요.</p>
+      <div class="research-topics">
+        {% for tech in research.technologies %}
+        <details class="research-topic" id="technology-{{ tech.id }}" data-technology="{{ tech.id }}" data-vertical="{{ tech.vertical_ids | join: ' ' }}" data-horizontal="{{ tech.horizontal_ids | join: ' ' }}">
+          <summary><span class="research-topic-order">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span><span class="research-topic-heading"><strong>{{ tech.name }}</strong><span>{{ tech.issue }}</span></span><span class="research-topic-toggle" aria-hidden="true">+</span></summary>
+          <div class="research-topic-body">
+            <div class="research-tags">{% for hid in tech.horizontal_ids %}{% assign h = research.horizontal_axes | where: 'id', hid | first %}<span>{{ h.label }}</span>{% endfor %}{% for vid in tech.vertical_ids %}{% assign v = research.vertical_axes | where: 'id', vid | first %}<span class="research-tag-domain">{{ v.label }}</span>{% endfor %}{% if tech.vertical_ids.size == 0 %}<span class="research-tag-domain">공통 기반 기술</span>{% endif %}</div>
+            <p class="research-contribution">{{ tech.contribution }}</p>
+            {% if tech.mapping_note %}<p class="research-note">분류 맥락 · {{ tech.mapping_note }}</p>{% endif %}
+            <p class="research-note">참여 연구기관 · {{ tech.organizations | join: ' · ' }}</p>
+            {% if tech.activity_ids.size > 0 %}<div class="research-timeline">
+              {% for aid in tech.activity_ids %}{% assign activity = research.activities | where: 'id', aid | first %}
+              <article class="research-milestone" data-year="{{ activity.year }}">
+                <p class="research-year">{{ activity.year }}</p><h3>{{ activity.title }}</h3>
+                <dl><dt>당시의 문제</dt><dd>{{ activity.issue }}</dd><dt>개발한 방법</dt><dd>{{ activity.work }}</dd><dt>기술적 기여</dt><dd>{{ activity.contribution }}</dd></dl>
+                <details class="research-reference"><summary>보고서 근거</summary>{% for ref in activity.references %}<p>{{ ref.document }}<br><span>PDF {{ ref.pdf_pages | join: ', ' }}쪽</span></p>{% endfor %}</details>
+              </article>
+              {% endfor %}
+            </div>
+            {% endif %}
+            {% if tech.artifact_ids.size > 0 %}<h3 class="research-outputs-heading">이 연구를 더 살펴보려면</h3>
+            <div class="research-outputs">{% for oid in tech.artifact_ids %}{% assign output = research.artifacts | where: 'id', oid | first %}
+              <article class="research-output"><div class="research-output-meta"><span>{{ output.kind_label }}</span>{% if output.year %}<span>{{ output.year }}{% if output.kind == 'paper' %} 발표·게재{% endif %}</span>{% endif %}</div><h4>{{ output.title | escape }}</h4><p>{{ output.description }}</p><p class="research-note">{{ output.mapping_note }}</p>{% if output.venue != '' %}<p class="research-note">{{ output.venue | escape }}</p>{% endif %}<div class="research-output-links">{% for output_link in output.links %}{% assign first_char = output_link.url | slice: 0 %}{% if first_char == '/' %}<a href="{{ output_link.url | relative_url }}">{{ output_link.label }} ↗</a>{% else %}<a href="{{ output_link.url }}" target="_blank" rel="noopener noreferrer">{{ output_link.label }} ↗</a>{% endif %}{% endfor %}</div></article>
+            {% endfor %}</div>{% endif %}
+          </div>
+        </details>
+        {% endfor %}
+      </div>
+    </section>
+    <section class="research-method research-section" aria-labelledby="research-method-heading">
+      <div><p class="research-kicker">03 / 읽는 방법</p><h2 id="research-method-heading">연구의 맥락을 연결합니다</h2><p>{{ research.editorial_note }}</p><p>성장은 질문을 통한 추론 개선, 지식체계 확장, 피드백을 이용한 모델 학습 등 여러 형태를 포함합니다. 각 연구의 설명에서 그 방식을 구분합니다.</p><p class="research-note">성과 연결은 보고서 본문과 산출물의 제목·용도를 대조해 구성했습니다. 특허 링크는 관련 주제를 안내하며, 국가별 출원·등록 이력은 기존 특허 목록에서 확인할 수 있습니다.</p></div>
+      <div><h3>자료와 범위</h3><ul>{% for source in research.sources %}<li>{{ source.title }}</li>{% endfor %}</ul><p class="research-note">수록 범위 2022–2025 · 2026년 실적은 후속 갱신 예정<br>최종 갱신 {{ research.updated }} · 페이지는 PDF 첫 장부터 계산합니다.</p><div class="research-output-links"><a href="{{ '/publications/' | relative_url }}">전체 논문 ↗</a><a href="{{ '/patents/' | relative_url }}">전체 특허 ↗</a><a href="{{ '/sw-data/' | relative_url }}">SW+Data ↗</a></div></div>
+    </section>
+  </div>
+</main>
