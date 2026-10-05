@@ -4046,10 +4046,38 @@
       ],
       "mapping_status": "proposed_from_report_analysis",
       "verification": {
-        "status": "unconfirmed",
+        "status": "verified",
         "checked_at": "2026-10-05",
-        "basis": "검색한 공개 출처에서 동일 산출물의 존재를 확정하지 못함. 부존재를 뜻하지 않음.",
-        "evidence": [],
+        "basis": "기관 저장소와 학회 공식 논문 목록에서 제목·저자·ICLR 2023 발표 기록 확인. 과제 기여율은 보고서와 별도 관리.",
+        "evidence": [
+          {
+            "url": "https://snu.elsevierpure.com/en/publications/online-boundary-free-continual-learning-by-scheduled-data-prior/",
+            "source": "서울대학교 연구성과 저장소 · ICLR 2023 학회 기록 대조",
+            "source_type": "publication_repository",
+            "title": "ONLINE BOUNDARY-FREE CONTINUAL LEARNING BY SCHEDULED DATA PRIOR",
+            "authors": [
+              "Hyunseo Koh",
+              "Minhyuk Seo",
+              "Jihwan Bang",
+              "Hwanjun Song",
+              "Deokki Hong",
+              "Seulki Park",
+              "Jung-Woo Ha",
+              "Jonghyun Choi"
+            ],
+            "venues": [
+              "International Conference on Learning Representations (ICLR 2023)"
+            ],
+            "years": [
+              2023
+            ],
+            "identifiers": {},
+            "match": "exact_title",
+            "access": "retrieved",
+            "checked_at": "2026-10-05",
+            "review_note": "기관 저장소의 제목·저자·ICLR 2023 발표 기록과 ICLR 공식 논문 목록을 대조함. https://iclr.cc/virtual/2023/papers.html"
+          }
+        ],
         "attempts": [
           {
             "provider": "Crossref",
@@ -4063,9 +4091,15 @@
             "query": "\"Online Boundary-Free Continual Learning by Scheduled Data Prior\"",
             "checked_at": "2026-10-05",
             "result": "searched"
+          },
+          {
+            "provider": "Web search",
+            "query": "site.iclr.cc \"Online Boundary-Free\" \"2023\"",
+            "checked_at": "2026-10-05",
+            "result": "confirmed_primary_publication"
           }
         ],
-        "status_label": "검색 후 미확인"
+        "status_label": "외부 존재 확인"
       },
       "metadata_issues": [],
       "links": [
@@ -4104,7 +4138,7 @@
         }
       ],
       "verified_dois": [],
-      "search_attempt_count": 2,
+      "search_attempt_count": 3,
       "reported_registration_date": ""
     },
     {
@@ -42335,15 +42369,15 @@
       "software_registration": 51
     },
     "by_status": {
-      "verified": 136,
-      "unconfirmed": 154,
+      "verified": 137,
+      "unconfirmed": 153,
       "preprint_only": 5,
       "pending_registration": 1
     },
     "by_kind_status": {
       "paper": {
-        "verified": 118,
-        "unconfirmed": 68,
+        "verified": 119,
+        "unconfirmed": 67,
         "preprint_only": 5
       },
       "patent": {

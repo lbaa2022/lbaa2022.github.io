@@ -1,0 +1,440 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LBA Annual Research Highlights",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "coverage",
+    "checked_at",
+    "selection_policy",
+    "years",
+    "highlights",
+    "review_notes",
+    "summary"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "coverage": {
+      "type": "object",
+      "required": [
+        "start",
+        "end",
+        "cutoff"
+      ],
+      "properties": {
+        "start": {
+          "const": 2022
+        },
+        "end": {
+          "const": 2025
+        },
+        "cutoff": {
+          "const": "2025-12-31"
+        }
+      },
+      "additionalProperties": false
+    },
+    "highlights": {
+      "type": "array",
+      "maxItems": 20,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "year",
+          "display_order",
+          "title",
+          "short_name",
+          "outcome_ids",
+          "technology_ids",
+          "horizontal_ids",
+          "vertical_ids",
+          "recognition",
+          "headline",
+          "assessment",
+          "outputs",
+          "evidence",
+          "patent_evidence",
+          "report_references",
+          "project_attribution",
+          "assessment_basis",
+          "mapping_note"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "year": {
+            "type": "integer",
+            "minimum": 2022,
+            "maximum": 2025
+          },
+          "display_order": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "short_name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "outcome_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "technology_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "horizontal_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "vertical_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "recognition": {
+            "type": "object",
+            "required": [
+              "label",
+              "track",
+              "verification"
+            ],
+            "properties": {
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "track": {
+                "enum": [
+                  "main_conference",
+                  "journal",
+                  "workshop",
+                  "report"
+                ]
+              },
+              "verification": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": false
+          },
+          "headline": {
+            "type": "object",
+            "required": [
+              "value",
+              "label",
+              "context",
+              "source_url"
+            ],
+            "properties": {
+              "value": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "context": {
+                "type": "string",
+                "minLength": 1
+              },
+              "source_url": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": false
+          },
+          "assessment": {
+            "type": "object",
+            "required": [
+              "prior_limitation",
+              "novelty",
+              "maturity",
+              "contribution",
+              "selection_reason",
+              "scope_note"
+            ],
+            "properties": {
+              "prior_limitation": {
+                "type": "string",
+                "minLength": 1
+              },
+              "novelty": {
+                "type": "string",
+                "minLength": 1
+              },
+              "maturity": {
+                "type": "string",
+                "minLength": 1
+              },
+              "contribution": {
+                "type": "string",
+                "minLength": 1
+              },
+              "selection_reason": {
+                "type": "string",
+                "minLength": 1
+              },
+              "scope_note": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": false
+          },
+          "outputs": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": [
+                "outcome_id",
+                "title",
+                "role",
+                "verification_status",
+                "reported_years"
+              ],
+              "properties": {
+                "outcome_id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "title": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "role": {
+                  "enum": [
+                    "primary",
+                    "supporting"
+                  ]
+                },
+                "verification_status": {
+                  "const": "verified"
+                },
+                "reported_years": {
+                  "type": "array",
+                  "items": {
+                    "type": "integer",
+                    "minimum": 2022,
+                    "maximum": 2025
+                  }
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "evidence": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": [
+                "label",
+                "url",
+                "supports",
+                "checked_at"
+              ],
+              "properties": {
+                "label": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "url": {
+                  "type": "string",
+                  "format": "uri"
+                },
+                "supports": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "uniqueItems": true
+                },
+                "checked_at": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "patent_evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "outcome_id",
+                "jurisdiction",
+                "number",
+                "event_year",
+                "status_at_cutoff",
+                "label",
+                "source_url",
+                "note"
+              ],
+              "properties": {
+                "outcome_id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "jurisdiction": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "number": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "event_year": {
+                  "type": "integer",
+                  "minimum": 2022,
+                  "maximum": 2025
+                },
+                "status_at_cutoff": {
+                  "enum": [
+                    "application_confirmed",
+                    "registration_confirmed",
+                    "unconfirmed"
+                  ]
+                },
+                "label": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "source_url": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "note": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "report_references": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": [
+                "document",
+                "pdf_pages"
+              ],
+              "properties": {
+                "document": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "pdf_pages": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "integer",
+                    "minimum": 1
+                  }
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "project_attribution": {
+            "type": "string",
+            "minLength": 1
+          },
+          "assessment_basis": {
+            "type": "string",
+            "minLength": 1
+          },
+          "mapping_note": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "years": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "required": [
+          "year",
+          "project_year",
+          "phase",
+          "summary",
+          "highlight_ids",
+          "lead_id"
+        ],
+        "properties": {
+          "year": {
+            "type": "integer",
+            "minimum": 2022,
+            "maximum": 2025
+          },
+          "project_year": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4
+          },
+          "phase": {
+            "type": "string",
+            "minLength": 1
+          },
+          "summary": {
+            "type": "string",
+            "minLength": 1
+          },
+          "highlight_ids": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 5,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "lead_id": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

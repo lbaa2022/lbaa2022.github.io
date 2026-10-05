@@ -1,0 +1,1772 @@
+{
+  "schema_version": "1.0",
+  "title": "연차별 대표성과",
+  "coverage": {
+    "start": 2022,
+    "end": 2025,
+    "cutoff": "2025-12-31"
+  },
+  "checked_at": "2026-10-05",
+  "selection_status": "evidence_based_editorial_selection",
+  "selection_policy": {
+    "selection_unit": "기술적 기여 단위. 같은 연구 주제의 밀접한 산출물은 묶되, 서로 다른 방법의 실험 수치를 합산하지 않음.",
+    "max_per_year": 5,
+    "year_assignment": "논문은 정식 학술대회 발표·학술지 게재 연도, 특허는 해당 출원·등록 사건 발생 연도로 배치. 2025-12-31까지의 성과만 평가.",
+    "ranking": "연차별 핵심 전달 순서이며 정량 점수 순위가 아님. 기관·분야별 할당량 없이 근거의 강도와 과제 기여를 종합한 편집적 선정.",
+    "criteria": [
+      {
+        "name": "학술적 인정",
+        "description": "주요 국제학술대회 본학회·학술지 게재를 우선 검토. 본학회, Findings, 워크숍, 공개 원고를 구분하며 학회 명칭만으로 자동 선정하지 않음."
+      },
+      {
+        "name": "기술적 신규성",
+        "description": "발표 당시 논문이 비교한 기존 방법의 한계와 구체적인 해결 방법을 대조. 최신 기술 전체에 대한 우월성이나 특허법상 신규성 판정으로 확대하지 않음."
+      },
+      {
+        "name": "완성도·기여",
+        "description": "벤치마크 비교·분석, 공개 구현·데이터, 통합 구현, 실물 로봇 검증 등 증거를 구분. 과제 핵심 기능과의 직접적인 연결을 함께 평가."
+      },
+      {
+        "name": "지식재산",
+        "description": "해외 등록은 등록번호·등록일이 확인되고 2025년 이내인 경우에만 등록 근거로 평가. 해외·PCT 출원은 보조 근거이며 등록과 동일하게 평가하지 않음."
+      }
+    ],
+    "eligibility": "과제 보고서에 실적이 수록되고, 대표 논문의 정식 발표가 외부 원문·학회·기관 자료로 확인된 기술을 우선 선정.",
+    "novelty_scope": "선행 기술 대비 차별점은 원문에 근거한 해석이며 독립 재현이나 포괄적인 선행기술 조사를 완료했다는 의미는 아님.",
+    "attribution_scope": "과제 관련성은 보고서 수록에 근거. 공동연구 전체 성과를 본 과제의 단독 기여로 환산하지 않음.",
+    "metric_scope": "핵심 수치는 각 논문의 실험 조건에 한정. 데이터 규모·모델 크기·성공률을 서로 같은 지표로 비교하지 않음."
+  },
+  "years": [
+    {
+      "year": 2022,
+      "project_year": 1,
+      "phase": "묻고 배우는 기반",
+      "summary": "도움 요청 정책과 데이터 편향 완화, 장면·구간 이해의 기반을 확보했습니다.",
+      "highlight_ids": [
+        "highlight-2022-ask4help",
+        "highlight-2022-selecmix",
+        "highlight-2022-mpgn",
+        "highlight-2022-bassl"
+      ],
+      "lead_id": "highlight-2022-ask4help"
+    },
+    {
+      "year": 2023,
+      "project_year": 2,
+      "phase": "스스로 확장하는 학습",
+      "summary": "합성 대화·지속학습·미지 입력 탐지로 지식과 학습 범위를 넓혔습니다.",
+      "highlight_ids": [
+        "highlight-2023-gst",
+        "highlight-2023-featurenorm",
+        "highlight-2023-sdp",
+        "highlight-2023-capeam",
+        "highlight-2023-lbs"
+      ],
+      "lead_id": "highlight-2023-gst"
+    },
+    {
+      "year": 2024,
+      "project_year": 3,
+      "phase": "신뢰도와 검증 체계",
+      "summary": "의료 데이터 정제, 환경 적응과 자동 평가를 통해 검증 범위를 넓혔습니다.",
+      "highlight_ids": [
+        "highlight-2024-cufit",
+        "highlight-2024-lota",
+        "highlight-2024-dplot",
+        "highlight-2024-duel",
+        "highlight-2024-rlaif"
+      ],
+      "lead_id": "highlight-2024-cufit"
+    },
+    {
+      "year": 2025,
+      "project_year": 4,
+      "phase": "질문에서 실제 행동으로",
+      "summary": "응답 가능성 판단과 자문자답 추론을 고도화하고 실제 로봇까지 검증했습니다.",
+      "highlight_ids": [
+        "highlight-2025-cliprt",
+        "highlight-2025-answerability",
+        "highlight-2025-c2r",
+        "highlight-2025-composition",
+        "highlight-2025-socratic"
+      ],
+      "lead_id": "highlight-2025-cliprt"
+    }
+  ],
+  "highlights": [
+    {
+      "id": "highlight-2022-ask4help",
+      "year": 2022,
+      "display_order": 1,
+      "title": "필요한 순간에 도움을 요청하는 에이전트",
+      "short_name": "Ask4Help",
+      "outcome_ids": [
+        "paper-78d1354bad3c"
+      ],
+      "technology_ids": [
+        "T06"
+      ],
+      "horizontal_ids": [
+        "H1",
+        "H2",
+        "H3",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V2"
+      ],
+      "recognition": {
+        "label": "NeurIPS 2022 · 본학회",
+        "track": "main_conference",
+        "verification": "primary_source_confirmed"
+      },
+      "headline": {
+        "value": "52% → 86%",
+        "label": "물체 목표 탐색 성공률",
+        "context": "논문 실험: 도움 비율 13%에서의 물체 목표 탐색 결과. 무도움 에이전트 대비 +34%p.",
+        "source_url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/674ad201bc8fa74b3c9979230aa0c63b-Abstract.html"
+      },
+      "assessment": {
+        "prior_limitation": "자율 에이전트는 오류 상황에서 반복 행동을 하며, 전문가에게 언제 도움을 요청할지 스스로 결정하기 어려웠습니다.",
+        "novelty": "기존 에이전트의 파라미터를 고정한 채 도움 요청 정책을 학습해, 수행 성능과 전문가 개입 비용을 함께 조절합니다.",
+        "maturity": "물체 목표 탐색·방 정리의 두 과제와 사람 참여 실험으로 검증했습니다.",
+        "contribution": "과제의 핵심인 “모르면 묻고, 답을 행동에 반영하는 능력”을 실행 가능한 정책으로 구현했습니다.",
+        "selection_reason": "NeurIPS 본학회 발표, 명확한 성능 개선, 질문 비용을 고려한 정책 설계가 함께 확인되는 초기 대표성과입니다.",
+        "scope_note": "도움에는 전문가의 행동 지원이 포함됩니다. 자연어 질문 생성만의 효과나 완전 자율 수행 성능을 뜻하지 않습니다."
+      },
+      "outputs": [
+        {
+          "outcome_id": "paper-78d1354bad3c",
+          "title": "Ask4Help: Learning to Leverage an Expert for Embodied Tasks",
+          "role": "primary",
+          "verification_status": "verified",
+          "reported_years": [
+            2022
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "label": "NeurIPS 2022 · 본학회 · 원문",
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/674ad201bc8fa74b3c9979230aa0c63b-Abstract.html",
+          "supports": [
+            "publication",
+            "novelty",
+            "validation"
+          ],
+          "checked_at": "2026-10-05"
+        }
+      ],
+      "patent_evidence": [],
+      "report_references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            45
+          ]
+        },
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            35
+          ]
+        },
+        {
+          "document": "221227 1차년도 연차보고서",
+          "pdf_pages": [
+            48
+          ]
+        }
+      ],
+      "project_attribution": "report_or_project_site_only",
+      "assessment_basis": "논문·기관 원문의 비교 실험과 보고서 연결에 근거한 편집적 선정. 독립 재현 실험 또는 특허 신규성 심사 결과가 아님.",
+      "mapping_note": "대표성과 설명의 기능을 기준으로 수평 축을 보완한 편집적 연결; 원 성과 DB의 주제 분류는 보존."
+    },
+    {
+      "id": "highlight-2022-selecmix",
+      "year": 2022,
+      "display_order": 2,
+      "title": "데이터 편향을 줄이는 선택적 학습",
+      "short_name": "SelecMix",
+      "outcome_ids": [
+        "paper-9b1ec588b224"
+      ],
+      "technology_ids": [
+        "T14"
+      ],
+      "horizontal_ids": [
+        "H2",
+        "H4",
+        "H3"
+      ],
+      "vertical_ids": [
+        "V4"
+      ],
+      "recognition": {
+        "label": "NeurIPS 2022 · 본학회",
+        "track": "main_conference",
+        "verification": "primary_source_confirmed"
+      },
+      "headline": {
+        "value": "편향 완화",
+        "label": "상충하는 표본 쌍을 골라 학습",
+        "context": "편향과 라벨의 상관관계를 약화하는 선택적 mixup; 노이즈 라벨 조건도 평가.",
+        "source_url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/5c6f928e3fc5f32ee29a1d916b68e6f5-Abstract-Conference.html"
+      },
+      "assessment": {
+        "prior_limitation": "라벨과 배경 등 우연한 특징이 강하게 연관되면, 모델은 목표 개념 대신 데이터 편향을 학습합니다.",
+        "novelty": "같은 라벨·다른 편향 또는 다른 라벨·같은 편향을 가진 표본 쌍을 선택해 혼합하는 방법을 제안했습니다.",
+        "maturity": "표준 편향 벤치마크와 라벨 노이즈 조건에서 비교 실험을 수행했습니다.",
+        "contribution": "정제 대상을 데이터의 오류뿐 아니라 편향으로 확장하며, 데이터 선택을 통한 강건한 학습 기반을 제공합니다.",
+        "selection_reason": "NeurIPS 본학회 발표와 데이터 선택 규칙의 명확한 신규성을 근거로 선정했습니다.",
+        "scope_note": "데이터 파일의 라벨을 직접 수정하는 도구가 아니라, 편향의 학습 영향을 줄이는 알고리즘입니다."
+      },
+      "outputs": [
+        {
+          "outcome_id": "paper-9b1ec588b224",
+          "title": "SelecMix: Debiased Learning by Contradicting-pair Sampling",
+          "role": "primary",
+          "verification_status": "verified",
+          "reported_years": [
+            2022
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "label": "NeurIPS 2022 · 본학회 · 원문",
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/5c6f928e3fc5f32ee29a1d916b68e6f5-Abstract-Conference.html",
+          "supports": [
+            "publication",
+            "novelty",
+            "validation"
+          ],
+          "checked_at": "2026-10-05"
+        }
+      ],
+      "patent_evidence": [],
+      "report_references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            46
+          ]
+        },
+        {
+          "document": "221227 1차년도 연차보고서",
+          "pdf_pages": [
+            48
+          ]
+        }
+      ],
+      "project_attribution": "report_or_project_site_only",
+      "assessment_basis": "논문·기관 원문의 비교 실험과 보고서 연결에 근거한 편집적 선정. 독립 재현 실험 또는 특허 신규성 심사 결과가 아님.",
+      "mapping_note": "대표성과 설명의 기능을 기준으로 수평 축을 보완한 편집적 연결; 원 성과 DB의 주제 분류는 보존."
+    },
+    {
+      "id": "highlight-2022-mpgn",
+      "year": 2022,
+      "display_order": 3,
+      "title": "정답 구간 주석 없이 학습하는 비디오 검색",
+      "short_name": "MPGN",
+      "outcome_ids": [
+        "paper-e4b5be8191f4"
+      ],
+      "technology_ids": [
+        "T02"
+      ],
+      "horizontal_ids": [
+        "H1",
+        "H3"
+      ],
+      "vertical_ids": [
+        "V1"
+      ],
+      "recognition": {
+        "label": "EMNLP 2022 · 본학회",
+        "track": "main_conference",
+        "verification": "primary_source_confirmed"
+      },
+      "headline": {
+        "value": "구간 주석 없이",
+        "label": "의사 질의로 비디오 검색 학습",
+        "context": "TVR 벤치마크에서 영상·자막 기반 의사 질의의 유효성 검증.",
+        "source_url": "https://aclanthology.org/2022.emnlp-main.530/"
+      },
+      "assessment": {
+        "prior_limitation": "자연어로 비디오 속 특정 순간을 검색하려면 질의별 정답 시간 구간을 사람이 주석해야 했습니다.",
+        "novelty": "자막으로 후보 구간을 추출하고 영상·텍스트 정보를 이용해 의사 질의를 만들어 자기지도 학습에 활용합니다.",
+        "maturity": "TVR에서 지도학습 및 비지도 비교 모델을 대상으로 검색 성능을 검증했습니다.",
+        "contribution": "대규모 비디오에서 필요한 지식을 검색하기 위한 수작업 주석 의존도를 낮췄습니다.",
+        "selection_reason": "EMNLP 본학회 발표와 질문 생성·지식 검색을 연결하는 직접적인 기여가 확인됩니다.",
+        "scope_note": "영상과 자막은 사용합니다. 모든 데이터나 감독 정보가 불필요하다는 의미는 아닙니다."
+      },
+      "outputs": [
+        {
+          "outcome_id": "paper-e4b5be8191f4",
+          "title": "Modal-specific Pseudo Query Generation for Video Corpus Moment Retrieval",
+          "role": "primary",
+          "verification_status": "verified",
+          "reported_years": [
+            2022
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "label": "EMNLP 2022 · 본학회 · 원문",
+          "url": "https://aclanthology.org/2022.emnlp-main.530/",
+          "supports": [
+            "publication",
+            "novelty",
+            "validation"
+          ],
+          "checked_at": "2026-10-05"
+        }
+      ],
+      "patent_evidence": [],
+      "report_references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            45
+          ]
+        },
+        {
+          "document": "221227 1차년도 연차보고서",
+          "pdf_pages": [
+            48
+          ]
+        }
+      ],
+      "project_attribution": "report_or_project_site_only",
+      "assessment_basis": "논문·기관 원문의 비교 실험과 보고서 연결에 근거한 편집적 선정. 독립 재현 실험 또는 특허 신규성 심사 결과가 아님.",
+      "mapping_note": "대표성과 설명의 기능을 기준으로 수평 축을 보완한 편집적 연결; 원 성과 DB의 주제 분류는 보존."
+    },
+    {
+      "id": "highlight-2022-bassl",
+      "year": 2022,
+      "display_order": 4,
+      "title": "긴 영상을 의미 있는 장면으로 분할",
+      "short_name": "BaSSL",
+      "outcome_ids": [
+        "paper-a24f40722104"
+      ],
+      "technology_ids": [
+        "T02"
+      ],
+      "horizontal_ids": [
+        "H1"
+      ],
+      "vertical_ids": [
+        "V1"
+      ],
+      "recognition": {
+        "label": "ACCV 2022 · 본학회",
+        "track": "main_conference",
+        "verification": "primary_source_confirmed"
+      },
+      "headline": {
+        "value": "장면 경계 학습",
+        "label": "MovieNet-SSeg에서 성능 검증",
+        "context": "논문 발표 당시 비교 방법 대비 우수한 장면 분할 결과를 보고.",
+        "source_url": "https://openaccess.thecvf.com/content/ACCV2022/html/Mun_BaSSL_Boundary-aware_Self-Supervised_Learning_for_Video_Scene_Segmentation_ACCV_2022_paper.html"
+      },
+      "assessment": {
+        "prior_limitation": "단순 샷 전환 검출만으로는 긴 영상의 의미 단위인 장면 경계를 파악하기 어렵습니다.",
+        "novelty": "의사 장면 경계와 세 가지 경계 인식 사전학습 과제로 장면 내부 유사성과 장면 간 차이를 학습합니다.",
+        "maturity": "MovieNet-SSeg 비교 실험과 구성요소 분석을 수행하고 코드를 공개했습니다.",
+        "contribution": "비디오 지식 추출과 후속 질의응답에 필요한 시간적 단위를 마련했습니다.",
+        "selection_reason": "국제학술대회 발표와 공개 구현, 장면 단위 지식체계의 기반 기여를 함께 평가했습니다.",
+        "scope_note": "ACCV 개최·발표 연도인 2022년에 배치했습니다. Springer 논문집 발행연도 2023과 구분합니다."
+      },
+      "outputs": [
+        {
+          "outcome_id": "paper-a24f40722104",
+          "title": "BaSSL: Boundary-aware Self-Supervised Learning for Video Scene Segmentation",
+          "role": "primary",
+          "verification_status": "verified",
+          "reported_years": [
+            2022
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "label": "ACCV 2022 · 본학회 · 원문",
+          "url": "https://openaccess.thecvf.com/content/ACCV2022/html/Mun_BaSSL_Boundary-aware_Self-Supervised_Learning_for_Video_Scene_Segmentation_ACCV_2022_paper.html",
+          "supports": [
+            "publication",
+            "novelty",
+            "validation"
+          ],
+          "checked_at": "2026-10-05"
+        }
+      ],
+      "patent_evidence": [],
+      "report_references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            45
+          ]
+        },
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            29
+          ]
+        },
+        {
+          "document": "221227 1차년도 연차보고서",
+          "pdf_pages": [
+            48
+          ]
+        }
+      ],
+      "project_attribution": "report_or_project_site_only",
+      "assessment_basis": "논문·기관 원문의 비교 실험과 보고서 연결에 근거한 편집적 선정. 독립 재현 실험 또는 특허 신규성 심사 결과가 아님.",
+      "mapping_note": "대표성과 설명의 기능을 기준으로 수평 축을 보완한 편집적 연결; 원 성과 DB의 주제 분류는 보존."
+    },
+    {
+      "id": "highlight-2023-gst",
+      "year": 2023,
+      "display_order": 1,
+      "title": "스스로 대화를 생성해 시각 질의응답을 확장",
+      "short_name": "Generative Self-Training",
+      "outcome_ids": [
+        "paper-fa1bebd9b607"
+      ],
+      "technology_ids": [
+        "T05"
+      ],
+      "horizontal_ids": [
+        "H4",
+        "H3",
+        "H1",
+        "H2"
+      ],
+      "vertical_ids": [
+        "V1"
+      ],
+      "recognition": {
+        "label": "CVPR 2023 · 본학회",
+        "track": "main_conference",
+        "verification": "primary_source_confirmed"
+      },
+      "headline": {
+        "value": "120만 → 1,290만",
+        "label": "질의응답 학습 데이터 확장",
+        "context": "논문 GST 설정의 QA 쌍 규모. 모두 사람이 직접 작성한 정답 데이터라는 의미는 아닙니다.",
+        "source_url": "https://openaccess.thecvf.com/content/CVPR2023/html/Kang_The_Dialog_Must_Go_On_Improving_Visual_Dialog_via_Generative_CVPR_2023_paper.html"
+      },
+      "assessment": {
+        "prior_limitation": "시각 대화 모델은 기존 라벨 데이터에 의존해 학습 규모를 늘리기 어려웠습니다.",
+        "novelty": "웹 이미지 선별, 합성 대화 생성, 생성 문장의 불확실도에 기반한 데이터 선택과 모달 일관성 학습을 하나의 자기학습 절차로 연결했습니다.",
+        "maturity": "VisDial v1.0·v0.9, 적대적 공격 및 적은 데이터 조건에서 평가하고 코드를 공개했습니다.",
+        "contribution": "질문과 답을 생성해 학습 자원을 확장하는 성장학습의 구체적 구현입니다.",
+        "selection_reason": "CVPR 본학회 발표, 대규모 QA 확장, 성능·강건성 검증을 갖춘 성과입니다.",
+        "scope_note": "신규성 평가는 발표 당시 논문의 선행연구 비교에 근거합니다."
+      },
+      "outputs": [
+        {
+          "outcome_id": "paper-fa1bebd9b607",
+          "title": "The Dialog Must Go On: Improving Visual Dialog via Generative Self-Training",
+          "role": "primary",
+          "verification_status": "verified",
+          "reported_years": [
+            2023
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "label": "CVPR 2023 · 본학회 · 원문",
+          "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Kang_The_Dialog_Must_Go_On_Improving_Visual_Dialog_via_Generative_CVPR_2023_paper.html",
+          "supports": [
+            "publication",
+            "novelty",
+            "validation"
+          ],
+          "checked_at": "2026-10-05"
+        }
+      ],
+      "patent_evidence": [],
+      "report_references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            46
+          ]
+        },
+        {
+          "document": "231226 2차년도 연차보고서",
+          "pdf_pages": [
+            50,
+            51,
+            52
+          ]
+        }
+      ],
+      "project_attribution": "report_or_project_site_only",
+      "assessment_basis": "논문·기관 원문의 비교 실험과 보고서 연결에 근거한 편집적 선정. 독립 재현 실험 또는 특허 신규성 심사 결과가 아님.",
+      "mapping_note": "대표성과 설명의 기능을 기준으로 수평 축을 보완한 편집적 연결; 원 성과 DB의 주제 분류는 보존."
+    },
+    {
+      "id": "highlight-2023-featurenorm",
+      "year": 2023,
+      "display_order": 2,
+      "title": "낯선 입력을 알아차리는 특징 블록 선택",
+      "short_name": "FeatureNorm / NormRatio",
+      "outcome_ids": [
+        "paper-7c7969a17b6c"
+      ],
+      "technology_ids": [
+        "T10"
+      ],
+      "horizontal_ids": [
+        "H2",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V3"
+      ],
+      "recognition": {
+        "label": "CVPR 2023 · 본학회",
+        "track": "main_conference",
+        "verification": "primary_source_confirmed"
+      },
+      "headline": {
+        "value": "불확실성 지각",
+        "label": "마지막 층 대신 적합한 특징 블록 선택",
+        "context": "CIFAR10·ImageNet과 여러 네트워크에서 분포 밖 입력 탐지를 검증.",
+        "source_url": "https://openaccess.thecvf.com/content/CVPR2023/html/Yu_Block_Selection_Method_for_Using_Feature_Norm_in_Out-of-Distribution_Detection_CVPR_2023_paper.html"
+      },
+      "assessment": {
+        "prior_limitation": "모델의 최종 출력은 낯선 입력에도 높은 확신을 보일 수 있어, 마지막 층만으로는 미지 입력을 구별하기 어렵습니다.",
+        "novelty": "직소 이미지로 의사 미지 입력을 만들고, 알려진 입력과의 특징 크기 차이가 큰 블록을 선택합니다.",
+        "maturity": "복수 데이터셋·네트워크의 탐지 성능을 평가했으며 관련 미국 출원도 기관 연구실 자료에서 확인했습니다.",
+        "contribution": "의료 분류 등에서 “알지 못하는 입력”을 먼저 인지하는 기반 기술입니다.",
+        "selection_reason": "CVPR 본학회 발표, 설명 가능한 블록 선택 원리, 미국 출원 근거를 함께 갖췄습니다.",
+        "scope_note": "일반 영상 벤치마크의 결과이며 임상 진단 정확도를 직접 입증하는 결과는 아닙니다."
+      },
+      "outputs": [
+        {
+          "outcome_id": "paper-7c7969a17b6c",
+          "title": "Block Selection Method for Using Feature Norm in Out-of-distribution Detection",
+          "role": "primary",
+          "verification_status": "verified",
+          "reported_years": [
+            2023
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "label": "CVPR 2023 · 본학회 · 원문",
+          "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Yu_Block_Selection_Method_for_Using_Feature_Norm_in_Out-of-Distribution_Detection_CVPR_2023_paper.html",
+          "supports": [
+            "publication",
+            "novelty",
+            "validation"
+          ],
+          "checked_at": "2026-10-05"
+        }
+      ],
+      "patent_evidence": [
+        {
+          "outcome_id": "patent-cbf6637d01d4",
+          "jurisdiction": "US",
+          "number": "18/518159",
+          "event_year": 2023,
+          "status_at_cutoff": "application_confirmed",
+          "label": "미국 출원 · 2023",
+          "source_url": "https://sites.google.com/view/gistailab/members/alumni/postdoctoral-researcher/%EC%9C%A0%EC%97%B0%EA%B5%AD-yu-yeonguk",
+          "note": "출원번호·제목을 기관 연구실 목록과 보고서로 대조. 등록 우수성으로 가산하지 않음."
+        }
+      ],
+      "report_references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            46
+          ]
+        },
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            30
+          ]
+        },
+        {
+          "document": "231226 2차년도 연차보고서",
+          "pdf_pages": [
+            50,
+            51,
+            52
+          ]
+        }
+      ],
+      "project_attribution": "report_or_project_site_only",
+      "assessment_basis": "논문·기관 원문의 비교 실험과 보고서 연결에 근거한 편집적 선정. 독립 재현 실험 또는 특허 신규성 심사 결과가 아님.",
+      "mapping_note": "대표성과 설명의 기능을 기준으로 수평 축을 보완한 편집적 연결; 원 성과 DB의 주제 분류는 보존."
+    },
+    {
+      "id": "highlight-2023-sdp",
+      "year": 2023,
+      "display_order": 3,
+      "title": "과제 경계 없이 계속 배우는 온라인 학습",
+      "short_name": "Scheduled Data Prior",
+      "outcome_ids": [
+        "paper-1a275346bb92"
+      ],
+      "technology_ids": [
+        "T09"
+      ],
+      "horizontal_ids": [
+        "H4"
+      ],
+      "vertical_ids": [
+        "V2"
+      ],
+      "recognition": {
+        "label": "ICLR 2023 · 본학회",
+        "track": "main_conference",
+        "verification": "primary_source_confirmed"
+      },
+      "headline": {
+        "value": "경계 없는 학습",
+        "label": "지식 유지와 새 지식 획득을 함께 평가",
+        "context": "CIFAR-10·CIFAR-100·TinyImageNet·ImageNet의 네 벤치마크.",
+        "source_url": "https://snu.elsevierpure.com/en/publications/online-boundary-free-continual-learning-by-scheduled-data-prior/"
+      },
+      "assessment": {
+        "prior_limitation": "연속학습 연구는 과제가 명확히 나뉜다는 가정을 두는 경우가 많아, 점진적으로 변하는 실제 데이터 흐름을 충분히 반영하지 못했습니다.",
+        "novelty": "과제 경계가 없는 온라인 학습 설정과 지식 손실·획득 지표를 제시하고, 과거 지식의 전달 강도를 일정에 따라 조절합니다.",
+        "maturity": "연속·주기적 데이터 흐름과 기존 과제 분할 조건을 네 벤치마크에서 평가하고 코드를 공개했습니다.",
+        "contribution": "질문을 통해 새 지식을 얻은 뒤 기존 지식을 유지해야 하는 성장 에이전트의 학습 기반입니다.",
+        "selection_reason": "ICLR 본학회 발표와 현실적인 문제 설정, 학습 방법 및 평가 지표의 결합을 높게 평가했습니다.",
+        "scope_note": "이 성과 자체가 질문 정책을 구현한 것은 아니며, 지속 성장의 기반 학습 기술로 배치했습니다."
+      },
+      "outputs": [
+        {
+          "outcome_id": "paper-1a275346bb92",
+          "title": "Online Boundary-Free Continual Learning by Scheduled Data Prior",
+          "role": "primary",
+          "verification_status": "verified",
+          "reported_years": [
+            2023
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "label": "ICLR 2023 · 본학회 · 원문",
+          "url": "https://snu.elsevierpure.com/en/publications/online-boundary-free-continual-learning-by-scheduled-data-prior/",
+          "supports": [
+            "publication",
+            "novelty",
+            "validation"
+          ],
+          "checked_at": "2026-10-05"
+        },
+        {
+          "label": "ICLR 2023 공식 논문 목록",
+          "url": "https://iclr.cc/virtual/2023/papers.html",
+          "supports": [
+            "publication"
+          ],
+          "checked_at": "2026-10-05"
+        }
+      ],
+      "patent_evidence": [],
+      "report_references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            46
+          ]
+        },
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            35
+          ]
+        },
+        {
+          "document": "231226 2차년도 연차보고서",
+          "pdf_pages": [
+            50,
+            51,
+            52
+          ]
+        }
+      ],
+      "project_attribution": "report_or_project_site_only",
+      "assessment_basis": "논문·기관 원문의 비교 실험과 보고서 연결에 근거한 편집적 선정. 독립 재현 실험 또는 특허 신규성 심사 결과가 아님.",
+      "mapping_note": "대표성과 설명의 기능을 기준으로 수평 축을 보완한 편집적 연결; 원 성과 DB의 주제 분류는 보존."
+    },
+    {
+      "id": "highlight-2023-capeam",
+      "year": 2023,
+      "display_order": 4,
+      "title": "행동으로 바뀐 환경을 기억하는 작업계획",
+      "short_name": "CAPEAM",
+      "outcome_ids": [
+        "paper-36cba21217fe"
+      ],
+      "technology_ids": [
+        "T06"
+      ],
+      "horizontal_ids": [
+        "H1",
+        "H2",
+        "H3",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V2"
+      ],
+      "recognition": {
+        "label": "ICCV 2023 · 본학회",
+        "track": "main_conference",
+        "verification": "primary_source_confirmed"
+      },
+      "headline": {
+        "value": "계획 + 환경 기억",
+        "label": "작업 맥락과 물체 상태 변화를 연결",
+        "context": "ALFRED의 본 환경·미지 환경에서 탐색과 물체 상호작용을 평가.",
+        "source_url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Kim_Context-Aware_Planning_and_Environment-Aware_Memory_for_Instruction_Following_Embodied_Agents_ICCV_2023_paper.pdf"
+      },
+      "assessment": {
+        "prior_limitation": "에이전트가 이미 옮긴 물체의 위치나 상태 변화를 잊으면 후속 행동과 탐색에 오류가 발생합니다.",
+        "novelty": "작업에 필요한 객체 맥락을 계획에 반영하고, 행동 이후 달라진 물체 위치·상태를 기억해 다음 행동에 활용합니다.",
+        "maturity": "장기 지시 수행 벤치마크에서 탐색·상호작용 및 환경 일반화 성능을 검증했습니다.",
+        "contribution": "관찰한 세계의 지식을 갱신하며 절차를 실행하는 기반을 강화했습니다.",
+        "selection_reason": "ICCV 본학회 발표와 지식 갱신·절차 수행을 함께 다룬 기여를 근거로 선정했습니다.",
+        "scope_note": "시뮬레이션 벤치마크 검증이며 실물 로봇의 서비스 완성도를 뜻하지 않습니다."
+      },
+      "outputs": [
+        {
+          "outcome_id": "paper-36cba21217fe",
+          "title": "Context-Aware Planning and Environment-Aware Memory for Instruction Following Embodied Agents",
+          "role": "primary",
+          "verification_status": "verified",
+          "reported_years": [
+            2023
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "label": "ICCV 2023 · 본학회 · 원문",
+          "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Kim_Context-Aware_Planning_and_Environment-Aware_Memory_for_Instruction_Following_Embodied_Agents_ICCV_2023_paper.pdf",
+          "supports": [
+            "publication",
+            "novelty",
+            "validation"
+          ],
+          "checked_at": "2026-10-05"
+        }
+      ],
+      "patent_evidence": [],
+      "report_references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            46
+          ]
+        },
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            36
+          ]
+        },
+        {
+          "document": "231226 2차년도 연차보고서",
+          "pdf_pages": [
+            50,
+            51,
+            52
+          ]
+        }
+      ],
+      "project_attribution": "report_or_project_site_only",
+      "assessment_basis": "논문·기관 원문의 비교 실험과 보고서 연결에 근거한 편집적 선정. 독립 재현 실험 또는 특허 신규성 심사 결과가 아님.",
+      "mapping_note": "대표성과 설명의 기능을 기준으로 수평 축을 보완한 편집적 연결; 원 성과 DB의 주제 분류는 보존."
+    },
+    {
+      "id": "highlight-2023-lbs",
+      "year": 2023,
+      "display_order": 5,
+      "title": "스케치로 형태와 공간 관계를 보존",
+      "short_name": "Learning by Sketching",
+      "outcome_ids": [
+        "paper-84ec00d3304b"
+      ],
+      "technology_ids": [
+        "T08"
+      ],
+      "horizontal_ids": [
+        "H1",
+        "H3",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V2"
+      ],
+      "recognition": {
+        "label": "CVPR 2023 · 본학회",
+        "track": "main_conference",
+        "verification": "primary_source_confirmed"
+      },
+      "headline": {
+        "value": "기하 정보 보존",
+        "label": "그리기를 통한 시각 표상 학습",
+        "context": "스케치 정답 데이터 없이 학습하고 형태·위치 정보의 보존을 이론과 실험으로 분석.",
+        "source_url": "https://openaccess.thecvf.com/content/CVPR2023/papers/Lee_Learning_Geometry-Aware_Representations_by_Sketching_CVPR_2023_paper.pdf"
+      },
+      "assessment": {
+        "prior_limitation": "일반적인 시각 표상은 배경 등 불필요한 특징에 치우치거나 형태·위치 관계를 명시적으로 보존하지 못할 수 있습니다.",
+        "novelty": "영상을 색상 획의 집합으로 바꾸는 표현을 학습하고, 아핀 변환에 대한 등변성으로 기하 정보 보존을 설명합니다.",
+        "maturity": "CLEVR 객체 속성 분류, CLEVR–STL-10 도메인 전이와 여러 후속 과제를 평가했습니다.",
+        "contribution": "실세계 객체를 언어·행동과 연결할 때 필요한 형태와 공간 관계의 표현 기반을 제공합니다.",
+        "selection_reason": "CVPR 본학회 발표, 표상 설계의 신규성, 이론·다중 과제 검증을 갖췄습니다.",
+        "scope_note": "로봇 작업 성공률을 직접 검증한 성과가 아닌 시각 인지 기반 기술입니다."
+      },
+      "outputs": [
+        {
+          "outcome_id": "paper-84ec00d3304b",
+          "title": "Learning Geometry-aware Representations by Sketching",
+          "role": "primary",
+          "verification_status": "verified",
+          "reported_years": [
+            2023
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "label": "CVPR 2023 · 본학회 · 원문",
+          "url": "https://openaccess.thecvf.com/content/CVPR2023/papers/Lee_Learning_Geometry-Aware_Representations_by_Sketching_CVPR_2023_paper.pdf",
+          "supports": [
+            "publication",
+            "novelty",
+            "validation"
+          ],
+          "checked_at": "2026-10-05"
+        }
+      ],
+      "patent_evidence": [],
+      "report_references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            46
+          ]
+        },
+        {
+          "document": "231226 2차년도 연차보고서",
+          "pdf_pages": [
+            50,
+            51,
+            52
+          ]
+        }
+      ],
+      "project_attribution": "report_or_project_site_only",
+      "assessment_basis": "논문·기관 원문의 비교 실험과 보고서 연결에 근거한 편집적 선정. 독립 재현 실험 또는 특허 신규성 심사 결과가 아님.",
+      "mapping_note": "대표성과 설명의 기능을 기준으로 수평 축을 보완한 편집적 연결; 원 성과 DB의 주제 분류는 보존."
+    },
+    {
+      "id": "highlight-2024-cufit",
+      "year": 2024,
+      "display_order": 1,
+      "title": "오류 라벨에도 강건한 의료 영상 학습",
+      "short_name": "CUFIT",
+      "outcome_ids": [
+        "paper-ccd43ef5d07a"
+      ],
+      "technology_ids": [
+        "T13"
+      ],
+      "horizontal_ids": [
+        "H2",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V4",
+        "V3"
+      ],
+      "recognition": {
+        "label": "NeurIPS 2024 · 본학회",
+        "track": "main_conference",
+        "verification": "primary_source_confirmed"
+      },
+      "headline": {
+        "value": "4개 의료 벤치마크",
+        "label": "오류 라벨 환경의 분류·정제 성능 검증",
+        "context": "HAM10000·APTOS-2019·BloodMNIST·OrganCMNIST. 논문에서 노이즈율 40% 조건의 비교 우위를 보고.",
+        "source_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/2093ed77c549eda95bd6f7212b735b43-Paper-Conference.pdf"
+      },
+      "assessment": {
+        "prior_limitation": "기존 오류 라벨 선별 방법은 처음부터 학습하는 모델을 가정해, 사전학습된 시각 기반 모델의 장점을 충분히 활용하지 못했습니다.",
+        "novelty": "선형 분류기와 두 어댑터를 순차적으로 학습하고, 앞 단계가 고른 정제 표본을 다음 단계로 전달하는 커리큘럼을 제안했습니다.",
+        "maturity": "네 의료 영상 벤치마크에서 분류 성능과 노이즈 라벨 검출을 분석하고 코드를 공개했습니다.",
+        "contribution": "데이터 정제와 의료진단 지원을 연결해, 오류가 포함된 데이터로도 신뢰할 수 있는 모델을 학습하는 기반을 확보했습니다.",
+        "selection_reason": "NeurIPS 본학회 발표, 의료 분야의 직접적 문제 해결, 복수 벤치마크 검증을 갖춘 대표성과입니다.",
+        "scope_note": "공개 데이터셋에서의 알고리즘 검증입니다. 임상시험·의료기기 허가 또는 실제 진료 효과를 뜻하지 않습니다."
+      },
+      "outputs": [
+        {
+          "outcome_id": "paper-ccd43ef5d07a",
+          "title": "Curriculum Fine-tuning of Vision Foundation Model for Medical Image Classification Under Label Noise",
+          "role": "primary",
+          "verification_status": "verified",
+          "reported_years": [
+            2024
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "label": "NeurIPS 2024 · 본학회 · 원문",
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/2093ed77c549eda95bd6f7212b735b43-Paper-Conference.pdf",
+          "supports": [
+            "publication",
+            "novelty",
+            "validation"
+          ],
+          "checked_at": "2026-10-05"
+        }
+      ],
+      "patent_evidence": [],
+      "report_references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            47
+          ]
+        },
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            31,
+            41
+          ]
+        }
+      ],
+      "project_attribution": "report_or_project_site_only",
+      "assessment_basis": "논문·기관 원문의 비교 실험과 보고서 연결에 근거한 편집적 선정. 독립 재현 실험 또는 특허 신규성 심사 결과가 아님.",
+      "mapping_note": "대표성과 설명의 기능을 기준으로 수평 축을 보완한 편집적 연결; 원 성과 DB의 주제 분류는 보존."
+    },
+    {
+      "id": "highlight-2024-lota",
+      "year": 2024,
+      "display_order": 2,
+      "title": "언어 기반 작업계획을 자동으로 비교·평가",
+      "short_name": "LoTa-Bench",
+      "outcome_ids": [
+        "paper-bcd1121b469e"
+      ],
+      "technology_ids": [
+        "T06"
+      ],
+      "horizontal_ids": [
+        "H1",
+        "H2",
+        "H3",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V2"
+      ],
+      "recognition": {
+        "label": "ICLR 2024 · 본학회",
+        "track": "main_conference",
+        "verification": "primary_source_confirmed"
+      },
+      "headline": {
+        "value": "2개 실행 환경",
+        "label": "계획의 실행 성능을 자동 평가",
+        "context": "ALFRED–AI2-THOR와 확장 Watch-And-Help–VirtualHome 조합.",
+        "source_url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/e91fb65c6324a984ea9ef39a5b84af04-Abstract-Conference.html"
+      },
+      "assessment": {
+        "prior_limitation": "LLM 기반 작업계획은 모델·프롬프트·평가 환경이 달라 성능을 공정하게 비교하기 어려웠습니다.",
+        "novelty": "계획을 시뮬레이터에서 실행하고 결과를 자동 측정하는 공통 평가 체계를 제시했습니다.",
+        "maturity": "두 데이터셋·시뮬레이터 조합에서 다양한 LLM과 프롬프트를 비교했습니다.",
+        "contribution": "질문·피드백 기반 계획의 개선 효과를 재현 가능하게 검증하는 과제의 실험 기반입니다.",
+        "selection_reason": "ICLR 본학회 발표와 개별 알고리즘을 넘어선 공통 평가 인프라의 기여를 평가했습니다.",
+        "scope_note": "벤치마크의 완성도이며 상용 가정용 로봇 서비스의 완성을 의미하지 않습니다."
+      },
+      "outputs": [
+        {
+          "outcome_id": "paper-bcd1121b469e",
+          "title": "LoTa-Bench: Benchmarking Language-oriented Task Planners for Embodied Agents",
+          "role": "primary",
+          "verification_status": "verified",
+          "reported_years": [
+            2024
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "label": "ICLR 2024 · 본학회 · 원문",
+          "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/e91fb65c6324a984ea9ef39a5b84af04-Abstract-Conference.html",
+          "supports": [
+            "publication",
+            "novelty",
+            "validation"
+          ],
+          "checked_at": "2026-10-05"
+        }
+      ],
+      "patent_evidence": [],
+      "report_references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            47
+          ]
+        },
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            38,
+            40
+          ]
+        }
+      ],
+      "project_attribution": "report_or_project_site_only",
+      "assessment_basis": "논문·기관 원문의 비교 실험과 보고서 연결에 근거한 편집적 선정. 독립 재현 실험 또는 특허 신규성 심사 결과가 아님.",
+      "mapping_note": "대표성과 설명의 기능을 기준으로 수평 축을 보완한 편집적 연결; 원 성과 DB의 주제 분류는 보존."
+    },
+    {
+      "id": "highlight-2024-dplot",
+      "year": 2024,
+      "display_order": 3,
+      "title": "운용 환경이 바뀌어도 적응하는 모델",
+      "short_name": "DPLOT",
+      "outcome_ids": [
+        "paper-1df6d77c1c35"
+      ],
+      "technology_ids": [
+        "T10"
+      ],
+      "horizontal_ids": [
+        "H2",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V3"
+      ],
+      "recognition": {
+        "label": "CVPR 2024 · 본학회",
+        "track": "main_conference",
+        "verification": "primary_source_confirmed"
+      },
+      "headline": {
+        "value": "라벨 없이 적응",
+        "label": "블록 선택과 두 시점 의사 라벨의 결합",
+        "context": "CIFAR10-C·CIFAR100-C·ImageNet-C의 환경 변화 조건에서 검증.",
+        "source_url": "https://openaccess.thecvf.com/content/CVPR2024/html/Yu_Domain-Specific_Block_Selection_and_Paired-View_Pseudo-Labeling_for_Online_Test-Time_Adaptation_CVPR_2024_paper.html"
+      },
+      "assessment": {
+        "prior_limitation": "배포 이후 환경이 달라질 때, 품질이 낮은 의사 라벨로 재학습하면 장기 적응 성능이 악화됩니다.",
+        "novelty": "환경에 민감한 특징 블록만 선택해 조정하고 원본·좌우 반전 이미지의 예측을 결합해 의사 라벨을 생성합니다.",
+        "maturity": "세 손상 이미지 벤치마크에서 기존 시험 시점 적응 방법과 비교하고 구성요소를 분석했습니다.",
+        "contribution": "추가 정답 라벨 확보가 어려운 운용 환경에서 불확실성 대응과 모델 갱신을 지원합니다.",
+        "selection_reason": "CVPR 본학회 발표, 단순하고 구현 가능한 적응 절차, 복수 환경 검증을 근거로 선정했습니다.",
+        "scope_note": "일반 영상 벤치마크의 성능을 의료 임상 성능으로 환산하지 않습니다."
+      },
+      "outputs": [
+        {
+          "outcome_id": "paper-1df6d77c1c35",
+          "title": "Domain-Specific Block Selection and Paired-View Pseudo-Labeling for Online Test-Time Adaptation",
+          "role": "primary",
+          "verification_status": "verified",
+          "reported_years": [
+            2024
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "label": "CVPR 2024 · 본학회 · 원문",
+          "url": "https://openaccess.thecvf.com/content/CVPR2024/html/Yu_Domain-Specific_Block_Selection_and_Paired-View_Pseudo-Labeling_for_Online_Test-Time_Adaptation_CVPR_2024_paper.html",
+          "supports": [
+            "publication",
+            "novelty",
+            "validation"
+          ],
+          "checked_at": "2026-10-05"
+        }
+      ],
+      "patent_evidence": [],
+      "report_references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            47
+          ]
+        },
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            34,
+            35
+          ]
+        }
+      ],
+      "project_attribution": "report_or_project_site_only",
+      "assessment_basis": "논문·기관 원문의 비교 실험과 보고서 연결에 근거한 편집적 선정. 독립 재현 실험 또는 특허 신규성 심사 결과가 아님.",
+      "mapping_note": "대표성과 설명의 기능을 기준으로 수평 축을 보완한 편집적 연결; 원 성과 DB의 주제 분류는 보존."
+    },
+    {
+      "id": "highlight-2024-duel",
+      "year": 2024,
+      "display_order": 4,
+      "title": "중복을 덜어 클래스 불균형을 완화",
+      "short_name": "DUEL",
+      "outcome_ids": [
+        "paper-1d570fb18c2e"
+      ],
+      "technology_ids": [
+        "T14"
+      ],
+      "horizontal_ids": [
+        "H2",
+        "H4",
+        "H3"
+      ],
+      "vertical_ids": [
+        "V4"
+      ],
+      "recognition": {
+        "label": "AAAI 2024 · 본학회",
+        "track": "main_conference",
+        "verification": "primary_source_confirmed"
+      },
+      "headline": {
+        "value": "능동 메모리",
+        "label": "데이터 다양성을 유지하는 중복 제거",
+        "context": "자기지도 사전학습 중 메모리의 중복 표본을 교체해 클래스 편향 완화.",
+        "source_url": "https://ojs.aaai.org/index.php/AAAI/article/view/29040"
+      },
+      "assessment": {
+        "prior_limitation": "원시 데이터의 빈번한 클래스가 메모리를 점유하면 자기지도 학습도 다수 클래스에 편향됩니다.",
+        "novelty": "메모리 내 데이터의 구별 가능성을 측정하고, 가장 중복된 표본을 새 표본으로 교체하는 능동 필터링을 도입했습니다.",
+        "maturity": "클래스 불균형 조건의 후속 과제 성능과 메모리 정책의 효과를 분석했습니다.",
+        "contribution": "저장·선택 단계에서 데이터 품질을 관리해 제한된 학습 자원으로 다양한 지식을 유지합니다.",
+        "selection_reason": "AAAI 본학회 발표와 데이터 선택·저장 품질을 직접 다룬 기여가 확인됩니다.",
+        "scope_note": "2022년 워크숍 원고와 구분하여 2024년 정식 학술대회 발표를 기준으로 선정했습니다."
+      },
+      "outputs": [
+        {
+          "outcome_id": "paper-1d570fb18c2e",
+          "title": "DUEL: Duplicate Elimination on Active Memory for Self-Supervised Class-Imbalanced Learning",
+          "role": "primary",
+          "verification_status": "verified",
+          "reported_years": [
+            2024
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "label": "AAAI 2024 · 본학회 · 원문",
+          "url": "https://ojs.aaai.org/index.php/AAAI/article/view/29040",
+          "supports": [
+            "publication",
+            "novelty",
+            "validation"
+          ],
+          "checked_at": "2026-10-05"
+        }
+      ],
+      "patent_evidence": [],
+      "report_references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            48
+          ]
+        }
+      ],
+      "project_attribution": "report_or_project_site_only",
+      "assessment_basis": "논문·기관 원문의 비교 실험과 보고서 연결에 근거한 편집적 선정. 독립 재현 실험 또는 특허 신규성 심사 결과가 아님.",
+      "mapping_note": "대표성과 설명의 기능을 기준으로 수평 축을 보완한 편집적 연결; 원 성과 DB의 주제 분류는 보존."
+    },
+    {
+      "id": "highlight-2024-rlaif",
+      "year": 2024,
+      "display_order": 5,
+      "title": "AI 피드백으로 비디오 응답을 개선",
+      "short_name": "VLM-RLAIF",
+      "outcome_ids": [
+        "paper-03de5d709d24"
+      ],
+      "technology_ids": [
+        "T02"
+      ],
+      "horizontal_ids": [
+        "H1",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V1"
+      ],
+      "recognition": {
+        "label": "ACL 2024 · 본학회",
+        "track": "main_conference",
+        "verification": "primary_source_confirmed"
+      },
+      "headline": {
+        "value": "AI 피드백 학습",
+        "label": "영상 맥락을 반영한 선호도·보상 학습",
+        "context": "여러 비디오 벤치마크에서 지도 미세조정 모델 등과 비교.",
+        "source_url": "https://aclanthology.org/2024.acl-long.52/"
+      },
+      "assessment": {
+        "prior_limitation": "영상 지시 데이터의 양과 품질이 충분하지 않아, 지도 미세조정만으로는 영상 내용과 응답을 잘 정렬하기 어렵습니다.",
+        "novelty": "상세 영상 설명을 선호도 평가에 제공하고, AI의 피드백을 보상 학습과 강화학습에 활용합니다.",
+        "maturity": "복수 비디오 벤치마크에서 기존 방법 및 지도 미세조정 모델과의 성능 차이를 평가했습니다.",
+        "contribution": "외부의 수작업 정답에만 의존하지 않고 피드백을 모델 개선으로 연결하는 성장학습 경로를 넓혔습니다.",
+        "selection_reason": "ACL 본학회 발표와 비디오 맥락을 포함한 피드백 학습의 신규성을 근거로 선정했습니다.",
+        "scope_note": "논문의 AI 선호 피드백 학습이며, 사용자와의 질의응답 정책 자체를 검증한 것은 아닙니다."
+      },
+      "outputs": [
+        {
+          "outcome_id": "paper-03de5d709d24",
+          "title": "Tuning Large Multimodal Models for Videos using Reinforcement Learning from AI Feedback",
+          "role": "primary",
+          "verification_status": "verified",
+          "reported_years": [
+            2024
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "label": "ACL 2024 · 본학회 · 원문",
+          "url": "https://aclanthology.org/2024.acl-long.52/",
+          "supports": [
+            "publication",
+            "novelty",
+            "validation"
+          ],
+          "checked_at": "2026-10-05"
+        }
+      ],
+      "patent_evidence": [],
+      "report_references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            48
+          ]
+        }
+      ],
+      "project_attribution": "report_or_project_site_only",
+      "assessment_basis": "논문·기관 원문의 비교 실험과 보고서 연결에 근거한 편집적 선정. 독립 재현 실험 또는 특허 신규성 심사 결과가 아님.",
+      "mapping_note": "대표성과 설명의 기능을 기준으로 수평 축을 보완한 편집적 연결; 원 성과 DB의 주제 분류는 보존."
+    },
+    {
+      "id": "highlight-2025-cliprt",
+      "year": 2025,
+      "display_order": 1,
+      "title": "사람의 말로 로봇 행동을 가르치다",
+      "short_name": "CLIP-RT",
+      "outcome_ids": [
+        "paper-c6a59d646cdf"
+      ],
+      "technology_ids": [
+        "T08"
+      ],
+      "horizontal_ids": [
+        "H1",
+        "H3",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V2"
+      ],
+      "recognition": {
+        "label": "RSS 2025 · 본학회",
+        "track": "main_conference",
+        "verification": "primary_source_confirmed"
+      },
+      "headline": {
+        "value": "1B 파라미터",
+        "label": "자연어 감독을 실제 로봇 정책으로",
+        "context": "논문은 7B OpenVLA와 비교한 실물 로봇 평가 및 LIBERO 시뮬레이션 평가를 보고.",
+        "source_url": "https://www.roboticsproceedings.org/rss21/p016.html"
+      },
+      "assessment": {
+        "prior_limitation": "로봇 시연 데이터 수집에는 전문 조작 기술이나 특수 장비가 필요해 비전문가 참여가 어렵습니다.",
+        "novelty": "자연어 지시로 시연을 수집·증강하고, CLIP을 활용한 대조 모방학습으로 언어 조건 행동 정책을 학습합니다.",
+        "maturity": "실물 로봇의 새로운 조작 기술, 소수 예제 일반화·협력 시나리오와 LIBERO를 평가했습니다.",
+        "contribution": "사람이 제공하는 언어 정보를 로봇의 실행 가능한 행동 지식으로 전환했습니다.",
+        "selection_reason": "RSS 본학회 발표, 경량 정책 설계, 실물 로봇까지 이어진 검증으로 완성도를 높게 평가했습니다.",
+        "scope_note": "1B 대 7B는 비교 모델의 파라미터 수입니다. 모든 과제의 속도나 학습비용이 7배 개선됐다는 뜻은 아닙니다."
+      },
+      "outputs": [
+        {
+          "outcome_id": "paper-c6a59d646cdf",
+          "title": "CLIP-RT: Learning Language-Conditioned Robotic Policies from Natural Language Supervision",
+          "role": "primary",
+          "verification_status": "verified",
+          "reported_years": [
+            2025
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "label": "RSS 2025 · 본학회 · 원문",
+          "url": "https://www.roboticsproceedings.org/rss21/p016.html",
+          "supports": [
+            "publication",
+            "novelty",
+            "validation"
+          ],
+          "checked_at": "2026-10-05"
+        }
+      ],
+      "patent_evidence": [],
+      "report_references": [
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            35
+          ]
+        }
+      ],
+      "project_attribution": "report_or_project_site_only",
+      "assessment_basis": "논문·기관 원문의 비교 실험과 보고서 연결에 근거한 편집적 선정. 독립 재현 실험 또는 특허 신규성 심사 결과가 아님.",
+      "mapping_note": "대표성과 설명의 기능을 기준으로 수평 축을 보완한 편집적 연결; 원 성과 DB의 주제 분류는 보존."
+    },
+    {
+      "id": "highlight-2025-answerability",
+      "year": 2025,
+      "display_order": 2,
+      "title": "답할 수 없는 비디오 질문을 알아차리다",
+      "short_name": "Alignment for Answerability",
+      "outcome_ids": [
+        "paper-547fa51be3fc"
+      ],
+      "technology_ids": [
+        "T03"
+      ],
+      "horizontal_ids": [
+        "H2"
+      ],
+      "vertical_ids": [
+        "V1"
+      ],
+      "recognition": {
+        "label": "ICLR 2025 · 본학회",
+        "track": "main_conference",
+        "verification": "primary_source_confirmed"
+      },
+      "headline": {
+        "value": "응답 가능성 정렬",
+        "label": "영상 근거가 없으면 답변을 보류",
+        "context": "학습 데이터 구축, 정렬 방법, 정렬 전후 평가 지표를 함께 제안.",
+        "source_url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/d77402f07113388562f5b51eaee89573-Abstract-Conference.html"
+      },
+      "assessment": {
+        "prior_limitation": "기존 Video LLM은 영상에서 답할 수 있는 질문 위주로 학습해, 영상 범위를 벗어난 질문에도 답하는 경향이 있습니다.",
+        "novelty": "답할 수 있는지 판단하고 부적절한 질문에는 응답을 거절하도록 정렬하는 학습·평가 프레임워크를 제시했습니다.",
+        "maturity": "기존 영상–설명 데이터로 응답 가능성 학습 데이터를 생성하고, 정렬 전후 행동을 지표로 평가했습니다.",
+        "contribution": "“모르는 것을 알아차리는 능력”을 비디오 언어모델의 측정 가능한 기능으로 구체화했습니다.",
+        "selection_reason": "ICLR 본학회 발표와 과제 핵심 목표에 대한 직접성, 데이터·학습·평가의 결합이 선정 근거입니다.",
+        "scope_note": "모든 종류의 환각이 해결됐다는 의미는 아니며, 영상과 질문의 응답 가능성에 초점을 둡니다."
+      },
+      "outputs": [
+        {
+          "outcome_id": "paper-547fa51be3fc",
+          "title": "Can Video LLMs Refuse to Answer? Alignment for Answerability in Video Large Language Models",
+          "role": "primary",
+          "verification_status": "verified",
+          "reported_years": [
+            2025
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "label": "ICLR 2025 · 본학회 · 원문",
+          "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/d77402f07113388562f5b51eaee89573-Abstract-Conference.html",
+          "supports": [
+            "publication",
+            "novelty",
+            "validation"
+          ],
+          "checked_at": "2026-10-05"
+        }
+      ],
+      "patent_evidence": [],
+      "report_references": [
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            35
+          ]
+        },
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            71
+          ]
+        }
+      ],
+      "project_attribution": "report_or_project_site_only",
+      "assessment_basis": "논문·기관 원문의 비교 실험과 보고서 연결에 근거한 편집적 선정. 독립 재현 실험 또는 특허 신규성 심사 결과가 아님.",
+      "mapping_note": "대표성과 설명의 기능을 기준으로 수평 축을 보완한 편집적 연결; 원 성과 DB의 주제 분류는 보존."
+    },
+    {
+      "id": "highlight-2025-c2r",
+      "year": 2025,
+      "display_order": 3,
+      "title": "질문을 만들고 답을 다시 검토하는 추론",
+      "short_name": "C2R · INQUIRER",
+      "outcome_ids": [
+        "paper-01d82f64969a",
+        "paper-0ceeebf2f93c"
+      ],
+      "technology_ids": [
+        "T05"
+      ],
+      "horizontal_ids": [
+        "H1",
+        "H2",
+        "H3",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V1"
+      ],
+      "recognition": {
+        "label": "EMNLP 2025 · 본학회",
+        "track": "main_conference",
+        "verification": "primary_source_confirmed"
+      },
+      "headline": {
+        "value": "추가 훈련 없이",
+        "label": "보조 질문과 신뢰도로 답변 정제",
+        "context": "C2R: 텍스트·이미지·비디오 QA의 여러 모델과 벤치마크에서 평가.",
+        "source_url": "https://aclanthology.org/2025.emnlp-main.354/"
+      },
+      "assessment": {
+        "prior_limitation": "보조 질문을 많이 만드는 것만으로는 답이 좋아지지 않으며, 생성 질문의 다양성과 품질도 관리해야 합니다.",
+        "novelty": "C2R은 보조 질문·답의 후보를 구성하고 신뢰도로 최종 답을 선택합니다. 관련 성과 INQUIRER는 내부 지식그래프로 다양한 비디오 질문을 생성·정제합니다.",
+        "maturity": "C2R은 여러 QA 모델·영역에서 평가했고, INQUIRER는 DramaQA·TVQA·How2QA·STAR에서 질문 생성과 후속 QA를 검증했습니다.",
+        "contribution": "지식체계 기반 질문 생성과 질문을 통한 답변 개선이라는 과제의 핵심 연구를 구체화했습니다.",
+        "selection_reason": "EMNLP 본학회와 Knowledge-Based Systems 게재, 질문 생성·답변 정제의 직접적 기여를 한 연구 주제의 성과로 묶었습니다.",
+        "scope_note": "C2R과 INQUIRER는 별개 방법입니다. 두 방법을 결합한 단일 시스템의 성능으로 표시하지 않습니다."
+      },
+      "outputs": [
+        {
+          "outcome_id": "paper-01d82f64969a",
+          "title": "Confidence-guided Refinement Reasoning for Zero-shot Question Answering",
+          "role": "primary",
+          "verification_status": "verified",
+          "reported_years": [
+            2025
+          ]
+        },
+        {
+          "outcome_id": "paper-0ceeebf2f93c",
+          "title": "INQUIRER: Harnessing internal knowledge graphs for video question generation",
+          "role": "supporting",
+          "verification_status": "verified",
+          "reported_years": [
+            2025
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "label": "EMNLP 2025 · 본학회 · 원문",
+          "url": "https://aclanthology.org/2025.emnlp-main.354/",
+          "supports": [
+            "publication",
+            "novelty",
+            "validation"
+          ],
+          "checked_at": "2026-10-05"
+        },
+        {
+          "label": "INQUIRER · Knowledge-Based Systems 2025",
+          "url": "https://snu.elsevierpure.com/en/publications/inquirer-harnessing-internal-knowledge-graphs-for-video-question-/",
+          "supports": [
+            "supporting_publication",
+            "question_generation",
+            "validation"
+          ],
+          "checked_at": "2026-10-05"
+        }
+      ],
+      "patent_evidence": [],
+      "report_references": [
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            34
+          ]
+        },
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            29
+          ]
+        },
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            33
+          ]
+        }
+      ],
+      "project_attribution": "report_or_project_site_only",
+      "assessment_basis": "논문·기관 원문의 비교 실험과 보고서 연결에 근거한 편집적 선정. 독립 재현 실험 또는 특허 신규성 심사 결과가 아님.",
+      "mapping_note": "대표성과 설명의 기능을 기준으로 수평 축을 보완한 편집적 연결; 원 성과 DB의 주제 분류는 보존."
+    },
+    {
+      "id": "highlight-2025-composition",
+      "year": 2025,
+      "display_order": 4,
+      "title": "배우지 않은 객체·행동 조합까지 이해",
+      "short_name": "Zero-shot Compositional Video Learning",
+      "outcome_ids": [
+        "paper-cf35eb5fc600"
+      ],
+      "technology_ids": [
+        "T01"
+      ],
+      "horizontal_ids": [
+        "H1"
+      ],
+      "vertical_ids": [
+        "V1"
+      ],
+      "recognition": {
+        "label": "ICCV 2025 · 본학회",
+        "track": "main_conference",
+        "verification": "primary_source_confirmed"
+      },
+      "headline": {
+        "value": "새 조합으로 일반화",
+        "label": "공간·시간 개념을 분리하고 재결합",
+        "context": "영상·이미지의 세 조합 일반화 벤치마크에서 평가.",
+        "source_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Jung_Zero-Shot_Compositional_Video_Learning_with_Coding_Rate_Reduction_ICCV_2025_paper.pdf"
+      },
+      "assessment": {
+        "prior_limitation": "대형 시각언어모델도 학습한 객체와 행동의 새로운 조합을 이해하는 데 한계를 보입니다.",
+        "novelty": "정보이론의 coding rate reduction을 이용해 공간·시간 정보를 분리한 표상을 학습합니다.",
+        "maturity": "세 조합 일반화 벤치마크와 표현의 해석 가능성 분석으로 방법을 검증했습니다.",
+        "contribution": "기존 개념을 조합해 새로운 상황을 이해하도록 지식체계의 일반화 능력을 확장했습니다.",
+        "selection_reason": "ICCV 본학회 발표, 정보이론 기반 표상 설계, 새로운 개념 조합에 대한 검증을 평가했습니다.",
+        "scope_note": "발표 당시 비교 실험 범위의 일반화 성과이며, 모든 미지 상황에 대한 일반지능을 입증한 것은 아닙니다."
+      },
+      "outputs": [
+        {
+          "outcome_id": "paper-cf35eb5fc600",
+          "title": "Zero-Shot Compositional Video Learning with Coding Rate Reduction",
+          "role": "primary",
+          "verification_status": "verified",
+          "reported_years": [
+            2025
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "label": "ICCV 2025 · 본학회 · 원문",
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Jung_Zero-Shot_Compositional_Video_Learning_with_Coding_Rate_Reduction_ICCV_2025_paper.pdf",
+          "supports": [
+            "publication",
+            "novelty",
+            "validation"
+          ],
+          "checked_at": "2026-10-05"
+        }
+      ],
+      "patent_evidence": [],
+      "report_references": [
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            35
+          ]
+        },
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            30
+          ]
+        }
+      ],
+      "project_attribution": "report_or_project_site_only",
+      "assessment_basis": "논문·기관 원문의 비교 실험과 보고서 연결에 근거한 편집적 선정. 독립 재현 실험 또는 특허 신규성 심사 결과가 아님.",
+      "mapping_note": "대표성과 설명의 기능을 기준으로 수평 축을 보완한 편집적 연결; 원 성과 DB의 주제 분류는 보존."
+    },
+    {
+      "id": "highlight-2025-socratic",
+      "year": 2025,
+      "display_order": 5,
+      "title": "자문자답과 시각 피드백으로 장기 임무 수행",
+      "short_name": "Socratic Planner",
+      "outcome_ids": [
+        "paper-3cb93ca18ec0"
+      ],
+      "technology_ids": [
+        "T06"
+      ],
+      "horizontal_ids": [
+        "H1",
+        "H3",
+        "H4"
+      ],
+      "vertical_ids": [
+        "V2"
+      ],
+      "recognition": {
+        "label": "ICRA 2025 · 본학회",
+        "track": "main_conference",
+        "verification": "primary_source_confirmed"
+      },
+      "headline": {
+        "value": "실물 로봇 검증",
+        "label": "자문자답 계획에서 시각 기반 재계획까지",
+        "context": "ALFRED 비교 실험과 물리적 로봇의 장기 과제 실행을 논문에서 보고.",
+        "source_url": "https://snu.elsevierpure.com/en/publications/socratic-planner-self-qa-based-zero-shot-planning-for-embodied-in/"
+      },
+      "assessment": {
+        "prior_limitation": "복합 지시를 여러 하위 목표로 분해하고, 실행 중 예상치 못한 상황에 맞춰 계획을 바꾸는 일이 어렵습니다.",
+        "novelty": "LLM의 자문자답으로 작업 정보를 분해하고, 실행 중 시각 피드백을 이용해 계획을 수정합니다.",
+        "maturity": "ALFRED의 장기 과제와 실제 로봇 배치를 통해 수행 가능성을 검증했습니다.",
+        "contribution": "질문 기반 추론을 환경 관찰과 실행 수정에 연결해 실세계·절차 이해의 완성도를 높였습니다.",
+        "selection_reason": "ICRA 정식 발표, 질문 기반 계획의 직접성, 시뮬레이션을 넘어선 물리적 로봇 검증을 근거로 선정했습니다.",
+        "scope_note": "논문이 보고한 실험실 로봇 검증이며, 일반 가정에서의 장기간 상용 서비스 검증은 아닙니다."
+      },
+      "outputs": [
+        {
+          "outcome_id": "paper-3cb93ca18ec0",
+          "title": "Socratic Planner: Self-QA-Based Zero-Shot Planning for Embodied Instruction Following",
+          "role": "primary",
+          "verification_status": "verified",
+          "reported_years": [
+            2025
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "label": "ICRA 2025 · 본학회 · 원문",
+          "url": "https://snu.elsevierpure.com/en/publications/socratic-planner-self-qa-based-zero-shot-planning-for-embodied-in/",
+          "supports": [
+            "publication",
+            "novelty",
+            "validation"
+          ],
+          "checked_at": "2026-10-05"
+        }
+      ],
+      "patent_evidence": [],
+      "report_references": [
+        {
+          "document": "251224 4차년도 연차보고서",
+          "pdf_pages": [
+            34
+          ]
+        }
+      ],
+      "project_attribution": "report_or_project_site_only",
+      "assessment_basis": "논문·기관 원문의 비교 실험과 보고서 연결에 근거한 편집적 선정. 독립 재현 실험 또는 특허 신규성 심사 결과가 아님.",
+      "mapping_note": "대표성과 설명의 기능을 기준으로 수평 축을 보완한 편집적 연결; 원 성과 DB의 주제 분류는 보존."
+    }
+  ],
+  "review_notes": [
+    {
+      "outcome_id": "paper-ec7ba9e6d02d",
+      "decision": "not_selected",
+      "reason": "2025년 공개 원고와 2026년 AAMAS 정식 발표를 구분. 2026년 학술성과를 2025년 우수학회 실적으로 사용하지 않음."
+    },
+    {
+      "outcome_id": "paper-53baed2dd62a",
+      "decision": "not_selected",
+      "reason": "2022년 DUEL은 워크숍 원고. 정식 본학회 검증을 갖춘 2024년 DUEL을 선정해 중복 강조를 줄임."
+    },
+    {
+      "outcome_id": "patent-1dbfce5b4640",
+      "decision": "needs_registration_evidence",
+      "reason": "보고서에는 일본 등록으로 기재되나 외부 등록 증거 미확인. 번호·등록일 대조 후 재평가하며 현 단계에서 해외 등록 우수성으로 사용하지 않음."
+    },
+    {
+      "outcome_id": "patent-412eec78edfd",
+      "decision": "application_only_before_cutoff",
+      "reason": "2023년 미국 출원은 확인. ETRI 기록의 등록일 2026-06-30은 이번 평가 범위 밖."
+    },
+    {
+      "outcome_id": "patent-895e029f6eac",
+      "decision": "application_only_before_cutoff",
+      "reason": "2023년 미국 출원은 확인. ETRI 기록의 등록일 2026-06-09는 이번 평가 범위 밖."
+    },
+    {
+      "outcome_id": "paper-d855a13fdfb6",
+      "decision": "reserve",
+      "reason": "C-TPT는 ICLR 2024의 유력 후보. 5개 상한에서 의료 정제·작업 평가·운용 적응·데이터 선택·피드백 학습의 서로 다른 기여를 대표하도록 구성."
+    },
+    {
+      "outcome_id": "paper-0b3deb14c94e",
+      "decision": "reserve",
+      "reason": "CVPR 2024 온라인 연속학습 성과. 2023년 지속학습 대표성과와의 중복을 고려해 이번 2024년 5개에는 포함하지 않음."
+    },
+    {
+      "technology_id": "T12",
+      "year": 2025,
+      "decision": "reserve",
+      "reason": "의료 플랫폼은 통합·실증 기반 기여가 있으나 현재 자료의 설계·데이터 구축·검증 범위를 구분해야 함. 외부 비교 검증과 실제 적용 근거가 명확한 후보를 우선 선정."
+    }
+  ],
+  "patent_note": {
+    "summary": "해외 출원은 보조 근거로 반영했습니다. 현재 확인 자료에서 2025년까지의 해외 등록을 확정한 사례는 이번 선정에 사용하지 않았습니다.",
+    "follow_up": "미국 등록 2건은 2026년 후속 성과로 분리하고, 보고서상 일본 등록 1건은 등록 증빙 확인 후 재평가합니다.",
+    "evidence": [
+      {
+        "label": "ETRI · 미국 출원 18/506600",
+        "url": "https://ksp.etri.re.kr/ksp/patent/read?id=PR20230427US",
+        "supports": [
+          "filing_date",
+          "registration_after_cutoff"
+        ],
+        "checked_at": "2026-10-05"
+      },
+      {
+        "label": "ETRI · 미국 출원 18/393944",
+        "url": "https://ksp.etri.re.kr/ksp/patent/read?id=PR20230756US",
+        "supports": [
+          "filing_date",
+          "registration_after_cutoff"
+        ],
+        "checked_at": "2026-10-05"
+      }
+    ]
+  },
+  "summary": {
+    "selected_highlights": 19,
+    "by_year": {
+      "2022": 4,
+      "2023": 5,
+      "2024": 5,
+      "2025": 5
+    },
+    "linked_papers": 20,
+    "selection_is_exhaustive": false
+  }
+}

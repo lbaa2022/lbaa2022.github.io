@@ -647,8 +647,8 @@
     "Online Boundary-Free Continual Learning by Scheduled Data Prior": [
       {
         "id": "paper-1a275346bb92",
-        "status": "unconfirmed",
-        "label": "검색 후 미확인"
+        "status": "verified",
+        "label": "외부 존재 확인"
       }
     ],
     "SMAC 환경에서 엄폐물 전략 학습을 위한 멀티에이전트 강화학습 모델 연구": [

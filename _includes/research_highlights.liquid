@@ -1,0 +1,67 @@
+{% assign highlights = site.data.research_highlights %}
+<section class="research-section research-highlights" id="research-highlights" aria-labelledby="highlights-heading">
+  <div class="research-section-title">
+    <div><p class="research-kicker">02 / 연차별 대표성과</p><h2 id="highlights-heading">질문하며 성장하는 기술, 무엇이 달라졌을까요?</h2></div>
+    <a class="research-text-link" href="{{ '/assets/data/research-highlights.json' | relative_url }}" download="lba-highlights-2022-2025.json">선정 근거 JSON ↓</a>
+  </div>
+  <p class="research-lead">학술적 인정, 기술적 신규성, 완성도와 과제 기여를 함께 살펴 <strong>연차별 최대 5개</strong>를 선정했습니다. <strong>{{ highlights.summary.selected_highlights }}개 대표성과</strong>와 연결 논문 {{ highlights.summary.linked_papers }}편의 핵심 변화·검증 근거를 만나보세요.</p>
+  <div class="highlights-overview" aria-label="4개 연도 핵심 성과 요약">
+    {% for year in highlights.years %}{% assign lead = highlights.highlights | where: 'id', year.lead_id | first %}
+    <a class="highlights-overview-card" href="#{{ lead.id }}" data-highlight-jump="{{ year.year }}">
+      <span class="highlights-year-label">{{ year.year }} <small>{{ year.project_year }}차년도 · {{ year.highlight_ids.size }}개 선정</small></span>
+      <strong>{{ year.phase }}</strong>
+      <span class="highlights-overview-value">{{ lead.headline.value }}</span>
+      <span>{{ lead.short_name }} · {{ lead.headline.label }}</span>
+      <small>{{ lead.recognition.label }} <span aria-hidden="true">↗</span></small>
+    </a>
+    {% endfor %}
+  </div>
+  <p class="research-note">수치는 각 논문의 실험 조건에 한정됩니다. 아래 카드에서 조건과 원문을 확인할 수 있습니다.</p>
+  <details class="highlights-policy">
+    <summary>선정 기준과 특허 평가 원칙</summary>
+    <div class="highlights-criteria">{% for criterion in highlights.selection_policy.criteria %}<div><strong>{{ criterion.name }}</strong><p>{{ criterion.description }}</p></div>{% endfor %}</div>
+    <p>{{ highlights.selection_policy.ranking }}</p>
+    <p>{{ highlights.selection_policy.attribution_scope }}</p>
+    <p>{{ highlights.selection_policy.year_assignment }}</p>
+    <p><strong>해외 특허 확인 결과</strong> · {{ highlights.patent_note.summary }} {{ highlights.patent_note.follow_up }}</p>
+    <div class="research-output-links">{% for ref in highlights.patent_note.evidence %}<a href="{{ ref.url }}" target="_blank" rel="noopener noreferrer">{{ ref.label }} ↗</a>{% endfor %}<a href="{{ '/outcomes/' | relative_url }}?kind=patent">특허 검증 DB ↗</a><a href="{{ '/assets/data/research-highlights.schema.json' | relative_url }}">데이터 스키마 ↗</a></div>
+  </details>
+  <div class="highlights-controls" hidden role="group" aria-label="대표성과 연도 선택">
+    {% for year in highlights.years %}<button type="button" data-highlight-year="{{ year.year }}" aria-pressed="false" aria-controls="highlights-year-{{ year.year }}">{{ year.year }} <span>{{ year.highlight_ids.size }}</span></button>{% endfor %}
+    <button type="button" data-highlight-year="all" aria-pressed="false" aria-controls="highlights-year-2022 highlights-year-2023 highlights-year-2024 highlights-year-2025">전체 연도</button>
+  </div>
+  <p class="research-sr-only" id="highlights-status" aria-live="polite"></p>
+  {% for year in highlights.years %}
+  <div class="highlights-year" id="highlights-year-{{ year.year }}" data-highlight-panel="{{ year.year }}">
+    <div class="highlights-year-heading"><h3>{{ year.year }} <span>{{ year.phase }}</span></h3><p>{{ year.summary }}</p></div>
+    <div class="highlights-cards">
+      {% for hid in year.highlight_ids %}{% assign item = highlights.highlights | where: 'id', hid | first %}
+      <article class="highlight-card{% if forloop.first %} highlight-card-lead{% endif %}" id="{{ item.id }}">
+        <div class="highlight-card-top"><span class="highlight-venue">{{ item.recognition.label }}</span><span class="highlight-index">{{ year.year }} / 0{{ forloop.index }}</span></div>
+        <h4>{{ item.title }}</h4><p class="highlight-name">{{ item.short_name }}</p>
+        <div class="highlight-key"><strong>{{ item.headline.value }}</strong><span>{{ item.headline.label }}</span></div>
+        <p class="highlight-context">{{ item.headline.context }}</p>
+        <p class="highlight-impact">{{ item.assessment.contribution }}</p>
+        <div class="research-tags">{% for vid in item.vertical_ids %}{% assign vertical = research.vertical_axes | where: 'id', vid | first %}<span class="research-tag-domain">{{ vertical.label }}</span>{% endfor %}{% for patent in item.patent_evidence %}<span class="highlight-patent">{{ patent.label }}</span>{% endfor %}</div>
+        <details class="highlight-detail">
+          <summary>왜 우수한가 · 검증 근거 보기</summary>
+          <dl>
+            <dt>기존 기술의 한계</dt><dd>{{ item.assessment.prior_limitation }}</dd>
+            <dt>새롭게 기여한 점</dt><dd>{{ item.assessment.novelty }}</dd>
+            <dt>어디까지 검증했나</dt><dd>{{ item.assessment.maturity }}</dd>
+            <dt>선정 이유</dt><dd>{{ item.assessment.selection_reason }}</dd>
+          </dl>
+          <p class="research-note">{{ item.assessment.scope_note }}</p>
+          <div class="highlight-sources"><strong>논문·검증 기록</strong><ul>{% for output in item.outputs %}<li>{{ output.title | escape }} <a href="{{ '/outcomes/' | relative_url }}#{{ output.outcome_id }}">DB 검증 기록 ↗</a></li>{% endfor %}</ul></div>
+          {% for patent in item.patent_evidence %}<p class="research-note">{{ patent.label }} · {{ patent.number }}<br>{{ patent.note }} <a href="{{ patent.source_url }}" target="_blank" rel="noopener noreferrer">출원 근거 ↗</a> · <a href="{{ '/outcomes/' | relative_url }}#{{ patent.outcome_id }}">DB ↗</a></p>{% endfor %}
+          <div class="research-output-links">{% for ref in item.evidence %}<a href="{{ ref.url }}" target="_blank" rel="noopener noreferrer">{{ ref.label }} ↗</a>{% endfor %}</div>
+          <details class="research-reference"><summary>과제 보고서 연결 근거</summary>{% for ref in item.report_references %}<p>{{ ref.document }} · PDF {{ ref.pdf_pages | join: ', ' }}쪽</p>{% endfor %}</details>
+        </details>
+        <div class="research-output-links highlight-footer"><a href="{{ item.evidence.first.url }}" target="_blank" rel="noopener noreferrer">원문 근거 ↗</a>{% for tid in item.technology_ids %}<a href="{{ '/research/' | relative_url }}?tech={{ tid }}#technology-{{ tid }}">연구 발전 과정 ↗</a>{% endfor %}</div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+  <p class="research-note">2025년까지의 성과 · 외부 근거 확인 {{ highlights.checked_at }} · 선정은 공개 근거에 기반한 편집적 판단이며 공식 수상·등급을 뜻하지 않습니다.</p>
+</section>

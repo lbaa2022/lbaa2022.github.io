@@ -6,6 +6,7 @@ lang: ko
 description: 지식체계 구축, 불확실성 지각, 질문 생성, 성장학습이 네 가지 응용 분야에서 발전한 과정과 대표 연구성과를 탐색합니다.
 ---
 {% include research_assets.liquid %}
+<script defer src="{{ '/assets/js/research-highlights.js' | relative_url }}"></script>
 {% assign research = site.data.research %}
 <main class="research-page" id="research-top" lang="ko">
   <header class="research-hero">
@@ -15,6 +16,7 @@ description: 지식체계 구축, 불확실성 지각, 질문 생성, 성장학�
         <h1>연구개발<br>성과 지도<span class="research-period">2022 — 2025</span></h1>
         <p class="research-intro">모르는 것을 알아차리고, 질문하고, 답을 통해 성장하기까지.<br>네 가지 기술이 네 가지 현장에서 발전한 과정을 살펴봅니다.</p>
         <a class="research-button research-button-light" href="#research-map">전체 기술 지도 보기 <span aria-hidden="true">↓</span></a>
+        <a class="research-button research-button-outline" href="#research-highlights">연차별 대표성과 보기 <span aria-hidden="true">↓</span></a>
       </div>
       <div class="research-cycle" aria-label="질문하며 성장하는 에이전트의 네 가지 기술">
         <p>질문하며 성장하는 에이전트</p>
@@ -47,8 +49,9 @@ description: 지식체계 구축, 불확실성 지각, 질문 생성, 성장학�
       </div>
       <p class="research-note">제안서의 UMC는 지식체계 구축·불확실성 지각에, UQG는 질문 생성에, OCL2는 성장학습에 대응합니다.</p>
     </section>
+    {% include research_highlights.liquid %}
     <section class="research-section" id="research-results" aria-labelledby="research-results-heading">
-      <div class="research-section-title"><div><p class="research-kicker">02 / 연구 주제와 발전 과정</p><h2 id="research-results-heading">문제에서 방법으로, 방법에서 성과로</h2></div><a class="research-text-link" href="{{ '/outcomes/' | relative_url }}">성과 검증 DB ↗</a><a class="research-text-link" href="{{ '/assets/data/research.json' | relative_url }}" download="lba-research-2022-2025.json">공개 데이터 JSON <span aria-hidden="true">↓</span></a></div>
+      <div class="research-section-title"><div><p class="research-kicker">03 / 연구 주제와 발전 과정</p><h2 id="research-results-heading">문제에서 방법으로, 방법에서 성과로</h2></div><a class="research-text-link" href="{{ '/outcomes/' | relative_url }}">성과 검증 DB ↗</a><a class="research-text-link" href="{{ '/assets/data/research.json' | relative_url }}" download="lba-research-2022-2025.json">공개 데이터 JSON <span aria-hidden="true">↓</span></a></div>
       <form class="research-filters" id="research-filters" role="search">
         <label>적용 분야<select id="research-vertical" name="vertical"><option value="">전체 분야</option>{% for v in research.vertical_axes %}<option value="{{ v.id }}">{{ v.label }}</option>{% endfor %}<option value="common">공통 기반 기술</option></select></label>
         <label>기술 단계<select id="research-horizontal" name="horizontal"><option value="">전체 기술</option>{% for h in research.horizontal_axes %}<option value="{{ h.id }}">{{ h.label }}</option>{% endfor %}</select></label>
@@ -89,7 +92,7 @@ description: 지식체계 구축, 불확실성 지각, 질문 생성, 성장학�
       </div>
     </section>
     <section class="research-method research-section" aria-labelledby="research-method-heading">
-      <div><p class="research-kicker">03 / 읽는 방법</p><h2 id="research-method-heading">연구의 맥락을 연결합니다</h2><p>{{ research.editorial_note }}</p><p>성장은 질문을 통한 추론 개선, 지식체계 확장, 피드백을 이용한 모델 학습 등 여러 형태를 포함합니다. 각 연구의 설명에서 그 방식을 구분합니다.</p><p class="research-note">성과 연결은 보고서 본문과 산출물의 제목·용도를 대조해 구성했습니다. 특허 링크는 관련 주제를 안내하며, 국가별 출원·등록 이력은 기존 특허 목록에서 확인할 수 있습니다.</p></div>
+      <div><p class="research-kicker">04 / 읽는 방법</p><h2 id="research-method-heading">연구의 맥락을 연결합니다</h2><p>{{ research.editorial_note }}</p><p>성장은 질문을 통한 추론 개선, 지식체계 확장, 피드백을 이용한 모델 학습 등 여러 형태를 포함합니다. 각 연구의 설명에서 그 방식을 구분합니다.</p><p class="research-note">성과 연결은 보고서 본문과 산출물의 제목·용도를 대조해 구성했습니다. 특허 링크는 관련 주제를 안내하며, 국가별 출원·등록 이력은 기존 특허 목록에서 확인할 수 있습니다.</p></div>
       <div><h3>자료와 범위</h3><ul>{% for source in research.sources %}<li>{{ source.title }}</li>{% endfor %}</ul><p class="research-note">수록 범위 2022–2025 · 2026년 실적은 후속 갱신 예정<br>최종 갱신 {{ research.updated }} · 페이지는 PDF 첫 장부터 계산합니다.</p><div class="research-output-links"><a href="{{ '/publications/' | relative_url }}">전체 논문 ↗</a><a href="{{ '/patents/' | relative_url }}">전체 특허 ↗</a><a href="{{ '/sw-data/' | relative_url }}">SW+Data ↗</a></div></div>
     </section>
   </div>
