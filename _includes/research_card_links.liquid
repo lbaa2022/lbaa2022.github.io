@@ -23,4 +23,4 @@
 {% endif %}
 {% endif %}
 
-{% if include.kind != 'software' %}{% include outcome_card_links.liquid kind=include.kind item=include.item %}{% endif %}
+{% if include.kind != 'software' and include.hide_outcome != true %}{% include outcome_card_links.liquid kind=include.kind item=include.item %}{% endif %}
