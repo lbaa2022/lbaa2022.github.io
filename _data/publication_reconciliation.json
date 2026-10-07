@@ -410,8 +410,20 @@
   "year_counts": {
     "2022": 14,
     "2023": 63,
-    "2024": 47,
-    "2025": 65,
-    "미확인": 1
+    "2024": 48,
+    "2025": 65
+  },
+  "publication_year_fallbacks": {
+    "paper-db7e26d65a50": {
+      "title": "Online Continual Learning for Interactive Instruction Following Agents",
+      "year": 2024,
+      "source": "ICLR 2024 공식 proceedings",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/557127988fc822e55f16aca5976cf0b7-Abstract-Conference.html"
+    }
+  },
+  "horizontal_category_counts": {
+    "umc": 75,
+    "uqg": 35,
+    "ocl2": 80
   }
 }

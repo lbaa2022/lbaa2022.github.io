@@ -18,7 +18,7 @@ permalink: /publications/
   </p>
 
   <p class="deliverables-lead">
-    집계 기준: 검증 DB와 동일한 최초 보고연도. 연도를 확정하지 못한 1건은 별도 표시합니다.
+    집계 기준: 최초 보고연도를 우선 적용하고, 보고연도가 없는 논문은 확인된 출판연도로 보완합니다. CAMA 논문은 ICLR 2024 출판기록에 따라 2024년에 배정했습니다.
     유형이 겹치는 제목은 저널을 우선해 한 번만 집계합니다. 이 수치는 서로 다른 출판물 수나 외부 검증 완료 논문 수를 뜻하지 않습니다.
     <a href="{{ '/outcomes/' | relative_url }}?kind=paper">검증 DB에서 근거 확인 ↗</a>
   </p>
@@ -35,7 +35,7 @@ permalink: /publications/
     {% for pair in publications.counts %}
       <div class="deliverables-stat">
         <strong>{{ pair[1] }}</strong>
-        <span>{% if pair[0] == "미확인" %}보고연도 미확인{% else %}{{ pair[0] }}년 최초 보고{% endif %}</span>
+        <span>{% if pair[0] == "미확인" %}보고연도 미확인{% else %}{{ pair[0] }}년{% endif %}</span>
       </div>
     {% endfor %}
   </div>
@@ -75,6 +75,8 @@ permalink: /publications/
     </table>
   </div>
 
+  <p class="deliverables-lead">논문은 주된 연구 기여에 따라 UMC·UQG·OCL2의 세 수평 핵심 기술 분야로 분류했습니다. 분야별 목록에는 해당 기술을 지원하는 기반 연구와 평가·벤치마크도 포함합니다.</p>
+
   <div class="deliverables-category-grid">
     {% for category in publications.categories %}
       <div class="deliverables-category-card">
@@ -97,7 +99,7 @@ permalink: /publications/
       {% for year_group in category.years %}
         <details class="deliverables-year" {% if forloop.first %}open{% endif %}>
           <summary>
-            <span class="deliverables-year-label">{% if year_group.year == "미확인" %}보고연도 미확인{% else %}{{ year_group.year }}년 최초 보고{% endif %}</span>
+            <span class="deliverables-year-label">{% if year_group.year == "미확인" %}보고연도 미확인{% else %}{{ year_group.year }}년{% endif %}</span>
             <span class="deliverables-year-count">{{ year_group.items | size }}건</span>
           </summary>
           <div class="deliverables-year-body">
@@ -115,7 +117,7 @@ permalink: /publications/
                   </div>
                   <div class="deliverables-meta-block">
                     <span class="deliverables-meta-label">보고 이력 / 검증 상태</span>
-                    {% if item.reported_years.size > 0 %}{{ item.reported_years | join: ', ' }}{% else %}보고연도 미확인{% endif %} · {{ item.verification_label }}
+                    {% if item.statistics_year_basis == 'publication_year' %}<a href="{{ item.statistics_year_source }}" target="_blank" rel="noopener noreferrer">{{ item.statistics_year }}년 출판연도 기준</a>{% elsif item.reported_years.size > 0 %}{{ item.reported_years | join: ', ' }}{% else %}보고연도 미확인{% endif %} · {{ item.verification_label }}
                   </div>
                   {% if item.authors %}
                     <div class="deliverables-meta-block">
