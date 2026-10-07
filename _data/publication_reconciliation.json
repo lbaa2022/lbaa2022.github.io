@@ -1,0 +1,417 @@
+{
+  "checked_at": "2026-10-07",
+  "previous_entries": 167,
+  "site_title_groups": 166,
+  "report_only_title_groups": 24,
+  "total_title_groups": 190,
+  "repeated_site_titles": [
+    {
+      "id": "paper-c6f50be2da59",
+      "title": "이동형 조작 로봇의 강건한 물체 파지를 위한 RGB-D 이미지 기반 3차원 비학습 물체 탐지",
+      "source_entries": 2,
+      "years": [
+        2025,
+        2023
+      ]
+    }
+  ],
+  "added_report_titles": [
+    {
+      "id": "paper-1a8273a63ae3",
+      "title": "A design of a Dataset for Human-like Question Generation under Uncertainty for Interactive Robots",
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            46
+          ]
+        },
+        {
+          "document": "231226 2차년도 연차보고서",
+          "pdf_pages": [
+            50,
+            51,
+            52
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paper-25fbf8fb4e07",
+      "title": "그래프 표현을 이용한 도메인 일반화 성능 개선",
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            46
+          ]
+        },
+        {
+          "document": "231226 2차년도 연차보고서",
+          "pdf_pages": [
+            50,
+            51,
+            52
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paper-cbea99d31e3c",
+      "title": "외부 지식 그패프 결합을 위한 그래프 트랜스포머 알고리즘",
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            46
+          ]
+        },
+        {
+          "document": "231226 2차년도 연차보고서",
+          "pdf_pages": [
+            50,
+            51,
+            52
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paper-1ef2292f15ef",
+      "title": "연속 학습을 위한 메모리를 사용하는 에너지 기반 모델",
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            46
+          ]
+        },
+        {
+          "document": "231226 2차년도 연차보고서",
+          "pdf_pages": [
+            50,
+            51,
+            52
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paper-9d033dfa5e30",
+      "title": "복잡한 시각 추론을 위한 멀티모달 그래프 트랜스포머 알고리즘",
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            46
+          ]
+        },
+        {
+          "document": "231226 2차년도 연차보고서",
+          "pdf_pages": [
+            50,
+            51,
+            52
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paper-24bf430c5b6e",
+      "title": "불확실성 해소 질문 생성을 위한 질의 유형에 관한 연구",
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            46
+          ]
+        },
+        {
+          "document": "231226 2차년도 연차보고서",
+          "pdf_pages": [
+            50,
+            51,
+            52
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paper-cad955e78dcc",
+      "title": "ImageNet-D: Benchmarking Neural Network Robustness on Diffusion Synthetic Object",
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            47
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paper-d855a13fdfb6",
+      "title": "C-TPT: Calibrated Test-Time Prompt Tuning for Vision-Language Models via Text Feature Dispersion",
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            47
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paper-fc47ef9f523d",
+      "title": "TLCR: Token-Level Continuous Reward for Fine-grained Reinforcement Learning from Human Feedback",
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            47
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paper-1df6d77c1c35",
+      "title": "Domain-Specific Block Selection and Paired-View Pseudo-Labeling for Online Test-Time Adaptation",
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            47
+          ]
+        },
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            34,
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paper-ccd43ef5d07a",
+      "title": "Curriculum Fine-tuning of Vision Foundation Model for Medical Image Classification Under Label Noise",
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            47
+          ]
+        },
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            31,
+            41
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paper-267dbee939c9",
+      "title": "토큰 단위에 따른 한국어 표준어-방언 번역 모델의 성능 변화 연구",
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            47
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paper-a4af2c3f4497",
+      "title": "LoRA 기반의 두 단계 학습을 통한 질문 생성 성능 향상",
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            47
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paper-22704631790c",
+      "title": "생성형 언어모델을 통한 폐쇄 도메인 텍스트-데이터 정보추출의 스키마 정렬 개선 연구",
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            47
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paper-6f9833e5b9de",
+      "title": "Structure-aware Multimodal Sequential Learning for Visual Dialog",
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            47
+          ]
+        },
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            29,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paper-8a26ae297afb",
+      "title": "Compositional Video Understanding with Spatiotemporal Structured-based Transformers, Computer Vision and Pattern Recognition Conference",
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            47
+          ]
+        },
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            29,
+            41
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paper-cd6e95a926e3",
+      "title": "시간적 일관성을 고려한 비디오 장면 그래프 생성",
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            47
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paper-0b3deb14c94e",
+      "title": "Learning Equi-angular Representations for Online Continual Learning",
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            48
+          ]
+        },
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            35,
+            36
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paper-03de5d709d24",
+      "title": "Tuning Large Multimodal Models for Videos using Reinforcement Learning from AI Feedback",
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paper-bb33fc00a550",
+      "title": "ReALFRED: An Embodied Instruction Following Benchmark in Photo-Realistic Environments",
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            48
+          ]
+        },
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            36,
+            37
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paper-db7e26d65a50",
+      "title": "Online Continual Learning for Interactive Instruction Following Agents",
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            48
+          ]
+        },
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            36
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paper-3d4701192f27",
+      "title": "Pre-emptive Action Revision by Environmental Feedback for Embodied Instruction Following Agents",
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            48
+          ]
+        },
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            36
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paper-7550bd9709e2",
+      "title": "A Simple Baseline for Uncertainty-Aware Language-Oriented Task Planner for Embodied Agents",
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paper-560017174b9a",
+      "title": "Class-Wise Confidence Thresholding for OOD Detection in Robot Vision-based Applications",
+      "references": [
+        {
+          "document": "241227 3차년도 단계보고서",
+          "pdf_pages": [
+            48
+          ]
+        }
+      ]
+    }
+  ],
+  "year_counts": {
+    "2022": 14,
+    "2023": 63,
+    "2024": 47,
+    "2025": 65,
+    "미확인": 1
+  }
+}

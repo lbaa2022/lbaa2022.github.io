@@ -14,14 +14,28 @@ permalink: /publications/
   <p class="research-catalog-link"><a href="{{ '/research/' | relative_url }}">연구개발 성과 지도에서 연구의 맥락 살펴보기 ↗</a></p>
   <p class="deliverables-lead">
     2025년까지의 논문 및 학술대회 성과를 정리했습니다.
-    동일 제목의 성과는 중복 없이 통합했고, 과제의 핵심 기술 분야 관점에서 다시 분류해 연도순으로 살펴볼 수 있도록 구성했습니다.
+    보고서와 기존 사이트 목록을 대조해 <strong>논문 제목 그룹 {{ publications.stats_by_kind.totals.total }}건</strong>으로 통합했습니다. 같은 제목의 학회 발표와 저널 게재는 한 그룹으로 집계하며, 각 발표·게재 이력은 목록에 보존합니다.
   </p>
+
+  <p class="deliverables-lead">
+    집계 기준: 검증 DB와 동일한 최초 보고연도. 연도를 확정하지 못한 1건은 별도 표시합니다.
+    유형이 겹치는 제목은 저널을 우선해 한 번만 집계합니다. 이 수치는 서로 다른 출판물 수나 외부 검증 완료 논문 수를 뜻하지 않습니다.
+    <a href="{{ '/outcomes/' | relative_url }}?kind=paper">검증 DB에서 근거 확인 ↗</a>
+  </p>
+  <details class="deliverables-year">
+    <summary>167건과 190건의 차이 · 2026-10-07 검증</summary>
+    <div class="deliverables-year-body">
+      <p>기존 목록 {{ site.data.publication_reconciliation.previous_entries }}건에서 같은 제목의 발표·게재 이력 1건을 통합한 {{ site.data.publication_reconciliation.site_title_groups }}개 제목에, 보고서에서 추가 확인한 {{ site.data.publication_reconciliation.report_only_title_groups }}개 제목을 더했습니다. 최종 {{ publications.stats_by_kind.totals.total }}개 제목 그룹입니다.</p>
+      <p>통합한 제목: 「이동형 조작 로봇의 강건한 물체 파지를 위한 RGB-D 이미지 기반 3차원 비학습 물체 탐지」 (2023년 학회 발표, 2025년 저널 게재).</p>
+      <p>보고서에서 추가한 제목은 보고서 기재 실적이며, 외부 서지 확인 상태는 검증 DB에서 별도로 표시합니다.</p>
+    </div>
+  </details>
 
   <div class="deliverables-stat-grid">
     {% for pair in publications.counts %}
       <div class="deliverables-stat">
         <strong>{{ pair[1] }}</strong>
-        <span>{{ pair[0] }}년 성과</span>
+        <span>{% if pair[0] == "미확인" %}보고연도 미확인{% else %}{{ pair[0] }}년 최초 보고{% endif %}</span>
       </div>
     {% endfor %}
   </div>
@@ -33,7 +47,7 @@ permalink: /publications/
         <tr>
           <th>구분</th>
           {% for year in stats.years %}
-            <th>{{ year }}년</th>
+            <th>{% if year == "미확인" %}연도 미확인{% else %}{{ year }}년{% endif %}</th>
           {% endfor %}
           <th>합계</th>
         </tr>
@@ -83,13 +97,13 @@ permalink: /publications/
       {% for year_group in category.years %}
         <details class="deliverables-year" {% if forloop.first %}open{% endif %}>
           <summary>
-            <span class="deliverables-year-label">{{ year_group.year }}년</span>
+            <span class="deliverables-year-label">{% if year_group.year == "미확인" %}보고연도 미확인{% else %}{{ year_group.year }}년 최초 보고{% endif %}</span>
             <span class="deliverables-year-count">{{ year_group.items | size }}건</span>
           </summary>
           <div class="deliverables-year-body">
             <div class="deliverables-grid">
               {% for item in year_group.items %}
-                <article class="deliverables-card">
+                <article class="deliverables-card" id="{{ item.id }}">
                   <h3>{{ item.title }}</h3>
                   <div class="deliverables-chip-row">
                     {% for org in item.orgs %}
@@ -98,6 +112,10 @@ permalink: /publications/
                     {% for kind in item.kinds %}
                       <span class="deliverables-chip deliverables-chip--muted">{{ kind }}</span>
                     {% endfor %}
+                  </div>
+                  <div class="deliverables-meta-block">
+                    <span class="deliverables-meta-label">보고 이력 / 검증 상태</span>
+                    {% if item.reported_years.size > 0 %}{{ item.reported_years | join: ', ' }}{% else %}보고연도 미확인{% endif %} · {{ item.verification_label }}
                   </div>
                   {% if item.authors %}
                     <div class="deliverables-meta-block">
@@ -122,6 +140,10 @@ permalink: /publications/
                     </div>
                   {% endif %}
                 {% include research_card_links.liquid kind="paper" item=item %}
+                {% assign existing_outcome_link = site.data.outcome_links.paper[item.title] %}
+                {% unless existing_outcome_link.size > 0 %}
+                  <div class="outcome-card-links"><a href="{{ '/outcomes/' | relative_url }}?id={{ item.id }}#{{ item.id }}">검증 DB와 보고서 근거 ↗</a></div>
+                {% endunless %}
                 </article>
               {% endfor %}
             </div>

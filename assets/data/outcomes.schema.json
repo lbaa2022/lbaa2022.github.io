@@ -123,6 +123,109 @@
                 "type": "array"
               }
             }
+          },
+          "project_contribution": {
+            "type": "object",
+            "required": [
+              "percent",
+              "status",
+              "observation_ids",
+              "selected_observation_ids",
+              "checked_at"
+            ],
+            "properties": {
+              "percent": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": 0,
+                "maximum": 100
+              },
+              "status": {
+                "enum": [
+                  "reported",
+                  "reported_and_corroborated",
+                  "explicit_in_paper",
+                  "conflicting_values",
+                  "percentage_not_stated",
+                  "grant_not_found_in_available_text",
+                  "full_text_unavailable",
+                  "paper_with_report_difference",
+                  "paper_with_version_difference"
+                ]
+              }
+            }
+          },
+          "citations": {
+            "type": "object",
+            "required": [
+              "provider",
+              "citation_count",
+              "status",
+              "checked_at",
+              "aggregation_owner_id"
+            ],
+            "properties": {
+              "provider": {
+                "const": "OpenAlex"
+              },
+              "citation_count": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 0
+              },
+              "status": {
+                "enum": [
+                  "matched",
+                  "not_found",
+                  "ambiguous",
+                  "access_error",
+                  "review_rejected"
+                ]
+              },
+              "checked_at": {
+                "type": "string"
+              },
+              "aggregation_owner_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "status": {
+                      "const": "matched"
+                    }
+                  }
+                },
+                "then": {
+                  "properties": {
+                    "citation_count": {
+                      "type": "integer",
+                      "minimum": 0
+                    }
+                  },
+                  "required": [
+                    "work_id",
+                    "match_method"
+                  ]
+                },
+                "else": {
+                  "properties": {
+                    "citation_count": {
+                      "type": "null"
+                    }
+                  }
+                }
+              }
+            ]
           }
         }
       }
@@ -148,6 +251,12 @@
           }
         }
       }
+    },
+    "citation_summary": {
+      "type": "object"
+    },
+    "citation_policy": {
+      "type": "object"
     }
   }
 }
